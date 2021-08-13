@@ -1,7 +1,10 @@
 ---
 title: 单局对抗玩法里的反马太设计
 date: 2021-08-13 20:50:03
-tags: 马太效应 单局玩法
+categories: 玩法设计
+tags: 
+- 马太效应 
+- 单局玩法
 cover: https://img-hut.com/images/2021/08/13/eed61a56794584929696465cc5e484b1.png
 ---
 

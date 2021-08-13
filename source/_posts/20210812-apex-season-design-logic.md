@@ -1,7 +1,10 @@
 ---
 title: APEX的赛季战斗主题迭代思路
 date: 2021-08-12 17:37:17
-tags: APEX
+categories: APEX
+tags: 
+- 赛季运营
+- 关卡战斗
 cover: https://img-hut.com/images/2021/08/12/c7fc41158b9ade2a8d08b9ef450e0ce5.jpg
 ---
 
