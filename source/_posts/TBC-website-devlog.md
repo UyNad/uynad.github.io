@@ -93,7 +93,7 @@ ___
 
   <br/>
 
-前期流程可以按照官方文档来，地址：https://hexo.io/zh-cn/docs/configuration。但一些地方比较含糊，可以勤奋使用hexo server然后去http://localhost:4000里查看效果，*或者直接报错跑不起来*。
+前期流程可以按照官方文档来，地址： https://hexo.io/zh-cn/docs/configuration 。但一些地方比较含糊，可以勤奋使用hexo server然后去 http://localhost:4000 里查看效果，*或者直接报错跑不起来*。
 
 *悄悄mark了下迁移，其实除去hexo，对Jekyll也非常感兴趣。等hexo玩转了就试试Jekyll*
 
