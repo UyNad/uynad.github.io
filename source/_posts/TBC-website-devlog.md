@@ -7,6 +7,8 @@ tags:
 - 博客
 ---
 
+![cover](images/website-devlog.jpg)
+
 记录本网页的期望目标及开发日记。
 
 <!--more-->
