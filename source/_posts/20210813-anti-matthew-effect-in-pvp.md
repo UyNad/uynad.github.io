@@ -8,8 +8,6 @@ tags:
 cover: https://img-hut.com/images/2021/08/13/eed61a56794584929696465cc5e484b1.png
 ---
 
-![cover](images/20210813-matthew.png)
-
 如何适度地防止输者越输、赢者越赢？
 
 <!--more-->

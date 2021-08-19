@@ -5,9 +5,8 @@ categories: APEX
 tags: 
 - 赛季运营
 - 关卡战斗
+cover: https://img-hut.com/images/2021/08/12/c7fc41158b9ade2a8d08b9ef450e0ce5.jpg
 ---
-
-![cover](images/20210812-apex.jpg)
 
 简单分析了下APEX在运营期的赛季运营思路。
 
