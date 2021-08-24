@@ -1,5 +1,5 @@
 ---
-title: King Exit
+title: 《King Exit》：黄油外皮下，热血王道冒险传奇
 date: 2017-11-01 12:16:19
 categories: 为爱FA电
 tags:
