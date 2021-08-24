@@ -1,9 +1,10 @@
 ---
 title: APEX的赛季战斗主题迭代思路
 date: 2021-08-12 17:37:17
-categories: APEX
+categories: 赛博垃圾
 tags: 
-- 赛季运营
+- APEX
+- 运营模式
 - 战斗设计
 cover: /images/20210812-apex.jpg
 ---

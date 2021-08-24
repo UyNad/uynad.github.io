@@ -1,7 +1,7 @@
 ---
 title: 开放世界游戏的叙事度
 date: 2021-08-20 21:37:00
-categories: 开放世界
+categories: 赛博垃圾
 tags: 
 - 开放世界
 - 叙事设计

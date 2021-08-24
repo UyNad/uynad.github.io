@@ -1,10 +1,10 @@
 ---
 title: 【持续更新】网页博客开发日记
 date: 2021-12-25 12:41:39
-categories: 开发日记
+categories: DevLog
 tags:
 - 开发日记
-- 博客
+- 网页开发
 cover: /images/website-devlog.jpg
 ---
 
@@ -68,9 +68,37 @@ ___
 
 ## 开发日记
 
+#### 2021.08.24
+
+今天屁事儿比较多，只集中于搬运，之后看看如何修改布局。
+
+  <br/>
+
+---
+
+#### 2021.08.23
+
+icarus成功上线，逼格一下子提升了不少。群众的智慧力量是真伟大，我自己写得多久能写到这个程度。
+
+这里踩了个很蠢的坑。icarus是本地安装的，效果完全正常。但push到主干后，trivis ci部署时找不到layout，看了日志推测是theme文件夹没有推送。但这怎么可能呢？
+
+上网找到好些类似问题，误以为是自己的情况，结果做了都没用。最后npm install并用指令改了config的theme，就好了。在这里发现了个点——
+
+我自己写的时候，是写成Icarus；但人家官方document，给的是icarus。
+
+@jskyzero补了一刀，yml对大小写敏感，说不定问题真的出在这里。
+
+回退了npm install，把Icarus改成icarus，推送，然后……
+
+部署成功了。：）
+
+  <br/>
+
+---
+
 #### 2021.08.20
 
-Claudia弃用，最后发现了个star很高的主题，Icarus。从名字上就非常喜欢，对这段古希腊神话故事相当熟悉，*外加DJMAX里很喜欢的一首歌叫For the Icarus*。
+Claudia弃用，最后发现了个star很高的主题，icarus。从名字上就非常喜欢，对这段古希腊神话故事相当熟悉，*外加DJMAX里很喜欢的一首歌叫For the Icarus*。
 
 clone到本地后一开，好家伙，DIY功能多到不行，直接能在_config_icarus.yml里改。虽然感觉运行速度好像变慢了*（错觉？）*，但功能一下子cover了当初建站的大部分需求。
 

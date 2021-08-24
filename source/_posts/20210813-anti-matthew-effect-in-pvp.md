@@ -1,9 +1,10 @@
 ---
 title: 单局对抗玩法里的反马太设计
 date: 2021-08-13 20:50:03
-categories: 玩法设计
-tags: 
-- 马太效应 
+categories: 赛博垃圾
+tags:
+- 玩法设计 
+- 马太效应
 - 单局玩法
 cover: /images/20210813-matthew.png
 ---
