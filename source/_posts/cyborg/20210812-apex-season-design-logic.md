@@ -1,6 +1,6 @@
 ---
-title: APEX的赛季战斗主题迭代思路
-date: 2021-08-12 17:37:17
+title: 《走近APEX》：赛季战斗主题迭代思路
+date: 2021-08-12
 categories: 赛博垃圾
 tags: 
 - APEX
