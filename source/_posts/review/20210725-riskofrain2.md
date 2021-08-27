@@ -4,7 +4,7 @@ date: 2021-07-25
 categories: 游戏评测
 tags: 
 - 随机生成
-- Roguelike
+- 玩法设计
 - 战斗设计
 cover: /images/20210725-riskofrain2.jpg
 ---
