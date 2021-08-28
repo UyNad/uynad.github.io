@@ -3,7 +3,7 @@ title: 《走近APEX》：进化甲的作用及迭代路线
 date: 2021-08-16
 categories: 赛博垃圾
 tags: 
-- APEX
+- 《走近APEX》
 - 战斗设计
 cover: /images/20210812-apex.jpg
 ---

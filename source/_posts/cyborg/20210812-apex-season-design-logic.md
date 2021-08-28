@@ -3,7 +3,7 @@ title: 《走近APEX》：赛季战斗主题迭代思路
 date: 2021-08-12
 categories: 赛博垃圾
 tags: 
-- APEX
+- 《走近APEX》
 - 运营模式
 - 战斗设计
 cover: /images/20210812-apex.jpg
