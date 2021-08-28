@@ -1,6 +1,6 @@
 ---
 title: 《走近APEX》：Arena玩法模式的体验反思
-date: 2021-08-12
+date: 2021-08-28
 categories: 赛博垃圾
 tags: 
 - 《走近APEX》
