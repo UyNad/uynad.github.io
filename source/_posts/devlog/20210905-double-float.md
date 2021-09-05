@@ -4,7 +4,7 @@ date: 2021-09-05
 categories: DevLog
 tags: 
 - 游戏开发
-cover: /images/20210825-mug99.png
+cover: /images/20210904-float.jpg
 ---
 
 “问题很好，但为什么不问问Google呢？”
