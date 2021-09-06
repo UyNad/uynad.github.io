@@ -5,6 +5,7 @@ categories: 为爱FA电
 tags:
 - 音乐剧
 cover: /images/20210823-broadway.jpg
+toc: true
 ---
 
 美国百老汇的历史背景，及音乐剧知识的介绍。

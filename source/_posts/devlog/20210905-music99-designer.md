@@ -5,6 +5,7 @@ categories: DevLog
 tags: 
 - 游戏开发
 cover: /images/20210825-mug99.png
+toc: true
 ---
 
 谁都可以用的Music99项目指南。
@@ -19,7 +20,7 @@ cover: /images/20210825-mug99.png
 
 后续功能拓展时，会对此文档进行不断补充，补充到鄙人终于放弃开发的时候。www
 
-### **1. GameManager的配置**
+### **GameManager的配置**
 
 绝大部分可以配置的参数都放在了这里。
 
@@ -31,7 +32,7 @@ cover: /images/20210825-mug99.png
 
    <br/>
 
-### **2. NoteHolder的配置**
+### **NoteHolder的配置**
 
 铺面相关的参数放在了这里。
 

@@ -6,6 +6,7 @@ tags:
 - 叙事设计
 - 二刺猿
 cover: /images/20200807-fata-morgana.jpg
+toc: true
 ---
 
 他人的期待，自己的愿望，是救赎也是枷锁。

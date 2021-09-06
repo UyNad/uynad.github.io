@@ -7,6 +7,7 @@ tags:
 - 二刺猿
 - 同人文化
 cover: /images/20210823-touhou.jpg
+toc: true
 ---
 
 当年写在《东方天空璋》登陆Steam时的宣传自来水文。

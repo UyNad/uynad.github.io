@@ -7,6 +7,7 @@ tags:
 - 二刺猿
 - 改变了鄙人人生的作品
 cover: /images/20210823-kingexit.png
+toc: true
 ---
 
 能遇到如此令人感动的RPG的机会真的不多。

@@ -7,6 +7,7 @@ tags:
 - 玩法设计
 - 战斗设计
 cover: /images/20210725-riskofrain2.jpg
+toc: true
 ---
 
 核心循环存在缺陷，但体验却实打实的做出来了。

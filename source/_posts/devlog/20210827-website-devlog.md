@@ -5,13 +5,16 @@ categories: DevLog
 tags:
 - 网页开发
 cover: /images/website-devlog.jpg
+toc: true
 ---
 
 记录本网页的期望目标及开发日记。（已完结）
 
 <!--more-->
 
-## **最终成果（20210827 Final Update）**
+## **最终成果**
+
+**20210827 Final Update**
 
 当前情况：基于icarus theme进行了自定义改造，效果如你所见。
 

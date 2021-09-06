@@ -6,7 +6,6 @@ tags:
 - 叙事设计
 - CRPG
 cover: /images/20210823-witcher.webp
-
 ---
 
 关于Witcher（猎魔人）系列的原著作者，安德烈·斯帕克沃斯基的介绍文。

@@ -5,6 +5,7 @@ categories: DevLog
 tags: 
 - 游戏开发
 cover: /images/20210825-mug99.png
+toc: true
 ---
 
 Music99（吃鸡音游demo）的开发过程记录。
@@ -19,7 +20,7 @@ Music99（吃鸡音游demo）的开发过程记录。
 
 开发过程里踩了不少坑，新东西嘛一个都没提出来，可以说是抄都抄不利索。为了给自己警示，照样会写开发日记。
 
-### **0. To-Do List**
+### **To-Do List**
 
 1. 改进commit规则，不要全量提交。
 2. 支持本地二人对打。
@@ -29,13 +30,13 @@ Music99（吃鸡音游demo）的开发过程记录。
 
    <br/>
 
-### **1. 项目预期**
+### **项目预期**
 
 *打算另写一篇文章，写完把链接贴在这里*
 
    <br/>
 
-### **2. 配置说明**
+### **配置说明**
 
 https://uynad.github.io/2021/09/04/devlog/20210905-music99-designer/
 
@@ -43,7 +44,7 @@ https://uynad.github.io/2021/09/04/devlog/20210905-music99-designer/
 
    <br/>
 
-### **3. 开发日志**
+### **开发日志**
 
 
 

@@ -7,6 +7,7 @@ tags:
 - indie
 - 二刺猿
 cover: /images/20171126-blackberry.jpg
+toc: true
 ---
 
 一个需要玩家打18X补丁的纯洁爱情故事。
