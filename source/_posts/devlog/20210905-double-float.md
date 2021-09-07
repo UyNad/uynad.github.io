@@ -1,7 +1,7 @@
 ---
 title: -1.5为什么是double而不是float？
 date: 2021-09-05
-categories: DevLog
+categories: Devlog
 tags: 
 - 游戏开发
 cover: /images/20210904-float.jpg

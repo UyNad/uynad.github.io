@@ -1,7 +1,7 @@
 ---
 title: 【持续更新中】Music99：项目配置说明文档
 date: 2021-09-05
-categories: DevLog
+categories: Devlog
 tags: 
 - 游戏开发
 cover: /images/20210825-mug99.png

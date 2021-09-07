@@ -1,7 +1,7 @@
 ---
 title: Hexo搭建博客网站的全流程指南
 date: 2021-08-29
-categories: DevLog
+categories: Devlog
 tags: 
 - 网页开发
 cover: /images/20210829-hexo.png
