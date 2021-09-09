@@ -55,3 +55,4 @@ widgets:
         type: toc
         # Whether to show the index of each heading
         index: true
+        collapsed: false
