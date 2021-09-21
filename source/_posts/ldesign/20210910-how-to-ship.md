@@ -4,11 +4,13 @@ date: 2021-09-10
 categories: 闸总自白
 tags: 
 - 关卡设计
+- 叙事设计
+- 玩法设计
 cover: /images/20210918-ship.png
 toc: true
 ---
 
-在欧洲乘过的客轮给了很多启发，虽然乘坐时没想到要做进游戏。
+本文将聚焦于关卡制作管线的第一环：概念设定及流程规划。
 
 <!--more-->
 
@@ -40,7 +42,9 @@ toc: true
 
 那么，在文案没有解释的情况下，要如何考虑去选择船只呢？
 
-![](/images/20210910-ship/ship-select.png)
+{% img "box px-0 py-0 ml-auto mr-auto" /images/20210910-ship/ship-select.png 700 '"船只种类选择Xmind" "船只种类选择Xmind"' %}
+
+<br/>
 
 最后选择了关卡自由度最高*且最容易做场景叙事*的游轮。游轮是个容易混淆的词（油轮、邮轮……），后续经常称呼为Ferry。
 
@@ -120,7 +124,9 @@ toc: true
 
 把所有Beats做成bubble，大小比例按照关卡尺寸来大致画下，然后放入地基形状内。按照最小联通和最大联通的目标去画连接线，然后查看交叉情况。室内设计会尽量规避交叉，但游戏关卡更加自由，只要处理好路线交叉时的引导问题，个人觉得交叉是可以接受的。
 
-<img src="/images/20210910-ship/bubble.png" width="322" height="245">
+{% img "box px-0 py-0 ml-auto mr-auto" /images/20210910-ship/bubble.png 500 '"Bubble Diagram" "Bubble Diagram"' %}
+
+<br/>
 
 可以画2~4份来场竞标比赛*（我竞标我自己）*，以防止思路受到限制。
 
