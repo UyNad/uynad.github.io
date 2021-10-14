@@ -49,15 +49,19 @@ toc: true
 
 #### 敌人机制
 
+<br/>
 
+<br/>
 
 #### 角色X敌人
 
+<br/>
 
+<br/>
 
 #### 战斗X关卡
 
-
+<br/>
 
 <br/>
 
@@ -100,7 +104,9 @@ toc: true
 
 ## 开发日记
 
- 
+
+
+ {% img "box px-0 py-0 ml-auto mr-auto" /images/20210928-endless-corridor/shit.png 700 '"shit" "shit级生成逻辑，已经在重构了，重构完会记录下功能思路"' %}
 
  <br/>
 
