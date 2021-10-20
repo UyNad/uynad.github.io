@@ -213,7 +213,7 @@ widgets:
         # Author title
         author_title: Here comes nothing!
         # Author's current location
-        location: 正在前往 国王大道
+        location: Elysium, in the Blue Sky
         # URL or path to the avatar image
         avatar: /img/avatar.jpg
         # Whether show the rounded avatar image
