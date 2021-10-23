@@ -4,7 +4,8 @@ date: 2021-10-23
 categories: 赛博垃圾
 tags: 
 - 玩法设计
-- 商业化
+- 战斗设计
+- 改变了鄙人人生的作品
 cover: /images/20211023-nioh2online.jpg
 ---
 
