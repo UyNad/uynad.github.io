@@ -1,5 +1,5 @@
 ---
-title: 一难BUFF：《仁王2》的多周目体验延伸机制
+title: 《仁王2》的多周目体验延伸机制：一难BUFF
 date: 2021-10-23
 categories: 赛博垃圾
 tags: 
