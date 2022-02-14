@@ -7,6 +7,7 @@ tags:
 - 战斗设计
 - 改变了鄙人人生的作品
 cover: /images/20211023-nioh2online.jpg
+toc: true
 ---
 
 《仁王2》尝试在Endgame里同时兼容技术验证和数值验证两种追求。不好用，但也不是不能用。
