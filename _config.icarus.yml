@@ -143,13 +143,33 @@ article:
 search:
     type: insight
 comment:
-    type: disqusjs
-    shortname: uynaddesign
-    api_key: 19UZTTLz4lw5tT7JdtplBdSbpZyfFmimylD3iIINAUxpcI3OEI9VjhAqJkZ6YQXd
-    api: https://disqus.skk.moe/disqus/
-    admin: UyNad
-    admin_label: Admin
-    nesting: 4
+    type: waline
+    server_url: https://blog-comment-api-1tl6ysf8x-uynad.vercel.app/
+    lang: zh-CN
+    visitor: true
+    emoji:
+      - 'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili'
+    dark: auto
+    meta: ["nick", "mail", "link"]
+    required_meta: []
+    login: enable
+    avatar: retro
+    word_limit: 0
+    page_size: 10
+    avatar_cdn: 'https://sdn.geekzu.org/avatar/'
+    avatar_force: false
+    highlight: true
+    math_tag_support: false
+    copyright: true
+    locale:
+      placeholder: 'Have fun.'
+    # type: disqusjs
+    # shortname: uynaddesign
+    # api_key: 19UZTTLz4lw5tT7JdtplBdSbpZyfFmimylD3iIINAUxpcI3OEI9VjhAqJkZ6YQXd
+    # api: https://disqus.skk.moe/disqus/
+    # admin: UyNad
+    # admin_label: Admin
+    # nesting: 4
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 # comment:
