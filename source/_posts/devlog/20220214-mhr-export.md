@@ -4,7 +4,7 @@ date: 2022-02-14
 categories: Devlog
 tags: 
 - 游戏开发
-- 动作设计
+- 战斗设计
 cover: /images/20220214-mhr-export.png
 toc: true
 ---
