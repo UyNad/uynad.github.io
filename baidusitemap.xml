@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://uynad.github.io/2022/01/18/review/20220119-rise/</loc>
-    <lastmod>2022-04-23</lastmod>
-  </url>
-  <url>
     <loc>http://uynad.github.io/2017/10/27/review/20211027-gamecores-origin/</loc>
     <lastmod>2022-04-23</lastmod>
   </url>
@@ -17,7 +13,19 @@
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
+    <loc>http://uynad.github.io/2022/01/18/review/20220119-rise/</loc>
+    <lastmod>2022-04-23</lastmod>
+  </url>
+  <url>
     <loc>http://uynad.github.io/2017/11/17/review/20211117-gamecores-hof2/</loc>
+    <lastmod>2022-04-23</lastmod>
+  </url>
+  <url>
+    <loc>http://uynad.github.io/2022/01/03/cyborg/20220104-asoul/</loc>
+    <lastmod>2022-04-23</lastmod>
+  </url>
+  <url>
+    <loc>http://uynad.github.io/2021/10/10/devlog/20211011-dungeon/</loc>
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
@@ -38,14 +46,6 @@
   </url>
   <url>
     <loc>http://uynad.github.io/2020/12/12/review/20201213-maneater/</loc>
-    <lastmod>2022-04-23</lastmod>
-  </url>
-  <url>
-    <loc>http://uynad.github.io/2021/10/10/devlog/20211011-dungeon/</loc>
-    <lastmod>2022-04-23</lastmod>
-  </url>
-  <url>
-    <loc>http://uynad.github.io/2022/01/03/cyborg/20220104-asoul/</loc>
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
@@ -109,23 +109,27 @@
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
-    <loc>http://uynad.github.io/2021/08/29/cyborg/20210830-ai-six/</loc>
+    <loc>http://uynad.github.io/2017/12/25/review/20171226-blackberry/</loc>
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
-    <loc>http://uynad.github.io/2021/08/30/cyborg/20210831-weather/</loc>
+    <loc>http://uynad.github.io/2017/12/18/review/20171216-paradise/</loc>
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
-    <loc>http://uynad.github.io/2021/09/08/cyborg/20210909-clockwork/</loc>
+    <loc>http://uynad.github.io/2017/11/27/review/20171128-jotun/</loc>
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
-    <loc>http://uynad.github.io/2021/09/18/cyborg/20210919-mh-arena/</loc>
+    <loc>http://uynad.github.io/2017/11/25/review/20171122-fleursword/</loc>
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
-    <loc>http://uynad.github.io/2021/09/22/cyborg/20210923-function/</loc>
+    <loc>http://uynad.github.io/2017/02/07/review/20171115-splatoon/</loc>
+    <lastmod>2022-04-23</lastmod>
+  </url>
+  <url>
+    <loc>http://uynad.github.io/2017/11/25/review/20171022-persia/</loc>
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
@@ -221,7 +225,7 @@
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
-    <loc>http://uynad.github.io/2017/12/25/review/20171226-blackberry/</loc>
+    <loc>http://uynad.github.io/2017/10/18/review/20171019-emily-too/</loc>
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
@@ -297,35 +301,31 @@
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
-    <loc>http://uynad.github.io/2017/10/18/review/20171019-emily-too/</loc>
-    <lastmod>2022-04-23</lastmod>
-  </url>
-  <url>
-    <loc>http://uynad.github.io/2017/11/25/review/20171022-persia/</loc>
-    <lastmod>2022-04-23</lastmod>
-  </url>
-  <url>
-    <loc>http://uynad.github.io/2017/02/07/review/20171115-splatoon/</loc>
-    <lastmod>2022-04-23</lastmod>
-  </url>
-  <url>
-    <loc>http://uynad.github.io/2017/11/25/review/20171122-fleursword/</loc>
-    <lastmod>2022-04-23</lastmod>
-  </url>
-  <url>
-    <loc>http://uynad.github.io/2017/11/27/review/20171128-jotun/</loc>
-    <lastmod>2022-04-23</lastmod>
-  </url>
-  <url>
-    <loc>http://uynad.github.io/2017/12/18/review/20171216-paradise/</loc>
-    <lastmod>2022-04-23</lastmod>
-  </url>
-  <url>
-    <loc>http://uynad.github.io/2021/07/04/cyborg/20210705-ender-level/</loc>
+    <loc>http://uynad.github.io/2021/07/14/cyborg/20210715-mrfz/</loc>
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
     <loc>http://uynad.github.io/2017/05/17/article/20210823-gamecores-broadway/</loc>
+    <lastmod>2022-04-23</lastmod>
+  </url>
+  <url>
+    <loc>http://uynad.github.io/2021/09/18/cyborg/20210919-mh-arena/</loc>
+    <lastmod>2022-04-23</lastmod>
+  </url>
+  <url>
+    <loc>http://uynad.github.io/2021/09/08/cyborg/20210909-clockwork/</loc>
+    <lastmod>2022-04-23</lastmod>
+  </url>
+  <url>
+    <loc>http://uynad.github.io/2021/08/30/cyborg/20210831-weather/</loc>
+    <lastmod>2022-04-23</lastmod>
+  </url>
+  <url>
+    <loc>http://uynad.github.io/2021/08/29/cyborg/20210830-ai-six/</loc>
+    <lastmod>2022-04-23</lastmod>
+  </url>
+  <url>
+    <loc>http://uynad.github.io/2021/08/27/cyborg/20210828-apex-arena/</loc>
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
@@ -377,7 +377,7 @@
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
-    <loc>http://uynad.github.io/2021/07/14/cyborg/20210715-mrfz/</loc>
+    <loc>http://uynad.github.io/2021/09/22/cyborg/20210923-function/</loc>
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
@@ -389,7 +389,7 @@
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
-    <loc>http://uynad.github.io/2021/08/27/cyborg/20210828-apex-arena/</loc>
+    <loc>http://uynad.github.io/2021/07/04/cyborg/20210705-ender-level/</loc>
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
@@ -421,6 +421,10 @@
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
+    <loc>http://uynad.github.io/2021/04/24/cyborg/20210425-hud/</loc>
+    <lastmod>2022-04-23</lastmod>
+  </url>
+  <url>
     <loc>http://uynad.github.io/2017/12/13/article/20210823-gamecores-lis/</loc>
     <lastmod>2022-04-23</lastmod>
   </url>
@@ -429,7 +433,7 @@
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
-    <loc>http://uynad.github.io/2021/04/24/cyborg/20210425-hud/</loc>
+    <loc>http://uynad.github.io/2020/08/31/cyborg/20200901-cv-sn/</loc>
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
@@ -438,10 +442,6 @@
   </url>
   <url>
     <loc>http://uynad.github.io/2018/06/04/article/20210823-gamecores-trophy/</loc>
-    <lastmod>2022-04-23</lastmod>
-  </url>
-  <url>
-    <loc>http://uynad.github.io/2020/08/31/cyborg/20200901-cv-sn/</loc>
     <lastmod>2022-04-23</lastmod>
   </url>
   <url>
