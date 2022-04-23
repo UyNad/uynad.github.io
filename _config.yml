@@ -5,7 +5,7 @@ keywords: Game Design
 author: UyNad
 language: zh-CN
 timezone: Asia/Shanghai
-url: http://uynad.github.io
+url: https://uynad.github.io/
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
 pretty_urls:
