@@ -33,6 +33,6 @@
     "hexo-wordcount": "^6.0.1",
     "inferno": "^7.3.3",
     "inferno-create-element": "^7.4.11",
-    "stylus": "^0.57.0"
+    "stylus": "^0.58.0"
   }
 }
