@@ -9,13 +9,13 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "5.4.1"
+    "version": "5.0.2"
   },
   "dependencies": {
-    "bulma-stylus": "^0.9.1",
+    "bulma-stylus": "^0.8.0",
     "ejs": "^3.1.8",
-    "hexo": "^6.3.0",
-    "hexo-component-inferno": "^2.0.2",
+    "hexo": "^5.0.2",
+    "hexo-component-inferno": "^0.13.0",
     "hexo-deployer-git": "^3.0.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-baidu-sitemap": "^0.1.9",
@@ -31,8 +31,8 @@
     "hexo-theme-landscape": "^0.0.3",
     "hexo-theme-nexmoe": "^4.1.4",
     "hexo-wordcount": "^6.0.1",
-    "inferno": "^8.0.5",
-    "inferno-create-element": "^8.0.5",
+    "inferno": "^7.3.3",
+    "inferno-create-element": "^7.3.3",
     "stylus": "^0.59.0"
   }
 }
