@@ -64,6 +64,6 @@ cover: /images/20221219-Christmas.png
 
 5. **如图捏**
 
-   ![](\images\20221219-Christmas\1.png)
+   {% img "box px-0 py-0 ml-auto mr-auto" /images/20221219-Christmas/1.png 700 '"""" ' %}
 
 <br/>
