@@ -65,7 +65,7 @@ deploy:
   type: git
   repo: git@github.com:uynad/uynad.github.io.git
   # example, https://github.com/uynad/uynad.github.io
-  branch: main
+  branch: gh-pages
 # 谷歌、百度站点地图生成
 Plugins:
 - hexo-generator-baidu-sitemap
