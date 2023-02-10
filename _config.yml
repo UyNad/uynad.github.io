@@ -63,8 +63,8 @@ theme: icarus
 # 部署配置
 deploy:
   type: git
-  repo: git@github.com:uynad/uynad.github.io.git
-  # example, https://github.com/uynad/uynad.github.io
+  repo: git@github.com:UyNad/uynad.github.io.git
+  # example: https://github.com/uynad/uynad.github.io
   branch: gh-pages
 # 谷歌、百度站点地图生成
 Plugins:
