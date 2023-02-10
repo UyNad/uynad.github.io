@@ -60,8 +60,12 @@ include: null
 exclude: null
 ignore: null
 theme: icarus
+# 部署配置
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:uynad/uynad.github.io.git
+  # example, https://github.com/uynad/uynad.github.io
+  branch: main
 # 谷歌、百度站点地图生成
 Plugins:
 - hexo-generator-baidu-sitemap
