@@ -272,14 +272,11 @@ widgets:
         links:
             Hexo: 'https://hexo.io'
             Bulma: 'https://bulma.io'
-            Travis-ci: 'https://travis-ci.com/github/UyNad/uynad.github.io'
             Pinterest: 'https://www.pinterest.com/'
             Mixamo: 'https://www.mixamo.com/#/'
             Pixiv: 'https://www.pixiv.net/'
             FontAwesome: 'https://fontawesome.cc/'
             W3Shools: 'https://www.w3schools.com/default.asp'
-            Saraba1st: 'https://bbs.saraba1st.com/2b/forum-4-1.html'
-            PSNINE: 'https://psnine.com/'
 
     # Categories widget configurations
     -
