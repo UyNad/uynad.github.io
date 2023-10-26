@@ -5,6 +5,7 @@ categories: 赛博垃圾
 tags: 
 - 二刺猿
 cover: /images/20221219-Christmas.png
+toc: true
 ---
 不管2022发生了什么，还是要说句圣诞快乐！
 
