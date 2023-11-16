@@ -1,7 +1,7 @@
 ---
 title: 下班，然后回家拼高达！
 date: 2023-05-11
-categories: Devlog
+categories: Survive
 tags: 
 - 3D动画
 cover: /images/20230511-gundam-model.jpg
