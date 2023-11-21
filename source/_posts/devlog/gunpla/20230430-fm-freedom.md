@@ -6,6 +6,7 @@ tags:
 - Gunpla
 cover: /images/20230430-fm-freedom.jpg
 toc: true
+hide: true
 ---
 用了自己拍的照片作封面！！！
 

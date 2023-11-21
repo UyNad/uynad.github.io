@@ -6,6 +6,7 @@ tags:
 - Gunpla
 cover: /images/20230915-hg-destiny.gif
 toc: true
+hide: true
 ---
 成品质量远超想象，最帅的大翅膀。
 

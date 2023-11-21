@@ -6,6 +6,7 @@ tags:
 - Gunpla
 cover: /images/20230808-MB-deviseexia.jpg
 toc: true
+hide: true
 ---
 拼完：指打开箱子把各个零件装在机体上。
 

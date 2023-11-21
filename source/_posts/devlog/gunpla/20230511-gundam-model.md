@@ -6,6 +6,7 @@ tags:
 - 3D动画
 cover: /images/20230511-gundam-model.jpg
 toc: true
+hide: true
 ---
 最近喜欢拼高达，不水一篇文章白不水。
 
