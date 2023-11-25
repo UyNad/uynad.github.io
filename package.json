@@ -21,6 +21,7 @@
     "hexo-generator-baidu-sitemap": "^0.1.9",
     "hexo-generator-category": "^2.0.0",
     "hexo-generator-index-custom": "^1.0.1",
+    "hexo-generator-random": "^1.0.2",
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
     "hexo-pagination": "^1.0.0",
@@ -34,6 +35,7 @@
     "hexo-wordcount": "^6.0.1",
     "inferno": "^7.3.3",
     "inferno-create-element": "^7.3.3",
+    "object-assign": "^4.1.1",
     "stylus": "^0.59.0"
   }
 }
