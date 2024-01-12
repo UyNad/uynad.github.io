@@ -1,39 +1,26 @@
-name: HEXO CI
-
+name: Hexo Deploy GitHub Pages
 on:
   push:
     branches:
-    - main
+    # 推送到main分支后开始自动更新
+      - main
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [14.x]
-
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout
+        uses: actions/checkout@master
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Configuration environment
+      - name: Build and Deploy
+        uses: theme-keep/hexo-deploy-github-pages-action@master
         env:
-          HEXO_DEPLOY_PRI: ${{secrets.HEXO_DEPLOY_PRI}}
-        run: |
-          mkdir -p ~/.ssh/
-          echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.name "UyNad"
-          git config --global user.email "cestvaljean24601@outlook.com"
-      - name: Install dependencies
-        run: |
-          npm i -g hexo-cli
-          npm i
-      - name: Deploy hexo
-        run: |
-          hexo clean && hexo generate && hexo deploy
+          # GITHUB TOKEN
+          PERSONAL_TOKEN: ${{ secrets.HEXO_KEEP_DEPLOY }}
+
+          #部署到uynad.github.io仓库
+          PUBLISH_REPOSITORY: UyNad/uynad.github.io
+
+          # 部署到gh-pages分支
+          BRANCH: gh-pages
+          PUBLISH_DIR: ./public
