@@ -36,7 +36,7 @@
     "hexo-theme-nexmoe": "^4.1.4",
     "hexo-wordcount": "^6.0.1",
     "inferno": "^8.0.6",
-    "inferno-create-element": "^7.3.3",
+    "inferno-create-element": "^8.0.6",
     "object-assign": "^4.1.1",
     "stylus": "^0.59.0"
   }
