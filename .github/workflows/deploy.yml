@@ -1,0 +1,26 @@
+name: Hexo Deploy GitHub Pages
+on:
+  push:
+    branches:
+    # 推送到main分支后开始自动更新
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Build and Deploy
+        uses: theme-keep/hexo-deploy-github-pages-action@master
+        env:
+          # GITHUB TOKEN
+          PERSONAL_TOKEN: ${{ secrets.HEXO_KEEP_DEPLOY }}
+
+          #部署到uynad.github.io仓库
+          PUBLISH_REPOSITORY: UyNad/uynad.github.io
+
+          # 部署到gh-pages分支
+          BRANCH: gh-pages
+          PUBLISH_DIR: ./public
