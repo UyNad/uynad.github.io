@@ -23,7 +23,7 @@ ___
     </figure>
   </div>
   <header class="card-header">
-      <p class="card-header-title is-size-4 has-background-dark has-text-light">拼完咯！EG RX-78-2 (McDonald’s Big Mac Colors)
+      <p class="card-header-title is-size-5 has-background-dark has-text-light">拼完咯！EG RX-78-2 (McDonald’s Big Mac Colors)
       </p>
   </header>
   <div class="card-content">
@@ -52,7 +52,7 @@ ___
     </figure>
   </div>
   <header class="card-header">
-      <p class="card-header-title is-size-4 has-background-dark has-text-light">拼完咯！Full Mechanics ZGMF-X10A Freedom Gundam Ver.GCP
+      <p class="card-header-title is-size-5 has-background-dark has-text-light">拼完咯！Full Mechanics ZGMF-X10A Freedom Gundam Ver.GCP
       </p>
   </header>
   <div class="card-content">
@@ -81,7 +81,7 @@ ___
     </figure>
   </div>
   <header class="card-header">
-      <p class="card-header-title is-size-4 has-background-dark has-text-light">拼完了...大班 MG 6650自由高达（樱花配色）
+      <p class="card-header-title is-size-5 has-background-dark has-text-light">拼完了...大班 MG 6650自由高达（樱花配色）
       </p>
   </header>
   <div class="card-content">
@@ -110,7 +110,7 @@ ___
     </figure>
   </div>
   <header class="card-header">
-      <p class="card-header-title is-size-4 has-background-dark has-text-light">拼完咯！RG RX-93 ν Gundam
+      <p class="card-header-title is-size-5 has-background-dark has-text-light">拼完咯！RG RX-93 ν Gundam
       </p>
   </header>
   <div class="card-content">
@@ -139,7 +139,7 @@ ___
     </figure>
   </div>
   <header class="card-header">
-      <p class="card-header-title is-size-4 has-background-dark has-text-light">拼完咯！MG MS-07B Gouf (Ver. 2.0)
+      <p class="card-header-title is-size-5 has-background-dark has-text-light">拼完咯！MG MS-07B Gouf (Ver. 2.0)
       </p>
   </header>
   <div class="card-content">
@@ -168,7 +168,7 @@ ___
     </figure>
   </div>
   <header class="card-header">
-      <p class="card-header-title is-size-4 has-background-dark has-text-light">拼完咯！GN-001 Gundam Devise Exia
+      <p class="card-header-title is-size-5 has-background-dark has-text-light">拼完咯！GN-001 Gundam Devise Exia
       </p>
   </header>
   <div class="card-content">
@@ -197,7 +197,7 @@ ___
     </figure>
   </div>
   <header class="card-header">
-      <p class="card-header-title is-size-4 has-background-dark has-text-light">拼完咯！HG RX-78-2 Gundam (Beyond Global)
+      <p class="card-header-title is-size-5 has-background-dark has-text-light">拼完咯！HG RX-78-2 Gundam (Beyond Global)
       </p>
   </header>
   <div class="card-content">
@@ -226,7 +226,7 @@ ___
     </figure>
   </div>
   <header class="card-header">
-      <p class="card-header-title is-size-4 has-background-dark has-text-light">拼完咯！SDEX GN-001 Gundam Exia
+      <p class="card-header-title is-size-5 has-background-dark has-text-light">拼完咯！SDEX GN-001 Gundam Exia
       </p>
   </header>
   <div class="card-content">
@@ -255,7 +255,7 @@ ___
     </figure>
   </div>
   <header class="card-header">
-      <p class="card-header-title is-size-4 has-background-dark has-text-light">拼完咯！HGCE ZGMF-X42S Destiny Gundam
+      <p class="card-header-title is-size-5 has-background-dark has-text-light">拼完咯！HGCE ZGMF-X42S Destiny Gundam
       </p>
   </header>
   <div class="card-content">
