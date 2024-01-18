@@ -74,6 +74,37 @@ ___
 
 <br/>
 
+
+
+<div class="card has-background-light">
+  <div class="card-image">
+    <figure class="image">
+      <img src="/images/20230513-hg-aerial.webp">
+    </figure>
+  </div>
+  <header class="card-header">
+      <p class="card-header-title is-size-5 has-background-dark has-text-light">拼完咯！HGTWFM XVX-016 Gundam Aerial
+      </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+    机体喜爱：★★★★☆<br>
+	拼装体验：★★★★★<br>
+	成品表现：★★★★☆<br>
+	自我打分：★★★☆☆<br>
+      水魔的HG整体都挺满意的。虽然至今只买了这一台！
+      <br>
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="https://uynad.github.io/2023/04/29/devlog/gunpla/20230513-hg-aerial/" class="card-footer-item has-background-link has-text-white is-size-5">点此跳转到评测</a>
+  </footer>
+</div>
+
+<br/>
+
+<br/>
+
 <div class="card has-background-light">
   <div class="card-image">
     <figure class="image">
