@@ -37,7 +37,7 @@ ___
     </div>
   </div>
   <footer class="card-footer">
-    <a href="https://uynad.github.io/2023/04/29/devlog/gunpla/20230430-eg-mc78/" class="card-footer-item has-background-link has-text-white is-size-4">点此跳转到评测</a>
+    <a href="https://uynad.github.io/2023/04/29/devlog/gunpla/20230430-eg-mc78/" class="card-footer-item has-background-link has-text-white is-size-5">点此跳转到评测</a>
   </footer>
 </div>
 
@@ -66,7 +66,7 @@ ___
     </div>
   </div>
   <footer class="card-footer">
-    <a href="https://uynad.github.io/2023/04/29/devlog/gunpla/20230430-fm-freedom/" class="card-footer-item has-background-link has-text-white is-size-4">点此跳转到评测</a>
+    <a href="https://uynad.github.io/2023/04/29/devlog/gunpla/20230430-fm-freedom/" class="card-footer-item has-background-link has-text-white is-size-5">点此跳转到评测</a>
   </footer>
 </div>
 
@@ -95,7 +95,7 @@ ___
     </div>
   </div>
   <footer class="card-footer">
-    <a href="https://uynad.github.io/2023/06/11/devlog/gunpla/20230612-mg-6650/" class="card-footer-item has-background-link has-text-white is-size-4">点此跳转到评测</a>
+    <a href="https://uynad.github.io/2023/06/11/devlog/gunpla/20230612-mg-6650/" class="card-footer-item has-background-link has-text-white is-size-5">点此跳转到评测</a>
   </footer>
 </div>
 
@@ -124,7 +124,7 @@ ___
     </div>
   </div>
   <footer class="card-footer">
-    <a href="https://uynad.github.io/2023/07/15/devlog/gunpla/20230716-rg-mou/" class="card-footer-item has-background-link has-text-white is-size-4">点此跳转到评测</a>
+    <a href="https://uynad.github.io/2023/07/15/devlog/gunpla/20230716-rg-mou/" class="card-footer-item has-background-link has-text-white is-size-5">点此跳转到评测</a>
   </footer>
 </div>
 
@@ -153,7 +153,7 @@ ___
     </div>
   </div>
   <footer class="card-footer">
-    <a href="https://uynad.github.io/2023/07/29/devlog/gunpla/20230730-mg-gouf/" class="card-footer-item has-background-link has-text-white is-size-4">点此跳转到评测</a>
+    <a href="https://uynad.github.io/2023/07/29/devlog/gunpla/20230730-mg-gouf/" class="card-footer-item has-background-link has-text-white is-size-5">点此跳转到评测</a>
   </footer>
 </div>
 
@@ -182,7 +182,7 @@ ___
     </div>
   </div>
   <footer class="card-footer">
-    <a href="https://uynad.github.io/2023/08/07/devlog/gunpla/20230808-MB-deviseexia/" class="card-footer-item has-background-link has-text-white is-size-4">点此跳转到评测</a>
+    <a href="https://uynad.github.io/2023/08/07/devlog/gunpla/20230808-MB-deviseexia/" class="card-footer-item has-background-link has-text-white is-size-5">点此跳转到评测</a>
   </footer>
 </div>
 
@@ -211,7 +211,7 @@ ___
     </div>
   </div>
   <footer class="card-footer">
-    <a href="https://uynad.github.io/2023/09/04/devlog/gunpla/20230905-hg-bg78/" class="card-footer-item has-background-link has-text-white is-size-4">点此跳转到评测</a>
+    <a href="https://uynad.github.io/2023/09/04/devlog/gunpla/20230905-hg-bg78/" class="card-footer-item has-background-link has-text-white is-size-5">点此跳转到评测</a>
   </footer>
 </div>
 
@@ -240,7 +240,7 @@ ___
     </div>
   </div>
   <footer class="card-footer">
-    <a href="https://uynad.github.io/2023/09/09/devlog/gunpla/20230910-sd-exia/" class="card-footer-item has-background-link has-text-white is-size-4">点此跳转到评测</a>
+    <a href="https://uynad.github.io/2023/09/09/devlog/gunpla/20230910-sd-exia/" class="card-footer-item has-background-link has-text-white is-size-5">点此跳转到评测</a>
   </footer>
 </div>
 
@@ -269,7 +269,7 @@ ___
     </div>
   </div>
   <footer class="card-footer">
-    <a href="https://uynad.github.io/2023/09/14/devlog/gunpla/20230915-hg-destiny/" class="card-footer-item has-background-link has-text-white is-size-4">点此跳转到评测</a>
+    <a href="https://uynad.github.io/2023/09/14/devlog/gunpla/20230915-hg-destiny/" class="card-footer-item has-background-link has-text-white is-size-5">点此跳转到评测</a>
   </footer>
 </div>
 
