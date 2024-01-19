@@ -16,7 +16,7 @@ ___
 
 
 
-<div class="card has-background-light">
+<div class="card has-background-grey-lighter">
   <div class="card-image">
     <figure class="image">
       <img src="/images/20230430-eg-mc78.jpg">
@@ -45,7 +45,7 @@ ___
 
 <br/>
 
-<div class="card has-background-light">
+<div class="card has-background-grey-lighter">
   <div class="card-image">
     <figure class="image">
       <img src="/images/20230430-fm-freedom.jpg">
@@ -76,7 +76,7 @@ ___
 
 
 
-<div class="card has-background-light">
+<div class="card has-background-grey-lighter">
   <div class="card-image">
     <figure class="image">
       <img src="/images/20230513-hg-aerial.webp">
@@ -107,7 +107,7 @@ ___
 
 
 
-<div class="card has-background-light">
+<div class="card has-background-grey-lighter">
   <div class="card-image">
     <figure class="image">
       <img src="/images/20230702-mg-fullsaber.webp">
@@ -136,7 +136,7 @@ ___
 
 <br/>
 
-<div class="card has-background-light">
+<div class="card has-background-grey-lighter">
   <div class="card-image">
     <figure class="image">
       <img src="/images/20230612-mg-6650.jpeg">
@@ -165,7 +165,7 @@ ___
 
 <br/>
 
-<div class="card has-background-light">
+<div class="card has-background-grey-lighter">
   <div class="card-image">
     <figure class="image">
       <img src="/images/20230716-rg-mou.webp">
@@ -194,7 +194,7 @@ ___
 
 <br/>
 
-<div class="card has-background-light">
+<div class="card has-background-grey-lighter">
   <div class="card-image">
     <figure class="image">
       <img src="/images/20230730-mg-gouf.webp">
@@ -223,7 +223,7 @@ ___
 
 <br/>
 
-<div class="card has-background-light">
+<div class="card has-background-grey-lighter">
   <div class="card-image">
     <figure class="image">
       <img src="/images/20230808-MB-deviseexia.jpg">
@@ -252,7 +252,7 @@ ___
 
 <br/>
 
-<div class="card has-background-light">
+<div class="card has-background-grey-lighter">
   <div class="card-image">
     <figure class="image">
       <img src="/images/20230905-hg-bg78.webp">
@@ -281,7 +281,7 @@ ___
 
 <br/>
 
-<div class="card has-background-light">
+<div class="card has-background-grey-lighter">
   <div class="card-image">
     <figure class="image">
       <img src="/images/20230910-sd-exia.png">
@@ -310,7 +310,7 @@ ___
 
 <br/>
 
-<div class="card has-background-light">
+<div class="card has-background-grey-lighter">
   <div class="card-image">
     <figure class="image">
       <img src="/images/20230915-hg-destiny.gif">
