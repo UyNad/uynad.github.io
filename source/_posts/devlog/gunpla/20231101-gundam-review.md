@@ -110,6 +110,35 @@ ___
 <div class="card has-background-grey-lighter">
   <div class="card-image">
     <figure class="image">
+      <img src="/images/20230524-fm-aerial.webp">
+    </figure>
+  </div>
+  <header class="card-header">
+      <p class="card-header-title is-size-5 has-background-dark has-text-light">拼完咯！Full Mechanics XVX-016 Gundam Aerial
+      </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+    机体喜爱：★★★★☆<br>
+	拼装体验：★★★★★<br>
+	成品表现：★★★★★<br>
+	自我打分：★★★☆☆<br>
+      这不比MG强？这不比MG强？这不比MG强？
+      <br>
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="https://uynad.github.io/2023/05/24/devlog/gunpla/20230524-fm-aerial/" class="card-footer-item has-background-link has-text-white is-size-5">点此跳转到评测</a>
+  </footer>
+</div>
+
+<br/>
+
+<br/>
+
+<div class="card has-background-grey-lighter">
+  <div class="card-image">
+    <figure class="image">
       <img src="/images/20230702-mg-fullsaber.webp">
     </figure>
   </div>
@@ -251,6 +280,39 @@ ___
 <br/>
 
 <br/>
+
+
+
+<div class="card has-background-grey-lighter">
+  <div class="card-image">
+    <figure class="image">
+      <img src="/images/20230826-rg-exia.webp">
+    </figure>
+  </div>
+  <header class="card-header">
+      <p class="card-header-title is-size-5 has-background-dark has-text-light">拼完咯！RG GN-001 Gundam Exia
+      </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+    机体喜爱：★★★★★<br>
+	拼装体验：★☆☆☆☆<br>
+	成品表现：★★★☆☆<br>
+	自我打分：★★★★☆<br>
+      最爱的机体，最史的RG。
+      <br>
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="https://uynad.github.io/2023/08/26/devlog/gunpla/20230826-rg-exia/" class="card-footer-item has-background-link has-text-white is-size-5">点此跳转到评测</a>
+  </footer>
+</div>
+
+<br/>
+
+<br/>
+
+
 
 <div class="card has-background-grey-lighter">
   <div class="card-image">
