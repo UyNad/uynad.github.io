@@ -5,7 +5,7 @@ categories: 游戏评测
 tags: 
 - 战斗设计
 - 玩法设计
-cover: /images/20240110-act-online.jpg
+cover: /images/20240110-act-online.gif
 toc: true
 ---
 为至今玩过的联机游戏进行无差别颁奖。*（动作品类专场）*
