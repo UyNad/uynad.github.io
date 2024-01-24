@@ -40,7 +40,7 @@
     "hexo-theme-nexmoe": "^4.2.2",
     "hexo-wordcount": "^6.0.1",
     "inferno": "^7.3.3",
-    "inferno-create-element": "^7.3.3",
+    "inferno-create-element": "^8.2.3",
     "inferno-shared": "^8.2.3",
     "inferno-vnode-flags": "^8.2.3",
     "is-plain-object": "^5.0.0",
