@@ -396,6 +396,34 @@ ___
     <a href="https://uynad.github.io/2023/09/14/devlog/gunpla/20230915-hg-destiny/" class="card-footer-item has-background-link has-text-white is-size-5">点此跳转到评测</a>
   </footer>
 </div>
+<br/>
+
+
+
+<div class="card has-background-grey-lighter">
+  <div class="card-image">
+    <figure class="image">
+      <img src="/images/20240101-mg-r4.jpg">
+    </figure>
+  </div>
+  <header class="card-header">
+      <p class="card-header-title is-size-5 has-background-dark has-text-light">拼完咯！GN-001REIIII Gundam Exia Repair IIII
+      </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+    机体喜爱：★★★★★<br>
+	拼装体验：☆☆☆☆☆<br>
+	成品表现：★☆☆☆☆<br>
+	自我打分：★★★☆☆<br>
+      MG能天使+铁创合金骨架+素心R4包+3D打印+部分重新喷漆。
+      <br>
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="https://uynad.github.io/2024/01/01/devlog/gunpla/20240101-mg-r4/" class="card-footer-item has-background-link has-text-white is-size-5">点此跳转到评测</a>
+  </footer>
+</div>
 
 <br/>
 
