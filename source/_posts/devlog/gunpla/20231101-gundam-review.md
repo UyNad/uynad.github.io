@@ -449,7 +449,7 @@ ___
     </div>
   </div>
   <footer class="card-footer">
-    <a href="https://uynad.github.io/2023/12/10/devlog/gunpla/20231210-hg-burning/" class="card-footer-item has-background-link has-text-white is-size-5">点此跳转到评测</a>
+    <a href="https://uynad.github.io/2023/12/09/devlog/gunpla/20231210-hg-burning/" class="card-footer-item has-background-link has-text-white is-size-5">点此跳转到评测</a>
   </footer>
 </div>
 
