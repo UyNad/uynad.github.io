@@ -14,7 +14,7 @@
   "dependencies": {
     "babel-plugin-dynamic-import-node": "^2.3.3",
     "babel-plugin-syntax-jsx": "^6.18.0",
-    "bulma": "^0.9.4",
+    "bulma": "^1.0.0",
     "bulma-stylus": "^0.8.0",
     "debug": "^4.3.4",
     "ejs": "^3.1.8",
