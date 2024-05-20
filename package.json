@@ -57,6 +57,7 @@
     "regjsparser": "^0.10.0",
     "shallow-clone": "^3.0.1",
     "stylus": "^0.59.0",
+    "to-fast-properties": "^4.0.0",
     "unicode-match-property-value-ecmascript": "^2.1.0",
     "unicode-property-aliases-ecmascript": "^2.1.0"
   }
