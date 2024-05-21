@@ -56,6 +56,7 @@
     "opencollective-postinstall": "^2.0.3",
     "pify": "^6.1.0",
     "preset-modules": "^0.0.1-security",
+    "punycode": "^2.3.1",
     "regexpu-core": "^6.0.0",
     "regjsparser": "^0.10.0",
     "shallow-clone": "^3.0.1",
