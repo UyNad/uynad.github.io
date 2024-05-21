@@ -48,6 +48,7 @@
     "inferno-vnode-flags": "^8.2.3",
     "is-plain-object": "^5.0.0",
     "isobject": "^4.0.0",
+    "jsesc": "^3.0.2",
     "locate-path": "^7.2.0",
     "lodash.debounce": "^4.0.8",
     "make-dir": "^4.0.0",
