@@ -17,7 +17,7 @@
     "babel-plugin-syntax-jsx": "^6.18.0",
     "bulma": "^0.9.4",
     "bulma-stylus": "^0.8.0",
-    "debug": "^4.3.4",
+    "debug": "^4.3.5",
     "define-properties": "^1.1.3",
     "define-property": "^2.0.2",
     "ejs": "^3.1.8",
