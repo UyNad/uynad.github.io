@@ -6,7 +6,7 @@ cover: /images/20240201-steam-deck-oled.jpg
 toc: true
 ---
 
-天呢，你是怎么知道我买了Steam Deck OLED的呢？
+你是怎么知道我买了Steam Deck OLED呢？
 
 <!--more-->
 
