@@ -228,7 +228,7 @@ atkparam可以配置atk下每个hit的判定大小、受击类型、受击权重
 - throwTypeId：为4100。配置投技成功后衔接的投机处决动画，即处决动画ID是4100。
 - throwFlag：枚举，为1.1表示是Throw transition投技过渡，2为Throw投技处决。
 
-如果继续看4100动画，会发现5130361~5130364就是投机处决动画的四个ThrowAttack Behavior，这类action相比Attack Behavior会同时调整玩家角色位置来做抓取表现。
+如果继续看4100动画，会发现5130361~5130364就是投机处决动画的ThrowAttack Behavior AtkParam_NPC ID。配置了4个AtkParam，是因为梅瑟莫的投技伤害由Strike+Thrust+Fire(small)+Fire(big)四种伤害类型组成，其中Fire(small)被调用多次，以实现“被火焰逐渐灼烧”的伤害表现。
 
 总之，看到这一步，不仅知道了为什么梅瑟莫投技难躲，还知道了如何调整这一配置。将5130360这一投技判定形状从sphere改为capsule，并修改radius使其符合手部大小，就会减少被梅瑟莫虚空抓取的表现。
 
