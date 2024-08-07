@@ -8,7 +8,7 @@ tags:
 cover: /images/20240801-elden-ring-unpack.png
 toc: true
 ---
-法环Mo制作流程其一：如何解包工程，并查看动画与配置文件。
+法环Mod制作流程其一：如何解包工程，并查看动画与配置文件。
 
 <!--more-->
 
