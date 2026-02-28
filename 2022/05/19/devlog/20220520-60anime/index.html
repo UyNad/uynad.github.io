@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>MMD-Blender指南：60帧3D动画工作流 - UyNad的年一站</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#f7f7f7"><meta name="application-name" content="Icaurs - Hexo Theme"><meta name="msapplication-TileImage" content="/img/favicon_new.svg"><meta name="msapplication-TileColor" content="#f7f7f7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Icaurs - Hexo Theme"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="记录下目前固定下来的一套3D动画工作流。60帧相当耗时，看情况使用。"><meta property="og:type" content="blog"><meta property="og:title" content="MMD-Blender指南：60帧3D动画工作流"><meta property="og:url" content="https://uynad.github.io/2022/05/19/devlog/20220520-60anime/"><meta property="og:site_name" content="UyNad的年一站"><meta property="og:description" content="记录下目前固定下来的一套3D动画工作流。60帧相当耗时，看情况使用。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://uynad.github.io/images/20220520-60anime.png"><meta property="article:published_time" content="2022-05-19T16:00:00.000Z"><meta property="article:modified_time" content="2026-02-28T11:09:26.000Z"><meta property="article:author" content="UyNad"><meta property="article:tag" content="二刺猿"><meta property="article:tag" content="叙事设计"><meta property="article:tag" content="老公"><meta property="article:tag" content="3D动画"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/images/20220520-60anime.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://uynad.github.io/2022/05/19/devlog/20220520-60anime/"},"headline":"MMD-Blender指南：60帧3D动画工作流","image":["https://uynad.github.io/images/20220520-60anime.png"],"datePublished":"2022-05-19T16:00:00.000Z","dateModified":"2026-02-28T11:09:26.000Z","author":{"@type":"Person","name":"UyNad"},"publisher":{"@type":"Organization","name":"UyNad的年一站","logo":{"@type":"ImageObject","url":"https://uynad.github.io/img/logo_new.svg"}},"description":"记录下目前固定下来的一套3D动画工作流。60帧相当耗时，看情况使用。"}</script><link rel="canonical" href="https://uynad.github.io/2022/05/19/devlog/20220520-60anime/"><link rel="icon" href="/img/favicon_new.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-72437521-5" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-72437521-5');</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.2"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/20220520-60anime.png" alt="MMD-Blender指南：60帧3D动画工作流"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-05-19T16:00:00.000Z" title="5/19/2022, 4:00:00 PM">2022-05-20</time>发表</span><span class="level-item"><a class="link-muted" href="/categories/Devlog/">Devlog</a></span><span class="level-item">15 分钟读完 (大约2297个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">MMD-Blender指南：60帧3D动画工作流</h1><div class="content"><p>记录下目前固定下来的一套3D动画工作流。60帧相当耗时，看情况使用。</p>
+<span id="more"></span>
+
+<hr>
+<p>其实在写这篇文章很久之前，就已经可以<em>高速</em>产出3D小人跳舞动画了。因为学的东西很乱很杂，出的问题也五花八门，并没有很好地根据进程总结经验。这周打算直接开始写结论型文章，不管之前尝试了哪些做法，反正<strong>现在这么做一定没问题。</strong></p>
+<p>本篇文章将介绍4K60帧的3D动画动作流。主要使用工具为MMDBridge和Blender，可兼容所有MMD动作和模型文件，以及所有Blender素材文件。</p>
+<br/>
+
+<h2 id="MMDBridge烘培ABC"><a href="#MMDBridge烘培ABC" class="headerlink" title="MMDBridge烘培ABC"></a>MMDBridge烘培ABC</h2><p>本人曾经尝试了各种Blender直接做物理的办法，最后觉得还是MMD等级的物理就够了。烘培ABC这一步，是要通过MMD物理烘培出带有所有动画信息的ABC文件，然后导入Blender，让Blender只用负责画面渲染的部分。</p>
+<h3 id="调整穿模问题"><a href="#调整穿模问题" class="headerlink" title="调整穿模问题"></a>调整穿模问题</h3><p>将模型和动作文件导入MMDBridge，导入后必须从头到尾播放一遍，确认是否发生穿模。一旦发现穿模问题，<em>如果不摆烂的话</em>，需要进行对应处理。</p>
+<p>根据穿模的严重等级不同，从上至下分为若干种解决方法。</p>
+<ol>
+<li><p>只是略微穿模。可以修改下这段动作的镜头，不让画面中出现穿模部分。</p>
+</li>
+<li><p>整段穿模，但这段动作后可以恢复不穿模的状态。单独修改这段动作的动作帧，适当移动或缩小部分动作。</p>
+</li>
+<li><p>整段穿模，且穿模后无法恢复，例如大腿永远在裙子外。一般是模型本身的物理就不robust，动作幅度太大就容易雪上加霜。可以关闭物理同调，对这一段动画直接手K，然后注册物理帧。</p>
+</li>
+<li><p><strong>压根没有不穿模的时候</strong>，<em>比如ASOUL乃琳的模型，</em>7000帧的舞蹈有6000帧在穿模。能到这种地步，一般是人物模型的物理复杂度完全超出了MMD物理可以hold住的范围。要么重做模型的物理，要么手k6000帧的穿模。</p>
+<p><em>当然，直接换套衣服也是可行的办法。可以用PMXEditor换身体部件，也可以用MarvelousDesigner做衣服解算。但这一操作超出本文范围，在此不会介绍。</em></p>
+</li>
+</ol>
+<p>开始烘焙ABC后，动作和物理数据就完全不可以再调整了。目前还没发现能在Blender里编辑ABC文件动画信息的有效方案。所以，所有对模型和动画的调整想法，都要在这一环节里处理完毕。</p>
+<p>在这里附赠两个邪门方案，仅供参考。</p>
+<p>①暂时修改重力参数。如果裙子飞起来会穿模，就暂时加大或修改这段期间的重力方向和重力大小，让裙子不要飞起来就好。</p>
+<p>②拉长动作，注册好物理帧后再弄回去。有段动作太激烈，裙子无论如何都会穿模的话，可以手动把这段关键帧拉长，例如3帧拉长到8帧，然后再自动演算，穿模现象会好得多。演算完了注册好物理帧，再把中间的帧数删掉，从8帧变回3帧。</p>
+<h3 id="设置对焦用的摄影机"><a href="#设置对焦用的摄影机" class="headerlink" title="设置对焦用的摄影机"></a>设置对焦用的摄影机</h3><p>画面渲染用的摄影机会在Blender里处理，但为了能够对焦人物，需要在MMBridge里设置一个位于人物脸部的摄影机。</p>
+<p>你可能会问：那我在Blende里直接对焦ABC文件里的脸部就好了，为什么要单独弄个摄影机呢？中间的理论环节略，反正你只要操作过一次，就会发现这种做法无法对焦，因为<strong>ABC蒙皮文件的真正位置永远只在原点</strong>。所以，我们需要一个跟着脸一起动的摄影机，让Blender能通过它读到人物脸部的真正位置。</p>
+<p>切换到Scene&#x2F;Camera&#x2F;Accessory，将Camera的所有位置信息都归于0，然后绑定外亲骨于人物脑部的某根骨骼，例如眼球。挪动相对位置挪到人物脸上进去一点，然后注册。</p>
+<p>注册完毕后可以play一次，确定摄影机确实是跟着人物脸部在移动。</p>
+<p>Q：我有多个人物，但Camera只能绑定一个人，怎么办？</p>
+<p>A：可以分别导出几次，每次的摄影机在一个人物的脸上。如果是多人画面，建议直接在Blender里处理。</p>
+<h3 id="设置导出参数"><a href="#设置导出参数" class="headerlink" title="设置导出参数"></a>设置导出参数</h3><p>到了这一步，模型、动画和对焦用摄影机都已经配置好了，只差开导。</p>
+<p>在菜单栏里，MMDBridge→Plugin设定，选择mmdbeidge_alembic_for_blender.py，改为实行。<strong>如果要导出60帧动画文件，帧数范围填写0~动画帧数*2，并将30fps改为60fps。</strong>如果导出30帧，帧数范围填写0~动画帧数即可。</p>
+<p>设置完后，点击OK，再通过菜单栏打开文件→导出视频，这一步是确定AVI视频的到处路径，视频并不是我们需要的东西，所以随便找个地方即可。点击保存后会弹出AVI-OUT设置，<strong>recording一栏要写0~动画帧数，不要乘以二。</strong></p>
+<p>在点击OK开始导出视频前，<strong>先确认MMDBridge源目录下的out文件夹里没有文件。</strong>ABC文件和材质贴图会导出到这里，如果没有out文件夹或之前还有其他文件，导出ABC可能会出现问题。</p>
+<p>一切准备就绪，开导！</p>
+<br/>
+
+<h2 id="Blender导入ABC"><a href="#Blender导入ABC" class="headerlink" title="Blender导入ABC"></a>Blender导入ABC</h2><p>上一步完成后，可以在out文件夹获得一个默认命名的ABC文件。其他文件和AVI视频都可以全部删除，将ABC文件剪切走<strong>并重新命名</strong>，不然日后工程多了，重名的ABC文件会互相冲突。</p>
+<p>新建Blender工程，<strong>需要将帧速率改成60</strong>，然后导入刚刚的ABC文件。此时Blender内的动画帧区间，应该是0~动画帧数*2。play后确认没问题的话，接下来开始导入摄影机。</p>
+<p>在Blender里选择一个摄影机，import对应动画的摄影机motion，导入后会发现Blender的帧速率又变回了30帧，<strong>此时要手动改回60帧。</strong></p>
+<p>导入的摄影机动画帧只有0~动画帧数区间，需要手动拓展成60帧的摄影机动画。MMD_Camera的本质是在MMD_Camera骨骼下绑了个Camera，所以需要对两个Camera都进行拓展操作。</p>
+<p><strong>分别选择MMD_Camera和Camera下的所有动画帧，按S（Scale），拉大为2倍。</strong>现在的关键帧间距被放大为元贝的二倍。被放大二倍后，原本相邻的关键帧中间会多出一帧空白帧，需要手动将这些部分的关键帧重新放到一起。</p>
+<p>全部操作完毕后，动画和摄影机的60帧部分就没问题了。剩下的场景、渲染、特效和材质着色等，按照Blender的标准操作进行处理即可。这部分内容不在本文范围内，后续会单独开文章总结一点心得。</p>
+<p>画面全部做好后，就可以开导了。Render→Render Animation，此时会导出2倍动画帧数的图片序列。</p>
+<br/>
+
+<h2 id="PR合成图片序列并导出视频"><a href="#PR合成图片序列并导出视频" class="headerlink" title="PR合成图片序列并导出视频"></a>PR合成图片序列并导出视频</h2><p>图片序列有一万种办法能合成导出视频，本人比较喜欢用PR进行处理。</p>
+<p>PR新建项目，导入→0000.png（图片序列勾选），就会自动合成动画素材。</p>
+<p>需要注意的是，动画素材的帧速率不一定是60。如果不是60帧，需要重新解释素材，将帧速率手动改为60帧。改完重新拖入轨道，再加上BGM音频，一个60帧老婆跳舞动画就完成了。</p>
+<p><em>PR本身有光流法补帧，可以将30帧补到60帧。但实际效果一般，插帧会有糊一下的效果，只适合画面稳定镜头不乱动的视频。</em></p>
+<p>导出时直接选择H.264 高码率4K预设即可，以这个配置上传B站，是必出现4K高码率的选项的。反正续了大会员，叔叔的带宽不用白不用。</p>
+<br/>
+</div><div class="article-licensing box"><div class="licensing-title"><p>MMD-Blender指南：60帧3D动画工作流</p><p><a href="https://uynad.github.io/2022/05/19/devlog/20220520-60anime/">https://uynad.github.io/2022/05/19/devlog/20220520-60anime/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>UyNad</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2022-05-20</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-02-28</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E4%BA%8C%E5%88%BA%E7%8C%BF/">二刺猿</a><a class="link-muted mr-2" rel="tag" href="/tags/%E5%8F%99%E4%BA%8B%E8%AE%BE%E8%AE%A1/">叙事设计</a><a class="link-muted mr-2" rel="tag" href="/tags/%E8%80%81%E5%85%AC/">老公</a><a class="link-muted mr-2" rel="tag" href="/tags/3D%E5%8A%A8%E7%94%BB/">3D动画</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2022/10/06/review/20221007-valkyrie/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">《北欧女神 极乐世界》：可以玩，但玩不多</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2022/05/01/devlog/20220502-moumou/"><span class="level-item">《哞哞小贝拉》网页小游戏开发记录</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="waline-thread"></div><script src="https://cdn.jsdelivr.net/npm/@waline/client@1.3.1/dist/Waline.min.js"></script><script>Waline({
+            el: '#waline-thread',
+            serverURL: "https://blog-comment-api-1tl6ysf8x-uynad.vercel.app/",
+            lang: "zh-CN",
+            visitor: true,
+            emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili"],
+            dark: "auto",
+            meta: ["nick","mail","link"],
+            requiredMeta: [],
+            login: "enable",
+            avatar: "retro",
+            
+            pageSize: 10,
+            avatarCDN: "https://sdn.geekzu.org/avatar/",
+            avatarForce: false,
+            highlight: true,
+            mathTagSupport: false,
+            copyright: true,
+            locale: {"placeholder":"Have fun."},
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.jpg" alt="UyNad"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">UyNad</p><p class="is-size-6 is-block">Here comes nothing!</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Elysium, in the Blue Sky</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">175</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://psnprofiles.com/megurined" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/UyNad"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://psnprofiles.com/megurined"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://psnprofiles.com/megurined"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://psnprofiles.com/megurined"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#MMDBridge烘培ABC"><span class="level-left"><span class="level-item">1</span><span class="level-item">MMDBridge烘培ABC</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#调整穿模问题"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">调整穿模问题</span></span></a></li><li><a class="level is-mobile" href="#设置对焦用的摄影机"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">设置对焦用的摄影机</span></span></a></li><li><a class="level is-mobile" href="#设置导出参数"><span class="level-left"><span class="level-item">1.3</span><span class="level-item">设置导出参数</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Blender导入ABC"><span class="level-left"><span class="level-item">2</span><span class="level-item">Blender导入ABC</span></span></a></li><li><a class="level is-mobile" href="#PR合成图片序列并导出视频"><span class="level-left"><span class="level-item">3</span><span class="level-item">PR合成图片序列并导出视频</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a><p class="is-size-7"><span>&copy; 2026 UyNad</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Discuss on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fas fa-comments"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

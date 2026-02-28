@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>【持续更新中】Genji：无限回廊开发日记 - UyNad的年一站</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#f7f7f7"><meta name="application-name" content="Icaurs - Hexo Theme"><meta name="msapplication-TileImage" content="/img/favicon_new.svg"><meta name="msapplication-TileColor" content="#f7f7f7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Icaurs - Hexo Theme"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="无限回廊关卡机制（基于FPS弹幕战斗demo）的开发过程记录。"><meta property="og:type" content="blog"><meta property="og:title" content="【持续更新中】Genji：无限回廊开发日记"><meta property="og:url" content="https://uynad.github.io/2021/09/27/devlog/20210928-endless-corridor/"><meta property="og:site_name" content="UyNad的年一站"><meta property="og:description" content="无限回廊关卡机制（基于FPS弹幕战斗demo）的开发过程记录。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://uynad.github.io/images/20210928-corridor.gif"><meta property="article:published_time" content="2021-09-27T16:00:00.000Z"><meta property="article:modified_time" content="2026-02-28T11:09:26.000Z"><meta property="article:author" content="UyNad"><meta property="article:tag" content="游戏开发"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/images/20210928-corridor.gif"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://uynad.github.io/2021/09/27/devlog/20210928-endless-corridor/"},"headline":"【持续更新中】Genji：无限回廊开发日记","image":["https://uynad.github.io/images/20210928-corridor.gif"],"datePublished":"2021-09-27T16:00:00.000Z","dateModified":"2026-02-28T11:09:26.000Z","author":{"@type":"Person","name":"UyNad"},"publisher":{"@type":"Organization","name":"UyNad的年一站","logo":{"@type":"ImageObject","url":"https://uynad.github.io/img/logo_new.svg"}},"description":"无限回廊关卡机制（基于FPS弹幕战斗demo）的开发过程记录。"}</script><link rel="canonical" href="https://uynad.github.io/2021/09/27/devlog/20210928-endless-corridor/"><link rel="icon" href="/img/favicon_new.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-72437521-5" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-72437521-5');</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.2"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/20210928-corridor.gif" alt="【持续更新中】Genji：无限回廊开发日记"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-09-27T16:00:00.000Z" title="9/27/2021, 4:00:00 PM">2021-09-28</time>发表</span><span class="level-item"><a class="link-muted" href="/categories/Devlog/">Devlog</a></span><span class="level-item">8 分钟读完 (大约1205个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">【持续更新中】Genji：无限回廊开发日记</h1><div class="content"><p>无限回廊关卡机制（基于FPS弹幕战斗demo）的开发过程记录。</p>
+<span id="more"></span>
+
+<hr>
+   <br/>
+
+<p><em>施工中。反正网站也没人看，我就不扔drafts，直接推送了，尼嘻嘻。</em></p>
+<h2 id="整体期望"><a href="#整体期望" class="headerlink" title="整体期望"></a>整体期望</h2><p>制作一个3D东方like的玩法原型，战斗方面为关卡结合留出空间，关卡方面制作各种playground来测试想法。</p>
+<br/>
+
+<h2 id="设计要点"><a href="#设计要点" class="headerlink" title="设计要点"></a>设计要点</h2><h3 id="战斗机制"><a href="#战斗机制" class="headerlink" title="战斗机制"></a>战斗机制</h3><h4 id="核心体验"><a href="#核心体验" class="headerlink" title="核心体验"></a>核心体验</h4><p>主角一击必死。面对压倒性的攻击，通过反弹弹幕，利用敌人的攻击去击溃敌人。</p>
+<h4 id="角色机制"><a href="#角色机制" class="headerlink" title="角色机制"></a>角色机制</h4><p>设计目标：速度快，立体位移多，快速响应，提供近似跑酷的畅快体验。</p>
+<p>3C规划：移动、跳跃、滑墙、反弹。</p>
+<ol>
+<li>移动：只有一种速度，无法跑步或缓行等。启动和停止加速度快。</li>
+<li>跳跃：二段跳，二段是基于一段跳的加速度，期望手感类似于天命2的二段跳。</li>
+<li>滑墙：在向前速度超过阈值时，可在离地时贴墙滑行。滑行期间初速度不断减少，直到离墙前滑行高度不变。</li>
+<li>反弹：由反弹区、枪口射线组成。反弹区在角色身前，枪口射线对准枪口位置。按下射击键后，反弹区内的所有弹幕从射线位置射出，飞行速度与【触发反弹时该弹幕与枪口射线出发点的距离】成正比。例：配置最大速度为10m&#x2F;s，最小速度为5m&#x2F;s；则触发反弹时，反弹区内在射线出发点上的弹幕飞行速度为10m&#x2F;s，最远的弹幕速度为5m&#x2F;s，中间弹幕根据距离比例计算出飞行速度。</li>
+</ol>
+<p>为了合理限制反弹体验，会加入一个反弹槽，将其表现具现化在武器上。该槽随着时间上升，但擦弹（距离弹幕较近）时可主动补充，以此鼓励玩家持续留在危险区。</p>
+<br/>
+
+<h4 id="敌人机制"><a href="#敌人机制" class="headerlink" title="敌人机制"></a>敌人机制</h4><br/>
+
+<br/>
+
+<h4 id="角色X敌人"><a href="#角色X敌人" class="headerlink" title="角色X敌人"></a>角色X敌人</h4><br/>
+
+<br/>
+
+<h4 id="战斗X关卡"><a href="#战斗X关卡" class="headerlink" title="战斗X关卡"></a>战斗X关卡</h4><br/>
+
+<br/>
+
+<h3 id="回廊关卡"><a href="#回廊关卡" class="headerlink" title="回廊关卡"></a>回廊关卡</h3><p>尚未整理成文档，以下为聊天记录摘抄。</p>
+<h4 id="流程概要"><a href="#流程概要" class="headerlink" title="流程概要"></a>流程概要</h4><blockquote>
+<p>无限回廊是个boss beat<br>玩家从安全屋进入，可以补给；然后进回廊，走一截触发即时演出动画，BOSS攻击，然后开始无限回廊<br>回廊有70%概率生成直的，15%概率向左或向右；每截回廊长度35米，FPS主角要走6秒左右；<br>BOSS每隔2~3秒放一波弹幕，因此一次循环里，玩家要与BOSS立回起码两次（因此每截走廊都有2排掩体）</p>
+<p>BOSS P1血没了后，会推到后面的房间里；玩家进去，这时候可以进入P2舞台<br>功能上就直接传送，然后删除原本生成的一大堆无限走P2 BOSS战结束后，这个地图会恢复 安全屋→一段走廊→P2舞台 的结构</p>
+</blockquote>
+<br/>
+
+<h4 id="设计QA"><a href="#设计QA" class="headerlink" title="设计QA"></a>设计QA</h4><blockquote>
+<p>1、回廊概率生成的目的和必要性是？<br>2、玩家、BOSS是不是会自动跑，如果一方不是自动跑的话，双方距离怎么做限制？说体验就好，大把作假手段；<br>3、核心玩法目的是？</p>
+</blockquote>
+<blockquote>
+<p>1.1 一直是直的非常丑，回头看特别明显<br>1.2 拐弯的其实直线距离比直的长，因为是方块+直线的构成，方块时间如果没有补给规划，那就是纯看场景，所以概率比直线的低<br>1.3 我想在这个方块里做点场景叙事，主要靠场景摆设组成连环画，因为目前还没剧情所以也没画</p>
+<p>2.1 玩家不会自动跑，爱跑不跑，一直呆在一个走廊里都可以<br>2.2 BOSS闪现，闪现到视频里尽头的那个聚光灯的地方，BOSS只出现在这里</p>
+<p>3.1 之前其实就有提到核心的战斗设计 但你可能已经忘了<br>3.2 子弹是会反弹的 狭窄位置的战斗会非常白热化，因此才专门出现一个走廊BOSS<br>3.3 走廊BOSS的P1由两种子弹构成 1.大面积的可反弹projectile 2.不可反弹的laser 其中laser必须靠掩体躲避；玩家要通过掩体消除laser的攻击，然后反弹projectile</p>
+</blockquote>
+<br/>
+
+
+
+<h2 id="开发日记"><a href="#开发日记" class="headerlink" title="开发日记"></a>开发日记</h2> <img src="/images/20210928-endless-corridor/shit.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="shit" alt="shit级生成逻辑，已经在重构了，重构完会记录下功能思路">
+
+ <br/>
+
+</div><div class="article-licensing box"><div class="licensing-title"><p>【持续更新中】Genji：无限回廊开发日记</p><p><a href="https://uynad.github.io/2021/09/27/devlog/20210928-endless-corridor/">https://uynad.github.io/2021/09/27/devlog/20210928-endless-corridor/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>UyNad</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-09-28</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-02-28</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2021/09/27/cyborg/20210928-arpglevel/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">在游玩中塑造角色：《绯红结系》与《异界星链》</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/09/24/cyborg/20210925-nijigasaki/"><span class="level-item">十人十色：最喜欢虹咲的三个理由</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="waline-thread"></div><script src="https://cdn.jsdelivr.net/npm/@waline/client@1.3.1/dist/Waline.min.js"></script><script>Waline({
+            el: '#waline-thread',
+            serverURL: "https://blog-comment-api-1tl6ysf8x-uynad.vercel.app/",
+            lang: "zh-CN",
+            visitor: true,
+            emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili"],
+            dark: "auto",
+            meta: ["nick","mail","link"],
+            requiredMeta: [],
+            login: "enable",
+            avatar: "retro",
+            
+            pageSize: 10,
+            avatarCDN: "https://sdn.geekzu.org/avatar/",
+            avatarForce: false,
+            highlight: true,
+            mathTagSupport: false,
+            copyright: true,
+            locale: {"placeholder":"Have fun."},
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.jpg" alt="UyNad"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">UyNad</p><p class="is-size-6 is-block">Here comes nothing!</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Elysium, in the Blue Sky</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">175</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://psnprofiles.com/megurined" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/UyNad"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://psnprofiles.com/megurined"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://psnprofiles.com/megurined"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://psnprofiles.com/megurined"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#整体期望"><span class="level-left"><span class="level-item">1</span><span class="level-item">整体期望</span></span></a></li><li><a class="level is-mobile" href="#设计要点"><span class="level-left"><span class="level-item">2</span><span class="level-item">设计要点</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#战斗机制"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">战斗机制</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#核心体验"><span class="level-left"><span class="level-item">2.1.1</span><span class="level-item">核心体验</span></span></a></li><li><a class="level is-mobile" href="#角色机制"><span class="level-left"><span class="level-item">2.1.2</span><span class="level-item">角色机制</span></span></a></li><li><a class="level is-mobile" href="#敌人机制"><span class="level-left"><span class="level-item">2.1.3</span><span class="level-item">敌人机制</span></span></a></li><li><a class="level is-mobile" href="#角色X敌人"><span class="level-left"><span class="level-item">2.1.4</span><span class="level-item">角色X敌人</span></span></a></li><li><a class="level is-mobile" href="#战斗X关卡"><span class="level-left"><span class="level-item">2.1.5</span><span class="level-item">战斗X关卡</span></span></a></li></ul></li><li><a class="level is-mobile" href="#回廊关卡"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">回廊关卡</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#流程概要"><span class="level-left"><span class="level-item">2.2.1</span><span class="level-item">流程概要</span></span></a></li><li><a class="level is-mobile" href="#设计QA"><span class="level-left"><span class="level-item">2.2.2</span><span class="level-item">设计QA</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="#开发日记"><span class="level-left"><span class="level-item">3</span><span class="level-item">开发日记</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a><p class="is-size-7"><span>&copy; 2026 UyNad</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Discuss on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fas fa-comments"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

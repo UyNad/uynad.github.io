@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>【持续更新中】Music99：项目开发日记 - UyNad的年一站</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#f7f7f7"><meta name="application-name" content="Icaurs - Hexo Theme"><meta name="msapplication-TileImage" content="/img/favicon_new.svg"><meta name="msapplication-TileColor" content="#f7f7f7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Icaurs - Hexo Theme"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Music99（吃鸡音游demo）的开发过程记录。"><meta property="og:type" content="blog"><meta property="og:title" content="【持续更新中】Music99：项目开发日记"><meta property="og:url" content="https://uynad.github.io/2021/09/09/devlog/20210910-music99-program/"><meta property="og:site_name" content="UyNad的年一站"><meta property="og:description" content="Music99（吃鸡音游demo）的开发过程记录。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://uynad.github.io/images/20210825-mug99.png"><meta property="article:published_time" content="2021-09-09T16:00:00.000Z"><meta property="article:modified_time" content="2026-02-28T11:09:26.000Z"><meta property="article:author" content="UyNad"><meta property="article:tag" content="游戏开发"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/images/20210825-mug99.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://uynad.github.io/2021/09/09/devlog/20210910-music99-program/"},"headline":"【持续更新中】Music99：项目开发日记","image":["https://uynad.github.io/images/20210825-mug99.png"],"datePublished":"2021-09-09T16:00:00.000Z","dateModified":"2026-02-28T11:09:26.000Z","author":{"@type":"Person","name":"UyNad"},"publisher":{"@type":"Organization","name":"UyNad的年一站","logo":{"@type":"ImageObject","url":"https://uynad.github.io/img/logo_new.svg"}},"description":"Music99（吃鸡音游demo）的开发过程记录。"}</script><link rel="canonical" href="https://uynad.github.io/2021/09/09/devlog/20210910-music99-program/"><link rel="icon" href="/img/favicon_new.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-72437521-5" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-72437521-5');</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.2"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/20210825-mug99.png" alt="【持续更新中】Music99：项目开发日记"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-09-09T16:00:00.000Z" title="9/9/2021, 4:00:00 PM">2021-09-10</time>发表</span><span class="level-item"><a class="link-muted" href="/categories/Devlog/">Devlog</a></span><span class="level-item">22 分钟读完 (大约3294个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">【持续更新中】Music99：项目开发日记</h1><div class="content"><p>Music99（吃鸡音游demo）的开发过程记录。</p>
+<span id="more"></span>
+
+<hr>
+   <br/>
+
+<p>回顾了下聊天记录，这个demo是8月26日和朋友吹水时决定开始做的。到现在两周的时间，虽说基本功能都做完了，但本身就不是很复杂的东西，开发效率仍待提高。</p>
+<p>开发过程里踩了不少坑，新东西嘛一个都没提出来，可以说是抄都抄不利索。为了给自己警示，照样会写开发日记。</p>
+<h3 id="To-Do-List"><a href="#To-Do-List" class="headerlink" title="To-Do List"></a><strong>To-Do List</strong></h3><ol>
+<li><p>改进commit规则，不要全量提交。</p>
+</li>
+<li><p>支持本地二人对打。</p>
+</li>
+<li><p>加入攻击交互，实现-1攻击和-3攻击两种攻击技能。</p>
+</li>
+<li><p>加入结算画面。</p>
+</li>
+<li><p><em>已经不打算做了，但姑且放在这里，提醒自己有多垃圾</em>，跑通大厅、房间和多人联网功能。</p>
+<br/></li>
+</ol>
+<h3 id="原型设计"><a href="#原型设计" class="headerlink" title="原型设计"></a><strong>原型设计</strong></h3><p><em>打算另写一篇文章，写完把链接贴在这里</em></p>
+   <br/>
+
+<h3 id="配置说明"><a href="#配置说明" class="headerlink" title="配置说明"></a><strong>配置说明</strong></h3><p><a href="https://uynad.github.io/2021/09/04/devlog/20210905-music99-designer/">https://uynad.github.io/2021/09/04/devlog/20210905-music99-designer/</a></p>
+<p>不断更新中，下次一定。</p>
+   <br/>
+
+<h3 id="开发日志"><a href="#开发日志" class="headerlink" title="开发日志"></a><strong>开发日志</strong></h3><hr>
+<h4 id="2021-09-04"><a href="#2021-09-04" class="headerlink" title="2021.09.04"></a><strong>2021.09.04</strong></h4><p>今天要开发的是②将Note统一加入对应队列进行管理。看似简单，<em>实际上确实很简单，</em>写的过程中遇到一堆问题。</p>
+  <br/>
+
+<p><strong>1. &lt;队列名&gt;.Peek()为什么会报错？</strong></p>
+<p>在Note物体上，用&lt;队列名&gt;.Peek()获取队列的第一位物体并和自己比对，如果是自己才可以按，不是就不能按。这是这个写法的核心思路。</p>
+<p>但是写了个 if(gameObject &#x3D;&#x3D; &lt;队列名&gt;.Peek())后就开始报错了，大意是对象是empty。音符被按掉后会出队列，在最后一个音符被按掉时一定会进入empty的状态。update()会卡死在这个报错行，不再向下执行。</p>
+<p>为了规避这个报错，又在外面套了个if，判断Peek()的对象是否存在。没想到这样改完依然报错，只是报错行从刚刚那行变成了这一行（…）。</p>
+<p>稍微做了下功课，发现queue支持包含的元素是null，应该就是这个特性导致了报错。把第一个if判断Peek()是否存在改为了&lt;队列名&gt;.count是否大于0，保证队列里还有元素。</p>
+  <br/>
+
+<p><strong>2. 逻辑写好了，单次按键还是会消掉多个</strong></p>
+<p>每个音符上挂着一个NoteObject的脚本，在里面Update不断判断：我是不是队列的第一个？是，则继续判断是否进入了判定区，是否触发了按键，一旦触发后就会计算hit类型，然后触发对应类型的得分事件。</p>
+<p>在实际运行时，单次按键却还是会消除掉所有在判定区里的音符。通过修改特定配置、打印DebugLog等方法，最后捋清了这一过程里发生的事。</p>
+<p>问题出在<strong>所有音符物体都在Update()里调用Input.GetKeyDown().</strong></p>
+<p>队列第一个和第二个音符同时进入判定区，第一个音符是可以触发按键的状态，在Input.GetKeyDown()后执行得分事件，并将自己退队；在同一帧内，第二个音符成为了队列第一名，由于它也在Update里监听Input.GetKeyDown()，同样得到了TRUE结果，结果自己也执行了得分事件并退队。</p>
+<p>简单来说，Input.GetKeyDown()会在一帧内返回同样的结果。对于多个监听这一事件的物体，可以用<em>记得自己之前也用过的</em>变量来控制。</p>
+<p>在NoteHolder上public了四个布尔变量，分别是key1~4是否按下。队列的第一个音符进入判定区时，只有该变量为False时才能触发按键事件。而一旦按键，该变量就会变为TRUE。同时，在Update里单独写一个if判断，如果Input.GetKeyUp()，对应变量就会变成FALSE。</p>
+<p>我承认这个写法相当不优雅，<em>且沾点脑瘫</em>，但它跑起来了。</p>
+  <br/>
+
+<p><strong>3. 解决问题后，再往前走几步</strong></p>
+<p>1和2处理妥当后，需求①和②已经完成了。但人不能只满足于解决问题，于是做了点额外工作。</p>
+<p>EffectObject：音符触发按键事件时的受击特效，单独封装成了一个prefab。这个prefab下有一个sprite图片表明是啥，还有一个粒子系统表明打击感。挂了一个EffectObject脚本，让它在float lifeTime后自行销毁，lifeTime公开出来可配置。在NoteObject的按键事件里加了一行，在当前的位置<em>（即被按键的位置）</em>生成对应的受击特效。</p>
+<p>生成配置参数修改：按之前的写法，NoteGroup里配置的是每个Note的初始Position.y，这一数字非常反人类，无法做谱。怎么看都是用<strong>多少秒后到达判定线</strong>更合理吧！于是，改了。改起来其实很简单，NoteScroller的移动逻辑是每秒 -&#x3D; beatTempo * Time.DeltaTime，其实beatTempo就是移动速度。修改了foreach里生成音符时传入的参数，从postion_y变成了time*beatTempo，其中time是策划配置，beatTempo是读取的noteScroller的数值。</p>
+<p>完美，终于可以回家了。</p>
+  <br/>
+
+<hr>
+<h4 id="2021-09-03"><a href="#2021-09-03" class="headerlink" title="2021.09.03"></a><strong>2021.09.03</strong></h4><p>昨天看项目时，一度萌生了“不然直接用这个好了”的邪恶想法，但最终还是作罢。</p>
+<p>本身这个项目也只是为了做玩法实验，如果因为“别人的程序写得比我好”就换，反而会拖慢实现想法的速度。好的东西是好，但学习不能一蹴而就，真是残念。</p>
+<p>昨天的研究过程里，发现了能解决问题的方案，C#的<a target="_blank" rel="noopener" href="https://www.runoob.com/csharp/csharp-queue.html">队列</a>。</p>
+<p>每一条轨道上的音符都是先进先出的关系，每次只对队列的第一位进行判定，判定成功后就将其踢出队伍。后来的音符加入队尾，等前面都被判定完再轮到自己。这不就是完美的音游次序解决方案吗？</p>
+<p>队列要挂在一直存在且和音符有关系的物体上，最后就挂在了NoteHolder上，为此单独写了个NoteManager脚本。为了将场上所有音符都自动加入队列，鄙人做出了个艰难的决定：</p>
+<p><strong>不再在场上直接摆音符，而是通过NoteManager脚本自动化生成。</strong></p>
+<p>这样NoteManager就要承载两个功能：①根据事先的配置自动生成Note；②将Note统一加入对应队列进行管理。</p>
+<p>先进行了①的开发。</p>
+<p>unity的instantiate函数相当好用。对于四个轨道的音符，只需要修改position.x进行对应；传参position.y进去生成对应距离（时间）的音符；.parent来指定母物体。因为不想用绝对路径去指定音符，就在前面public了四个GameObject，然后分别把四种音符物体都拖进来。通过这一方法生成的音符，只是原版的clone。</p>
+<p>最后，再在最外面套一个音符1队列名.Enqueue(生成音符1) ，生成的音符物体就会自动进入该队列了。</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th><strong>public virtual void Enqueue( object obj );</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>向 Queue 的末尾添加一个对象。</td>
+</tr>
+</tbody></table>
+</blockquote>
+  <br/>
+
+<hr>
+<h4 id="2021-09-02"><a href="#2021-09-02" class="headerlink" title="2021.09.02"></a><strong>2021.09.02</strong></h4><p>秉着能抄就抄不能换个的开发原则，当然是要去找找更成熟的项目了。在Github上搜索，最后选中了<a target="_blank" rel="noopener" href="https://github.com/Ggross98/RhythmLane">这个unity项目</a>作为参考对象。</p>
+<p>不下不知道，一下吓一跳。看完之后，鄙人陷入了自卑。</p>
+<p>在开发项目前，就和朋友讨论过音乐游戏的谱面编辑器，以及如果要做有key音的高端音游，编辑器要怎么设计才方便。但当时的想法只停留在设计层面，并没考虑过具体执行。毕竟鄙人不是真正的程序员，<em>而且实在太菜了毫无头绪。</em></p>
+<p>这个小项目麻雀虽小五脏齐全，不仅完美实现了鄙人的基本诉求，而且附带一个完整的谱面编辑器，且游戏内自带了几张制作完整的谱面，玩起来完全没问题。音符甚至轨道全都是游戏开始后初始化生成的，不用狗策划自己手摆。</p>
+<p>除去功能问题，整体框架也显得比我现在的更好些，拓展性更强，<em>写死的地方更少。</em></p>
+<p>断断续续看了一天。</p>
+  <br/>
+
+<hr>
+<h4 id="2021-09-01"><a href="#2021-09-01" class="headerlink" title="2021.09.01"></a><strong>2021.09.01</strong></h4><p>教学视频里的工程存在一个非常大的问题：每个Note单独挂一个脚本，自己判定自己的，如果多个Note一起进了判定区，按一下会同时消除掉多个。</p>
+<p><strong>先复盘下当前工程的结构——</strong></p>
+<p>GameManager上挂了游戏规则相关的几乎所有参数，并写了三种类型（Perfect、Good和Miss）的得分计算事件。GM被静态公开，以便被其他脚本引用。</p>
+<p>Note上挂了NoteObject脚本，这一脚本会检测是否进入判定区，以及按下时判定为哪种类型的hit。判定结束后执行引用自GM的对应得分事件。</p>
+<p>NoteHolder是所有Note的母物体，上面有BeatScroller脚本，会根据配置的bpm进行移动。也就是说，Note本身没有在移动，只是它们共同的<em>亲妈</em>母物体在移动而已。</p>
+<p>Button（判定线）上挂的脚本没有程序功能，只是在按下和放开时切换sprite，来做出动态效果。</p>
+<p>Canvas上挂了一切需要给玩家看的UI，本身没有程序功能，被GameManager引用并不断更新文本。</p>
+  <br/>
+
+<p>可以看出，Note没有一个程序功能上的管理器，控制所有Note的状态，每个Note单独进行自己的判定，因此才出现了按一次消多个的情况。</p>
+<p>当时思考到这一点，突然整个人就漏气儿了<em>（迫真）</em>。问题定在了结构上，但结构本来就是最难改的地方。而且话说回来，到底要改成什么样的结构，才能满足这个需求呢？</p>
+  <br/>
+
+<hr>
+<h4 id="2021-08-31"><a href="#2021-08-31" class="headerlink" title="2021.08.31"></a><strong>2021.08.31</strong></h4><p>第一周马上实现了和视频里效果一致的原型，很快啊。但就是从这一周开始问题频出。</p>
+<p>一是这个教学视频本身结构就偏简单，后面拓展起来容易出问题；二是鄙人是有一套完整的玩法构思的，在人家的基础上改造也可能出事儿。</p>
+<p>要改造的第一个点就是——判定算分机制。</p>
+<p>原视频里，Perfect、Good和Miss三个区间是直接写死在函数里的，不利于拓展；而且我希望实现的效果是，Perfect和Miss之间，会根据精准度来计算出一个百分比，再根据百分比计算得分。</p>
+<p>最后的算法是，用Good距离减去Miss距离并除以9，结果再被按下时的Note距离所整除，使用Math.f函数进行取整，最后除以10，就得到了percent数值。</p>
+<p>对于Good的分数算法，会将上面的percent传入，例如good总得分是200，当精准度percent为0.8（80%）时，得分就只有200*percent&#x3D;160。</p>
+<p>为了突出perfect和good的区别，perfect单独进行了赋值，日后可以通过配置perfect基础值为300，而good为200，进一步强调90%与100%的质变差异。</p>
+  <br/>
+
+<hr>
+<h4 id="2021-08-26-2021-08-30"><a href="#2021-08-26-2021-08-30" class="headerlink" title="2021.08.26 - 2021.08.30"></a><strong>2021.08.26 - 2021.08.30</strong></h4><p>和朋友吹水，聊到这个吃鸡音游的想法，决定抓住机会马上完善下，不要让吹水只停留在吹水阶段。</p>
+<p>毕竟怎么想都是2D游戏，打算使用Unity开发。但近一年玩的都是UE4，对Unity已经开始记忆模糊，<em>实际上当初用也没用得多熟练。</em>秉着能抄就抄不能换个的开发理念，火速在YouTube上找了个<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=cZzf1FQQFA0&list=PLLPYMaP0tgFKZj5VG82316B63eet0Pvsv">符合需求的开发教学</a> ，然后开始全量照抄。</p>
+<p>国外是没有Music Game这一细分概念的，需要搜索Rhythm Game。</p>
+<p>做着做着，Unity的记忆也开始复苏了，真好。</p>
+  <br/>
+</div><div class="article-licensing box"><div class="licensing-title"><p>【持续更新中】Music99：项目开发日记</p><p><a href="https://uynad.github.io/2021/09/09/devlog/20210910-music99-program/">https://uynad.github.io/2021/09/09/devlog/20210910-music99-program/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>UyNad</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-09-10</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-02-28</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2021/09/15/ldesign/20210916-sktup-faceproblem/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">SketchUp的面向问题及个人反思</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/09/09/ldesign/20210910-how-to-ship/"><span class="level-item">《如何做船》：游轮副本关卡的设计过程总结</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="waline-thread"></div><script src="https://cdn.jsdelivr.net/npm/@waline/client@1.3.1/dist/Waline.min.js"></script><script>Waline({
+            el: '#waline-thread',
+            serverURL: "https://blog-comment-api-1tl6ysf8x-uynad.vercel.app/",
+            lang: "zh-CN",
+            visitor: true,
+            emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili"],
+            dark: "auto",
+            meta: ["nick","mail","link"],
+            requiredMeta: [],
+            login: "enable",
+            avatar: "retro",
+            
+            pageSize: 10,
+            avatarCDN: "https://sdn.geekzu.org/avatar/",
+            avatarForce: false,
+            highlight: true,
+            mathTagSupport: false,
+            copyright: true,
+            locale: {"placeholder":"Have fun."},
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.jpg" alt="UyNad"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">UyNad</p><p class="is-size-6 is-block">Here comes nothing!</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Elysium, in the Blue Sky</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">175</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://psnprofiles.com/megurined" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/UyNad"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://psnprofiles.com/megurined"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://psnprofiles.com/megurined"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://psnprofiles.com/megurined"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#To-Do-List"><span class="level-left"><span class="level-item">1</span><span class="level-item">To-Do List</span></span></a></li><li><a class="level is-mobile" href="#原型设计"><span class="level-left"><span class="level-item">2</span><span class="level-item">原型设计</span></span></a></li><li><a class="level is-mobile" href="#配置说明"><span class="level-left"><span class="level-item">3</span><span class="level-item">配置说明</span></span></a></li><li><a class="level is-mobile" href="#开发日志"><span class="level-left"><span class="level-item">4</span><span class="level-item">开发日志</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#2021-09-04"><span class="level-left"><span class="level-item">4.1</span><span class="level-item">2021.09.04</span></span></a></li><li><a class="level is-mobile" href="#2021-09-03"><span class="level-left"><span class="level-item">4.2</span><span class="level-item">2021.09.03</span></span></a></li><li><a class="level is-mobile" href="#2021-09-02"><span class="level-left"><span class="level-item">4.3</span><span class="level-item">2021.09.02</span></span></a></li><li><a class="level is-mobile" href="#2021-09-01"><span class="level-left"><span class="level-item">4.4</span><span class="level-item">2021.09.01</span></span></a></li><li><a class="level is-mobile" href="#2021-08-31"><span class="level-left"><span class="level-item">4.5</span><span class="level-item">2021.08.31</span></span></a></li><li><a class="level is-mobile" href="#2021-08-26-2021-08-30"><span class="level-left"><span class="level-item">4.6</span><span class="level-item">2021.08.26 - 2021.08.30</span></span></a></li></ul></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a><p class="is-size-7"><span>&copy; 2026 UyNad</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Discuss on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fas fa-comments"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

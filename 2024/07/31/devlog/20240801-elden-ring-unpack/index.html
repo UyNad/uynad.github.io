@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>《艾尔登法环》Mod：解包工程篇 - UyNad的年一站</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#f7f7f7"><meta name="application-name" content="Icaurs - Hexo Theme"><meta name="msapplication-TileImage" content="/img/favicon_new.svg"><meta name="msapplication-TileColor" content="#f7f7f7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Icaurs - Hexo Theme"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="法环Mod制作流程其一：如何解包工程，并查看动画与配置文件。"><meta property="og:type" content="blog"><meta property="og:title" content="《艾尔登法环》Mod：解包工程篇"><meta property="og:url" content="https://uynad.github.io/2024/07/31/devlog/20240801-elden-ring-unpack/"><meta property="og:site_name" content="UyNad的年一站"><meta property="og:description" content="法环Mod制作流程其一：如何解包工程，并查看动画与配置文件。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://uynad.github.io/images/20240801-elden-ring-unpack.png"><meta property="article:published_time" content="2024-07-31T16:00:00.000Z"><meta property="article:modified_time" content="2026-02-28T11:09:26.000Z"><meta property="article:author" content="UyNad"><meta property="article:tag" content="战斗设计"><meta property="article:tag" content="游戏开发"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/images/20240801-elden-ring-unpack.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://uynad.github.io/2024/07/31/devlog/20240801-elden-ring-unpack/"},"headline":"《艾尔登法环》Mod：解包工程篇","image":["https://uynad.github.io/images/20240801-elden-ring-unpack.png"],"datePublished":"2024-07-31T16:00:00.000Z","dateModified":"2026-02-28T11:09:26.000Z","author":{"@type":"Person","name":"UyNad"},"publisher":{"@type":"Organization","name":"UyNad的年一站","logo":{"@type":"ImageObject","url":"https://uynad.github.io/img/logo_new.svg"}},"description":"法环Mod制作流程其一：如何解包工程，并查看动画与配置文件。"}</script><link rel="canonical" href="https://uynad.github.io/2024/07/31/devlog/20240801-elden-ring-unpack/"><link rel="icon" href="/img/favicon_new.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-72437521-5" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-72437521-5');</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.2"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/20240801-elden-ring-unpack.png" alt="《艾尔登法环》Mod：解包工程篇"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2024-07-31T16:00:00.000Z" title="7/31/2024, 4:00:00 PM">2024-08-01</time>发表</span><span class="level-item"><a class="link-muted" href="/categories/Devlog/">Devlog</a></span><span class="level-item">18 分钟读完 (大约2633个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">《艾尔登法环》Mod：解包工程篇</h1><div class="content"><p>法环Mod制作流程其一：如何解包工程，并查看动画与配置文件。</p>
+<span id="more"></span>
+
+<hr>
+<p>本篇文档会介绍如何解包法环工程，从而查看并修改游戏数值、角色AI、角色动画、技能配置及关卡场景配置。</p>
+<br/>
+
+<h1 id="解包工具一览"><a href="#解包工具一览" class="headerlink" title="解包工具一览"></a>解包工具一览</h1><table>
+<thead>
+<tr>
+<th>工具</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://www.nexusmods.com/eldenring/mods/1651">UXM Selective Unpacker</a></td>
+<td>对游戏本体进行解包和打包</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/JKAnderson/Yabber">Yabber</a></td>
+<td>对UXM解包出来的文件进行进一步解包和打包，支持.bnd, .bhd&#x2F;.bdt, .dcx, .fltparam, .fmg, .gparam, .luagnl, .luainfo, .tpf.这些格式</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/soulsmods/DSMapStudio">DSMapStudio</a></td>
+<td>查看并编辑游戏内的.map地图文件、param游戏参数以及角色模型贴图等</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/Meowmaritus/DSAnimStudio">DSAnimStudio</a></td>
+<td>查看并编辑游戏内的.tae动画数据文件</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/katalash/DSLuaDecompiler">DSLuaDecompiler</a></td>
+<td>对AI lua文件进行反编译</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://github.com/soulsmods/ModEngine2">ModEngine2</a></td>
+<td>应用mod文件夹下的文件修改并启动法环，可建立多份Instance测试不同内容</td>
+</tr>
+</tbody></table>
+<br/>
+
+<h1 id="必要：使用UXM解包本体"><a href="#必要：使用UXM解包本体" class="headerlink" title="必要：使用UXM解包本体"></a>必要：使用UXM解包本体</h1><br/>
+
+<img src="/images/20240801-elden-ring-unpack/uxm.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="uxm" alt="UXM工具">
+
+<p>在Executable Path里索引游戏本体的运行exe，可以在View Files里进一步选择解包范围。</p>
+<p>点击Unpack后会开始解包，解出如下文件结构。</p>
+<img src="/images/20240801-elden-ring-unpack/struc.png" class="box px-0 py-0 ml-auto mr-auto" width="400" title="struc" alt="文件夹及对应内容">
+
+<br/>
+
+<h1 id="Yabber：单文件解包"><a href="#Yabber：单文件解包" class="headerlink" title="Yabber：单文件解包"></a>Yabber：单文件解包</h1><p>Yabber可以对UXM解包出来的.dcx文件进一步解包，编辑完之后再打包。我主要用来做两件事：</p>
+<ol>
+<li>msg编辑：从dcx解包出xml文件，修改后打包回去，用来处理冲突或者做汉化。</li>
+<li>AI编辑：从.dcx解包出lua文件，再反编译后查看AI配置。<em>暂时还没自己魔改过AI</em></li>
+</ol>
+<p>以msg&#x2F;engus&#x2F;item_dlc02-msgbnd.dcx为例，Yabber解包后会在该路径生成item_dlc02-msgbnd-dcx文件夹：</p>
+<img src="/images/20240801-elden-ring-unpack/yabber1.png" class="box px-0 py-0 ml-auto mr-auto" width="300" title="yabber1">
+
+<br/>
+
+<p>再次对WeaponName_dlc01.fmg进行解包，可以得到WeaponName_dlc01.fmg.xml文件：</p>
+<img src="/images/20240801-elden-ring-unpack/yabber2.png" class="box px-0 py-0 ml-auto mr-auto" width="300" title="yabber2">
+
+<br/>
+
+<p>这个文件就是dlc01黄金树幽影的武器名文本。</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;fmg&gt;
+&lt;compression&gt;None&lt;/compression&gt;
+&lt;version&gt;DarkSouls3&lt;/version&gt;
+&lt;bigendian&gt;False&lt;/bigendian&gt;
+&lt;entries&gt;
+&lt;text id=&quot;1500000&quot;&gt;Main-gauche&lt;/text&gt;
+&lt;text id=&quot;1500100&quot;&gt;Heavy Main-gauche&lt;/text&gt;
+&lt;text id=&quot;1500200&quot;&gt;Keen Main-gauche&lt;/text&gt;
+&lt;text id=&quot;1500300&quot;&gt;Quality Main-gauche&lt;/text&gt;
+&lt;text id=&quot;1500400&quot;&gt;Fire Main-gauche&lt;/text&gt;
+&lt;text id=&quot;1500500&quot;&gt;Flame Art Main-gauche&lt;/text&gt;
+&lt;text id=&quot;1500600&quot;&gt;Lightning Main-gauche&lt;/text&gt;
+&lt;text id=&quot;1500700&quot;&gt;Sacred Main-gauche&lt;/text&gt;
+&lt;text id=&quot;1500800&quot;&gt;Magic Main-gauche&lt;/text&gt;
+&lt;text id=&quot;1500900&quot;&gt;Cold Main-gauche&lt;/text&gt;
+&lt;text id=&quot;1501000&quot;&gt;Poison Main-gauche&lt;/text&gt;
+&lt;text id=&quot;1501100&quot;&gt;Blood Main-gauche&lt;/text&gt;
+&lt;text id=&quot;1501200&quot;&gt;Occult Main-gauche&lt;/text&gt;
+&lt;text id=&quot;1510000&quot;&gt;Fire Knight&#39;s Shortsword&lt;/text&gt;
+&lt;text id=&quot;1510100&quot;&gt;Fire Knight&#39;s Heavy Shortsword&lt;/text&gt;
+&lt;text id=&quot;1510200&quot;&gt;Fire Knight&#39;s Keen Shortsword&lt;/text&gt;
+&lt;text id=&quot;1510300&quot;&gt;Fire Knight&#39;s Quality Shortsword&lt;/text&gt;
+&lt;!-- more until 68510000--&gt;
+&lt;/entries&gt;
+&lt;/fmg&gt;
+</code></pre>
+<br/>
+
+<h1 id="DSMapStudio：编辑地图"><a href="#DSMapStudio：编辑地图" class="headerlink" title="DSMapStudio：编辑地图"></a>DSMapStudio：编辑地图</h1><p>对于解包后的文件，DSMapStudio可以以Map为单位，索引地图模型及对应的游戏参数，查看并编辑地图数值。</p>
+<img src="/images/20240801-elden-ring-unpack/dsmap.png" class="box px-0 py-0 ml-auto mr-auto" width="1100" title="dsmap" alt="m11→9000→11000389">
+
+<br/>
+
+<p>如上图，M11是王城罗德尔，load map后可以查看map配置。图中选中的entity就是王城罗德尔大道上的腐败化身enemy。</p>
+<p>DSMapStudio还有个重要用途，就是修改战斗参数param。以下图为例：</p>
+<img src="/images/20240801-elden-ring-unpack/dsmap-param.png" class="box px-0 py-0 ml-auto mr-auto" width="800" title="dsmap-param" alt="战灰：二连斩的配置">
+
+<br/>
+
+<p>可以修改该战灰的稀有度、购入售出价格、是否可掉落、可附魔属性、可附魔武器种类等。</p>
+<p>在DSMapStudio中修改后保存，文件会存到mod文件夹下。修改内容可以通过ModEngine2启动。</p>
+<br/>
+
+<h1 id="DSAnimStudio：编辑动画"><a href="#DSAnimStudio：编辑动画" class="headerlink" title="DSAnimStudio：编辑动画"></a>DSAnimStudio：编辑动画</h1><p>DSAnimStudio可以编辑TAE（TimeAct Editor）文件，从而控制判定帧、取消帧、无敌帧、SPEffect、bullet、SFX、sound等所有由动画帧驱动的内容。</p>
+<blockquote>
+<ul>
+<li>Activating invulnerability frames.</li>
+<li>Parry windows</li>
+<li>Applying an “SpEffect” (special temporary statuses such as ring effects, poisoning, buffs, AI triggers, etc)</li>
+<li>Allowing animation cancelling</li>
+<li>Setting the flag for YOU DIED and respawning</li>
+<li>Creating “SFX” &#x2F; “FFX” (both refer to the exact same files: visual effects)</li>
+<li>Playing sound effects such as footsteps, sword swooshes, etc.</li>
+<li>Invoking an attack behavior (does damage to opponent, drains stamina from player, etc all in one event)</li>
+<li>Invoking a “bullet” (projectile) behavior (fires projectile, drains stamina from player, etc all in one event)</li>
+<li>Invoking a “common” behavior (like attack behaviors but for simpler things such as falling on someone’s head causing stagger)</li>
+<li>Creating motion blur on weapon swings</li>
+<li>Setting the opacity of a character (used for getting summoned into other worlds, dying, etc)</li>
+<li>Setting attack aim tracking speed of a character</li>
+<li>Playing a “RumbleCam” file (relative screen movement e.g. Smough’s footsteps shaking screen)</li>
+<li>Playing additional animation layers (e.g. all of Gwyn’s animations have events to play his clothes-blowing-in-wind animation layered on top of the other animations)</li>
+<li>Adjusting model render masks (showing&#x2F;hiding specific parts of characters)</li>
+<li>Many more that we haven’t even figured out yet.</li>
+</ul>
+</blockquote>
+<p><em>DSAS唯一不支持的FS游戏是《黑暗之魂2》，因为魂2是用其他引擎制作的。</em></p>
+<p>对于已经解包的工程，可以通过Files→open打开chr.anibnd.dcx，查看该角色的动画数据。</p>
+<p>角色的一个行为&#x3D;动画数据（hkx）+动画帧驱动数据（tae），DSAS可以直接编辑tae，而hkx需要导出到Blender后修改再打回去。</p>
+<img src="/images/20240801-elden-ring-unpack/dsas.png" class="box px-0 py-0 ml-auto mr-auto" width="800" title="dsas" alt="DSAnimStudio视图介绍">
+
+<ul>
+<li>Animation：chr的动画文件。</li>
+<li>Graph：该动画的action数据。</li>
+<li>Parameters：选中action的具体参数。</li>
+<li>Entity：控制Entity的Transform、StateInfo（用来做多阶段）和NPC Param（用来替换模型）。如果自己做了角色模型，可以在这里导入后测试。</li>
+<li>Viewport：查看动画+数据的播放表现，可以逐帧查看。</li>
+</ul>
+<p>部分action只有在特定StateInfo下才会apply，如果不apply，会显示为红色×。如果不想设置StateInfo就查看动画的全部action，可以按4（Toggle StateInfo Of Selected Actions 快捷键）打开。</p>
+<br/>
+
+<h1 id="DSLuaDecompiler：编辑AI"><a href="#DSLuaDecompiler：编辑AI" class="headerlink" title="DSLuaDecompiler：编辑AI"></a>DSLuaDecompiler：编辑AI</h1><p>通过Yabber解包出的Lua，需要进一步反编译才能被阅读。这一步需要DSLuaDecompiler，对AI Lua文件进行反编译。</p>
+<img src="/images/20240801-elden-ring-unpack/lua.png" class="box px-0 py-0 ml-auto mr-auto" width="400" title="lua" alt="2120是玛莲妮亚chrID，212000_battle.lua是玛莲妮亚战斗AI">
+
+<br/>
+
+<p>FS游戏的AI逻辑介绍：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/614731111">如何设计有“对话感”的BOSS？《只狼》Ai完全拆解。</a></p>
+<p>在HTN框架下，以任务（条件→影响）为单位，AI会一直挑选符合条件的任务加入各个计划的任务池。AI有几套优先级不同的计划，在不因优先级发生跳出的情况下，会从该计划的任务池里随机选择一个任务进行执行。计划内可以注册函数、声明计数器、声明计时器等。</p>
+<p><em>可以通过内容已知的SPEffectID或动画ID反过来慢慢看AI逻辑，直接从头看会比较吃力。</em></p>
+<br/>
+
+<h1 id="DSMS→DSAS工作流-梅瑟莫为例"><a href="#DSMS→DSAS工作流-梅瑟莫为例" class="headerlink" title="DSMS→DSAS工作流-梅瑟莫为例"></a>DSMS→DSAS工作流-梅瑟莫为例</h1><p>制作Mod，尤其是涉及动画的Mod，需要将DSMapStudio和DSAnimStudio配合使用。接下来以梅瑟莫的投技为例，介绍这一工作流。</p>
+<p>梅瑟莫的投技表现和玛莲妮亚非常类似，都是前冲、抬手然后抓取判定，但为什么梅瑟莫的抓取要难躲得多？</p>
+<p>针对这一需求，需要查找到梅瑟莫角色的抓取动画，并查看该动画配置的tae数据。</p>
+<br/>
+
+<h2 id="DSMS：查找chrID"><a href="#DSMS：查找chrID" class="headerlink" title="DSMS：查找chrID"></a>DSMS：查找chrID</h2><p>查找ID有许多办法，此处提供三种最通用的思路：</p>
+<ol>
+<li><p><a target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1evpDLAfi1b3cYfGilDtMWXDvynwyN_lbX1chnSSR7Uk">Rodan’s Juicy Elden Ring Doc</a>：汇总了VFX、TAE、BEH、HKS和PARTS五类文件的ID和对应内容介绍，但截止到24年8月没有包含DLC内容。</p>
+</li>
+<li><p>DSMS的Model Editor：可以通过角色的英文名查找对应chrID，存在多个时需要分辨哪个是base。<em>基本是第一个。</em><br/><img src="/images/20240801-elden-ring-unpack/dsmschrid2.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="lua"></p>
+</li>
+<li><p>DSMS的Map Editor：不确定要编辑的对象用了哪个chrID时，可以通过map反查。找到物种包藏库这张map，通过英文名查找entity，或者自己手动沿着地图一路“走”过去，找到entity并查看Model Name。<br/><img src="/images/20240801-elden-ring-unpack/dsmschrid.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="lua"></p>
+<br/></li>
+</ol>
+<br/>
+
+<h2 id="DSAS：查找抓取技配置"><a href="#DSAS：查找抓取技配置" class="headerlink" title="DSAS：查找抓取技配置"></a>DSAS：查找抓取技配置</h2><p>查看5130的动画数据，找到投技动画，看到这一配置时，“为什么梅瑟莫投技很难躲”的答案已经呼之欲出——</p>
+<img src="/images/20240801-elden-ring-unpack/throwtae.png" class="box px-0 py-0 ml-auto mr-auto" width="800" title="throwtae" alt="a000_003022配置">
+
+<br/>
+
+<p>如果进一步追究，这个attack behavior的BehaviorJudgeID为360，它的判定配置为5130360，即chrID+BehaviorJudgeID。</p>
+<br/>
+
+<h2 id="DSMS：查找atkparam"><a href="#DSMS：查找atkparam" class="headerlink" title="DSMS：查找atkparam"></a>DSMS：查找atkparam</h2><p>在DSMS的Param Editor下找到AtkParam_Npc，这一文件管理atk的hitbox&amp;damage。查到5130360配置，它就是梅瑟莫投技判定的“罪魁祸首”——</p>
+<img src="/images/20240801-elden-ring-unpack/atkparam.png" class="box px-0 py-0 ml-auto mr-auto" width="800" title="atkparam" alt="5130360配置">
+
+<br/>
+
+<p>atkparam可以配置atk下每个hit的判定大小、受击类型、受击权重、hitbox挂点及形状、击退距离、卡肉时间、附加SPEffect、各类型伤害基础值、多人下各类型伤害基础值、冲击力、对物件伤害、SFX ID、Decal ID和AI Sound ID等。</p>
+<p>这里没有列举出所有数值，因为配置项实在太多了。和这一投技最相关的配置，其实只有四项：</p>
+<ul>
+<li>hit0_Radius：第一次hit的半径大小，为1.3。</li>
+<li>hit0_DmyPoly2：第一次hit的第二个挂点，为-1。-1表示没有，即第一次hit为sphere。</li>
+<li>throwTypeId：为4100。配置投技成功后衔接的投机处决动画，即处决动画ID是4100。</li>
+<li>throwFlag：枚举，为1.1表示是Throw transition投技过渡，2为Throw投技处决。</li>
+</ul>
+<p>如果继续看4100动画，会发现5130361~5130364就是投机处决动画的ThrowAttack Behavior AtkParam_NPC ID。配置了4个AtkParam，是因为梅瑟莫的投技伤害由Strike+Thrust+Fire(small)+Fire(big)四种伤害类型组成，其中Fire(small)被调用多次，以实现“被火焰逐渐灼烧”的伤害表现。</p>
+<p>总之，看到这一步，不仅知道了为什么梅瑟莫投技难躲，还知道了如何调整这一配置。将5130360这一投技判定形状从sphere改为capsule，并修改radius使其符合手部大小，就会减少被梅瑟莫虚空抓取的表现。</p>
+<br/>
+
+</div><div class="article-licensing box"><div class="licensing-title"><p>《艾尔登法环》Mod：解包工程篇</p><p><a href="https://uynad.github.io/2024/07/31/devlog/20240801-elden-ring-unpack/">https://uynad.github.io/2024/07/31/devlog/20240801-elden-ring-unpack/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>UyNad</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2024-08-01</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-02-28</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1/">战斗设计</a><a class="link-muted mr-2" rel="tag" href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2024/08/19/review/20240820-fallen/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">《堕落之主》：仰望星空，然后撞空气墙</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2024/06/30/ldesign/20240701-dg-clock/"><span class="level-item">DG_Clock：钟表主题地牢关卡留档</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="waline-thread"></div><script src="https://cdn.jsdelivr.net/npm/@waline/client@1.3.1/dist/Waline.min.js"></script><script>Waline({
+            el: '#waline-thread',
+            serverURL: "https://blog-comment-api-1tl6ysf8x-uynad.vercel.app/",
+            lang: "zh-CN",
+            visitor: true,
+            emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili"],
+            dark: "auto",
+            meta: ["nick","mail","link"],
+            requiredMeta: [],
+            login: "enable",
+            avatar: "retro",
+            
+            pageSize: 10,
+            avatarCDN: "https://sdn.geekzu.org/avatar/",
+            avatarForce: false,
+            highlight: true,
+            mathTagSupport: false,
+            copyright: true,
+            locale: {"placeholder":"Have fun."},
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.jpg" alt="UyNad"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">UyNad</p><p class="is-size-6 is-block">Here comes nothing!</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Elysium, in the Blue Sky</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">175</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://psnprofiles.com/megurined" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/UyNad"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://psnprofiles.com/megurined"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://psnprofiles.com/megurined"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://psnprofiles.com/megurined"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#解包工具一览"><span class="level-left"><span class="level-item">1</span><span class="level-item">解包工具一览</span></span></a></li><li><a class="level is-mobile" href="#必要：使用UXM解包本体"><span class="level-left"><span class="level-item">2</span><span class="level-item">必要：使用UXM解包本体</span></span></a></li><li><a class="level is-mobile" href="#Yabber：单文件解包"><span class="level-left"><span class="level-item">3</span><span class="level-item">Yabber：单文件解包</span></span></a></li><li><a class="level is-mobile" href="#DSMapStudio：编辑地图"><span class="level-left"><span class="level-item">4</span><span class="level-item">DSMapStudio：编辑地图</span></span></a></li><li><a class="level is-mobile" href="#DSAnimStudio：编辑动画"><span class="level-left"><span class="level-item">5</span><span class="level-item">DSAnimStudio：编辑动画</span></span></a></li><li><a class="level is-mobile" href="#DSLuaDecompiler：编辑AI"><span class="level-left"><span class="level-item">6</span><span class="level-item">DSLuaDecompiler：编辑AI</span></span></a></li><li><a class="level is-mobile" href="#DSMS→DSAS工作流-梅瑟莫为例"><span class="level-left"><span class="level-item">7</span><span class="level-item">DSMS→DSAS工作流-梅瑟莫为例</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#DSMS：查找chrID"><span class="level-left"><span class="level-item">7.1</span><span class="level-item">DSMS：查找chrID</span></span></a></li><li><a class="level is-mobile" href="#DSAS：查找抓取技配置"><span class="level-left"><span class="level-item">7.2</span><span class="level-item">DSAS：查找抓取技配置</span></span></a></li><li><a class="level is-mobile" href="#DSMS：查找atkparam"><span class="level-left"><span class="level-item">7.3</span><span class="level-item">DSMS：查找atkparam</span></span></a></li></ul></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a><p class="is-size-7"><span>&copy; 2026 UyNad</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Discuss on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fas fa-comments"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

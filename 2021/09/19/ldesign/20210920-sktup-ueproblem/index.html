@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>如何正确地将SketchUp白模优雅导入UE4 - UyNad的年一站</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#f7f7f7"><meta name="application-name" content="Icaurs - Hexo Theme"><meta name="msapplication-TileImage" content="/img/favicon_new.svg"><meta name="msapplication-TileColor" content="#f7f7f7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Icaurs - Hexo Theme"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="SketchUp → Datasmith → UE4 &amp;#x3D; SU白模流程验证。"><meta property="og:type" content="blog"><meta property="og:title" content="如何正确地将SketchUp白模优雅导入UE4"><meta property="og:url" content="https://uynad.github.io/2021/09/19/ldesign/20210920-sktup-ueproblem/"><meta property="og:site_name" content="UyNad的年一站"><meta property="og:description" content="SketchUp → Datasmith → UE4 &amp;#x3D; SU白模流程验证。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://uynad.github.io/images/20210918-suue.png"><meta property="article:published_time" content="2021-09-19T16:00:00.000Z"><meta property="article:modified_time" content="2026-02-28T11:09:26.000Z"><meta property="article:author" content="UyNad"><meta property="article:tag" content="关卡设计"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/images/20210918-suue.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://uynad.github.io/2021/09/19/ldesign/20210920-sktup-ueproblem/"},"headline":"如何正确地将SketchUp白模优雅导入UE4","image":["https://uynad.github.io/images/20210918-suue.png"],"datePublished":"2021-09-19T16:00:00.000Z","dateModified":"2026-02-28T11:09:26.000Z","author":{"@type":"Person","name":"UyNad"},"publisher":{"@type":"Organization","name":"UyNad的年一站","logo":{"@type":"ImageObject","url":"https://uynad.github.io/img/logo_new.svg"}},"description":"SketchUp → Datasmith → UE4 &#x3D; SU白模流程验证。"}</script><link rel="canonical" href="https://uynad.github.io/2021/09/19/ldesign/20210920-sktup-ueproblem/"><link rel="icon" href="/img/favicon_new.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-72437521-5" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-72437521-5');</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.2"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/20210918-suue.png" alt="如何正确地将SketchUp白模优雅导入UE4"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-09-19T16:00:00.000Z" title="9/19/2021, 4:00:00 PM">2021-09-20</time>发表</span><span class="level-item"><a class="link-muted" href="/categories/%E9%97%B8%E6%80%BB%E8%87%AA%E7%99%BD/">闸总自白</a></span><span class="level-item">6 分钟读完 (大约835个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">如何正确地将SketchUp白模优雅导入UE4</h1><div class="content"><p>SketchUp → Datasmith → UE4 &#x3D; SU白模流程验证。</p>
+<span id="more"></span>
+
+<hr>
+<h2 id="插件导入流程"><a href="#插件导入流程" class="headerlink" title="插件导入流程"></a>插件导入流程</h2><p>SketchUp导入UE4需要借助导出插件Datasmith，这是官网的文档说明：<a target="_blank" rel="noopener" href="https://docs.unrealengine.com/4.27/zh-CN/WorkingWithContent/Importing/Datasmith/SoftwareInteropGuides/SketchUp/">结合使用Datasmith与SketchUp Pro</a>。</p>
+<h3 id="安装Datasmith"><a href="#安装Datasmith" class="headerlink" title="安装Datasmith"></a>安装Datasmith</h3><p>去<a target="_blank" rel="noopener" href="https://www.unrealengine.com/zh-CN/datasmith/plugins">Datasmith网页</a>下载SketchUp PRO导出器，安装，它会自动识别你安装的SU版本。</p>
+<h3 id="SU内Datasmith导出"><a href="#SU内Datasmith导出" class="headerlink" title="SU内Datasmith导出"></a>SU内Datasmith导出</h3><p>插件安装完毕后，就能导出datasmith文件了。可以全量导出，包括场景摄影机（scene）和光照，因此UE4内可以只准备个完全空白的level。</p>
+<h3 id="UE4内Datasmith导入"><a href="#UE4内Datasmith导入" class="headerlink" title="UE4内Datasmith导入"></a>UE4内Datasmith导入</h3><p>在UE4内的工具栏，找到Datasmith，选择对应文件并导入。导入时可以选择1.导入位置 2.导入内容 等选项，根据需要勾选。导入成功后，会把资源放入当前关卡。</p>
+<p>如果工具栏没有Datasmith，要去plugins里面进行启用，而不是project settings。</p>
+<br/>
+
+<h2 id="UE4的SM生成规则"><a href="#UE4的SM生成规则" class="headerlink" title="UE4的SM生成规则"></a>UE4的SM生成规则</h2><p>自己做了个简单的对比实验，看看UE4是以什么规则去生成SM的。<em>上网搜应该也可以搜到，和实验结果应该是一样的。</em></p>
+<p><img src="/images/20210920-suue/ex.png"></p>
+<p><strong>no group</strong>：完全没有打组。所有连在一起的面都导出成了一个SM，没有父物体。</p>
+<p><strong>1 group</strong>：全部打了一个组。所有连在一起的面都导出成了一个SM，有一个父物体。</p>
+<p><strong>wall&#x2F;floor group</strong>：每个墙面&#x2F;地板面打了一个组。所有组单独导出了一个父物体+一个SM。</p>
+<p>这几个白模较为简单，实际上，如果组内有面分开的情况，会在父物体下导出成多个SM。</p>
+<p>对于no group和1 group，把对应SM的碰撞改为 <strong>Use Complex Collision As Simple</strong> 就OK了。对于wall&#x2F;floor group也适用，但由于墙面和地板面本来就是简单box，也可以直接添加简单碰撞。</p>
+<br/>
+
+<h2 id="SU绘制规范"><a href="#SU绘制规范" class="headerlink" title="SU绘制规范"></a>SU绘制规范</h2><p>因为SU绘制不规范，导入后吃了很多亏，有苦说不出。为了保证导入模型的质量，从而实现<strong>SU修改白模→导入UE4进行验证→SU修改白模</strong>的关卡验证流程，需要提高SU的白模质量。</p>
+<ol>
+<li>可复用内容打成组件，复用性较低的不要打成组件，群组即可。</li>
+<li>如果不是完全确定尺寸与结构，尽量以墙→地板→内部结构的颗粒度去打组。</li>
+<li>所有能被正反面看到的结构都需要是墙体。即，只有关卡边缘才可能用面。</li>
+<li>管理正反面，保证所有朝外的面都是正面。</li>
+<li>给每个block拍摄一个scene，方便日后修改与查看。</li>
+<li>如果存在多层，尽量给整体→每层→每block都拍摄顶视图scene。</li>
+<li>及时擦除无用的参考线，不要等线多到选都选不中了才开始擦。</li>
+<li>多往场景里拖预制件小人，进行尺寸对照。<em>做完后记得删</em></li>
+<li>（踩坑了会继续补充，虚位以待）</li>
+</ol>
+<br/>
+
+</div><div class="article-licensing box"><div class="licensing-title"><p>如何正确地将SketchUp白模优雅导入UE4</p><p><a href="https://uynad.github.io/2021/09/19/ldesign/20210920-sktup-ueproblem/">https://uynad.github.io/2021/09/19/ldesign/20210920-sktup-ueproblem/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>UyNad</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-09-20</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-02-28</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/">关卡设计</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2021/09/20/ldesign/20210921-blockmesh-guideline/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">关卡设计指导规范：白模制作</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/09/18/cyborg/20210919-mh-arena/"><span class="level-item">《怪物猎人》的水战玩法体验反思</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="waline-thread"></div><script src="https://cdn.jsdelivr.net/npm/@waline/client@1.3.1/dist/Waline.min.js"></script><script>Waline({
+            el: '#waline-thread',
+            serverURL: "https://blog-comment-api-1tl6ysf8x-uynad.vercel.app/",
+            lang: "zh-CN",
+            visitor: true,
+            emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili"],
+            dark: "auto",
+            meta: ["nick","mail","link"],
+            requiredMeta: [],
+            login: "enable",
+            avatar: "retro",
+            
+            pageSize: 10,
+            avatarCDN: "https://sdn.geekzu.org/avatar/",
+            avatarForce: false,
+            highlight: true,
+            mathTagSupport: false,
+            copyright: true,
+            locale: {"placeholder":"Have fun."},
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.jpg" alt="UyNad"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">UyNad</p><p class="is-size-6 is-block">Here comes nothing!</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Elysium, in the Blue Sky</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">175</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://psnprofiles.com/megurined" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/UyNad"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://psnprofiles.com/megurined"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://psnprofiles.com/megurined"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://psnprofiles.com/megurined"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#插件导入流程"><span class="level-left"><span class="level-item">1</span><span class="level-item">插件导入流程</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#安装Datasmith"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">安装Datasmith</span></span></a></li><li><a class="level is-mobile" href="#SU内Datasmith导出"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">SU内Datasmith导出</span></span></a></li><li><a class="level is-mobile" href="#UE4内Datasmith导入"><span class="level-left"><span class="level-item">1.3</span><span class="level-item">UE4内Datasmith导入</span></span></a></li></ul></li><li><a class="level is-mobile" href="#UE4的SM生成规则"><span class="level-left"><span class="level-item">2</span><span class="level-item">UE4的SM生成规则</span></span></a></li><li><a class="level is-mobile" href="#SU绘制规范"><span class="level-left"><span class="level-item">3</span><span class="level-item">SU绘制规范</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a><p class="is-size-7"><span>&copy; 2026 UyNad</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Discuss on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fas fa-comments"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

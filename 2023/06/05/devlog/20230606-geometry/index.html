@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>Blender几何节点：数学的强度美 - UyNad的年一站</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#f7f7f7"><meta name="application-name" content="Icaurs - Hexo Theme"><meta name="msapplication-TileImage" content="/img/favicon_new.svg"><meta name="msapplication-TileColor" content="#f7f7f7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Icaurs - Hexo Theme"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="人物是老活儿，场景是新整。"><meta property="og:type" content="blog"><meta property="og:title" content="Blender几何节点：数学的强度美"><meta property="og:url" content="https://uynad.github.io/2023/06/05/devlog/20230606-geometry/"><meta property="og:site_name" content="UyNad的年一站"><meta property="og:description" content="人物是老活儿，场景是新整。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://uynad.github.io/images/20230810-index-custom.gif"><meta property="article:published_time" content="2023-06-05T16:00:00.000Z"><meta property="article:modified_time" content="2026-02-28T11:09:26.000Z"><meta property="article:author" content="UyNad"><meta property="article:tag" content="游戏开发"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/images/20230810-index-custom.gif"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://uynad.github.io/2023/06/05/devlog/20230606-geometry/"},"headline":"Blender几何节点：数学的强度美","image":["https://uynad.github.io/images/20230810-index-custom.gif"],"datePublished":"2023-06-05T16:00:00.000Z","dateModified":"2026-02-28T11:09:26.000Z","author":{"@type":"Person","name":"UyNad"},"publisher":{"@type":"Organization","name":"UyNad的年一站","logo":{"@type":"ImageObject","url":"https://uynad.github.io/img/logo_new.svg"}},"description":"人物是老活儿，场景是新整。"}</script><link rel="canonical" href="https://uynad.github.io/2023/06/05/devlog/20230606-geometry/"><link rel="icon" href="/img/favicon_new.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-72437521-5" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-72437521-5');</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.2"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/20230810-index-custom.gif" alt="Blender几何节点：数学的强度美"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2023-06-05T16:00:00.000Z" title="6/5/2023, 4:00:00 PM">2023-06-06</time>发表</span><span class="level-item"><a class="link-muted" href="/categories/Devlog/">Devlog</a></span><span class="level-item">22 分钟读完 (大约3356个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">Blender几何节点：数学的强度美</h1><div class="content"><p>人物是老活儿，场景是新整。</p>
+<span id="more"></span>
+
+<hr>
+<p>最近在玩Blender的几何节点，看下来和Houdini的几何差距还是挺大的。</p>
+<p>Houdini的几何节点最擅长使用一套规则快速生成大场景，包括但不限于高度图生成地形、算法生成道路和河流岩石雕刻等。Blender的几何节点更注重单个物件的视觉表现，例如如何让一个Mesh在自我复制实例的同时绕贝塞尔曲线旋转。</p>
+<p>以上的例子都是对两个软件的粗糙概括，实际上，Houdini和Blender的功能上限远不止于此。但工具说到底也只是服务于人的想象力的，就像本篇文档中的几何节点场景，制作出来也只是为了满足本人的小小愿景。</p>
+<br/>
+
+<h1 id="一切的开始"><a href="#一切的开始" class="headerlink" title="一切的开始"></a>一切的开始</h1><p>初学Blender几何节点，第一个例子是手搓两个圆球，一个自转，一个绕着一个公转。这个例子继续做下去，可以手搓出一个太阳系雏形，但我想做点别的东西。</p>
+<p>两个实体对峙，周围是转来转去的乱七八糟的玩意儿……这个功能最终在本人脑海里形成了类似这样的画面：</p>
+<img src="/images/20230810-index-custom/1.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="极简主义风草稿" alt="极简主义风草稿">
+
+<br/>
+
+<p>这真是够抽象的。但没关系，马上就会变得不抽象。</p>
+<br/>
+
+<h1 id="角色三渲二处理"><a href="#角色三渲二处理" class="headerlink" title="角色三渲二处理"></a>角色三渲二处理</h1><h2 id="三渲二材质处理"><a href="#三渲二材质处理" class="headerlink" title="三渲二材质处理"></a>三渲二材质处理</h2><p>用Blender进行三渲二已经属于本人的舒适区了。在去年的<a href="https://uynad.github.io/2022/03/17/devlog/20220318-render/">Blender三渲二学习</a>后，保存了不少预配置好的三渲二工程模板，这次只需要下载三月七模型，放入后一顿材质连线，即可将模型做出三渲二效果了。</p>
+<p><em>不过高清材质和高光贴图都是从别人那里下的，并不是自己画的。</em></p>
+<br/>
+
+<h2 id="Rig控制器生成"><a href="#Rig控制器生成" class="headerlink" title="Rig控制器生成"></a>Rig控制器生成</h2><p>三渲二效果处理完成后，此时的模型还是A-Pose，放在场景里怪怪的。为了完成上面的画面，需要对三月七进行K动作。直接K骨骼是最蠢的办法，很容易K出非人的姿势。这里用了CATS MMD插件+MMD Rig插件，直接以MMD JP为预设生成了Rig控制器。</p>
+<p>3D动画的本质是一堆点动来动去。Mesh定义了一堆点，而Bone定义了它对不同Mesh的影响权重。在这两层概念上，Rig控制器定义的是Bone之间的运动关联，例如拉动手掌会联动手臂、转动脖子会移动脑袋角度等。</p>
+<p>CATS MMD插件和MMD Rig插件我只在2.79里用，更高的版本经常出兼容问题。在2.79工程里K好了三月七的姿势候，就可以挪进3.0+版本里继续制作几何场景了。</p>
+<p>实际上，如果更加用心，应该K出一段呼吸动画优化表现的。但我并没继续K，毕竟场景制作才是本文的重点。</p>
+<p><em>而且我实在懒得。</em></p>
+<br/>
+
+<h2 id="武器Solidify处理"><a href="#武器Solidify处理" class="headerlink" title="武器Solidify处理"></a>武器Solidify处理</h2><p>细心的朋友应该发现了，三月七的弓不知为何在发光。这并不是渲染出错，而是本人的“匠心设计”。</p>
+<img src="/images/20230810-index-custom/2.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="武器Solidify发光效果" alt="武器Solidify发光效果">
+
+<br/>
+
+<p>因为预设的是一个较黑暗的场景，如果自然光太弱，三月七就不够突出。为了让三月七的背影更加威武（？）。决定给武器加点特效让它看着更像一把牛逼的武器<em>（天火出鞘）</em>。</p>
+<p>描边自发光效果非常好加。新增一个材质，在里面写Shader定义外观。给弓添加Solidify Modifier，法线方向反转，然后设置材质偏移为2，指向自己新增的材质。此时粉色描边效果已经有了，可以通过thickness控制粗细，以及是否勾选平滑。</p>
+<p>这个做法是Blender三渲二里最常见的，并且是本人唯一稳定掌握的描边方案。MMD插件其实自带创建描边功能，但用了几次发现很不稳定且黑盒难以调整效果，最终还是采用了最开始学的老办法。</p>
+<br/>
+
+<h1 id="场景几何化生成"><a href="#场景几何化生成" class="headerlink" title="场景几何化生成"></a>场景几何化生成</h1><p>角色已经做好了，并且拉出了一个精品分镜，现在该做转来转去的目标了……慢着，在目标前，是不是忘了什么？</p>
+<p>当然是地形和远景！！！</p>
+<p>“我是谁、我在哪儿和我要干什么”的人生三问里，“我是谁”已经得到解决，“我要干什么”也有了初步答案，但“我在哪儿”还没有处理。实际上，要先做好大场景，才好往上堆各种“我要干什么”的小景观。总之，现在要开始做场景了。</p>
+<br/>
+
+<h2 id="地面生成"><a href="#地面生成" class="headerlink" title="地面生成"></a>地面生成</h2><p>整个场景的“风土人情”是这样的：</p>
+<img src="/images/20230810-index-custom/3.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Plane生成不规则地面" alt="Plane生成不规则地面">
+
+<br/>
+
+<p>打了一盏光用于标记“日后要在这里放一个奇怪玩意儿”，颇具科幻风的地面已经做完了。地面的几何原理其实非常简单，先拉一个Plane出来，然后在Plane的所有点里噪音选点，最后以最大+最小+密度等规则生成对应的实例。核心节点是<strong>Instance on Points</strong>，即在点位上生成实例。而实例，自然就是场景里随机出来的大小方块啦。</p>
+<p>根据YouTube视频来，其实在地面的基础上来制作了大中小三种景观Cube的随机分布。但实际用了下感觉很丑，于是把这部分几何的生成密度调得非常低。</p>
+<br/>
+
+<h2 id="高台生成"><a href="#高台生成" class="headerlink" title="高台生成"></a>高台生成</h2><p>做完了基础地形后，回到分镜中一看，感觉角色仰视的感觉并不强烈，因为角色和目标是同一水平面。为了凸显目标的高大感，做了个小高台。</p>
+<p><em>把目标做高本身也是一种思路，但我觉得这样会显得场景太平。总之只是一种个人选择。</em></p>
+<p>高台用了和地面完全一样的几何逻辑，唯一的区别是，这次我没有拉Plane，而是直接在几何节点里“无中生有”创建了一个Cube，并以Cube的XYZ作为空间约束，去生成随机方块来填充。这样做的好处是高台大小更可控，如果根据Plane生成还得算下它最终会扩大到Plane尺寸的多少倍。</p>
+<br/>
+
+<h2 id="圆环生成"><a href="#圆环生成" class="headerlink" title="圆环生成"></a>圆环生成</h2><p>基础地形有了之后，场景实在太空了。为了进一步凸显科幻感，打算做一堆会绕着玩家转来转去的圆环，做出一种类似环行星带的氛围。</p>
+<p>加了两圈光环和两圈石头环后，场景现在长这样。</p>
+<img src="/images/20230810-index-custom/4.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="圆环转转乐" alt="圆环转转乐">
+
+<br/>
+
+<p>石头环是用贝塞尔曲线拉出来的，贝塞尔曲线并不算几何节点，但也是Blender里非常方便的建模方案，尤其是用来做卡通系大块头发。光环和几何节点其实也没多少关系，除了动画每帧+ Rotation Z做出天体旋转的效果。</p>
+<h2 id="背景制作"><a href="#背景制作" class="headerlink" title="背景制作"></a>背景制作</h2><p>摊牌了，背景的黑色半圆柱和一堆柱子是手搓的，这部分没有用几何节点制作。</p>
+<p>对于效果简单的模型，自己建模还是比几何节点要快得多的……不过，也可能是我几何节点学得不够多。</p>
+<p>总之，在加了一大堆场景元素后，构图现在变成了这样子。</p>
+<img src="/images/20230810-index-custom/5.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="主角虚位以待" alt="主角虚位以待">
+
+<br/>
+
+<p>接下来就要往画面主体里加入那个转来砖去的奇怪玩意儿了。</p>
+<br/>
+
+<h1 id="圆柱球体几何化生成"><a href="#圆柱球体几何化生成" class="headerlink" title="圆柱球体几何化生成"></a>圆柱球体几何化生成</h1><p>圆柱球体的制作高度参考了YouTube上的一个教学视频。前面也提到了，本人其实是初学者，之所以要做这个工程，是希望能学以致用去做自己想做的内容。这个工程的制作过程就是在学习，所以照着人家的视频做也情有可原，<em>毕竟本人太菜做不出想要的效果。</em></p>
+<img src="/images/20230810-index-custom/6.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="三月七的亲戚——纠缠之缘" alt="三月七的亲戚——纠缠之缘">
+
+<br/>
+
+<p>唯一的遗憾是没有搞来一个真正的纠缠之缘模型，让它在上面转来转去。</p>
+<br/>
+
+<h1 id="世界渲染设置与导出"><a href="#世界渲染设置与导出" class="headerlink" title="世界渲染设置与导出"></a>世界渲染设置与导出</h1><p>圆柱球体做好后，整个场景长成这个样子：</p>
+<img src="/images/20230810-index-custom/7.png" class="box px-0 py-0 ml-auto mr-auto" width="700">
+
+<br/>
+
+<p>在近处的渲染大概这个样子：</p>
+<img src="/images/20230810-index-custom/8.png" class="box px-0 py-0 ml-auto mr-auto" width="700">
+
+<img src="/images/20230810-index-custom/9.png" class="box px-0 py-0 ml-auto mr-auto" width="700">
+
+<br/>
+
+<p>其实，上述截图都不是开发中的真实画面还原。我是做好了整个工程后，通过开关局部内容，来表示我在每一步做了什么。最开始选定的分镜也经过了很久的调整，<em>毕竟草图实在太抽象了</em>，要用3D还原可不容易。</p>
+<p>分镜选好后，调整下Render设置和渲染图层设置，来控制渲染画面效果；调整下Output选项的文件格式和压缩方法，来控制最终输出的文件和质量。这些操作对于本人来说又进入了舒适区，用了较低配的EEVEE渲染参数打算快速渲完。</p>
+<br/>
+
+<h1 id="不重要的后话"><a href="#不重要的后话" class="headerlink" title="不重要的后话"></a>不重要的后话</h1><p>一旦开始渲染，电脑就会变得卡卡的。我打开Github，打算把这个项目写成一篇文档。写着写着，就忍不住把玩起Blender工程来，彷佛这就是自己的一个赛博手办。</p>
+<p>这就是我为什么喜欢3D项目。2D是视角限定的，你要用自己的想象力补足2D到3D的空白；而3D是精准的，哪怕你只是想做一个分镜，你也要制作一整套资源。</p>
+<p>而当你做完这一整套资源，那张分镜已经不只是一张照片了。你“被迫”设定好了人物、场景和目标的全套内容，甚至为它编造了一个小故事。并且，除去分镜的画面，你可以从任何角度观赏你创造这个小世界，获得更多的观赏体验。</p>
+<img src="/images/20230810-index-custom/10.png" class="box px-0 py-0 ml-auto mr-auto" width="600" title="三月七可爱捏" alt="三月七可爱捏">
+
+<br/>
+
+<p>3D是一件需要漫长流程的工作。一堆职能参与进来，指手画脚，领取自己的工作，最后合起来看看能不能跑。每个精美的3D资产，背后都是一堆人的雕琢和合作。</p>
+<p>并不是只有一个人的天才绘画才叫艺术品。每件制作规范且视觉无死角的3D作品，都同样是工业上的艺术品。工程做完后，我选了很多个角度，进一步欣赏这个由我创建的小小天地，<em>主要是欣赏三月七。</em></p>
+<p>距离上次制作3D动画，已经过去快一年了。这一年间回到熟悉的资源网站，发现大家的更新频率生猛似虎，自己学习和下载过的“新”资源，早就被刷到了二十页开外。这次的渲染方案其实也偷了一些最新科技，毕竟新表现不用白不用。</p>
+<p>Blender3D是一个充满了活力的地方。三渲二在发展，人物骨骼动画在发展，几何节点场景也在不断发展。不断优化工具、打磨技术、创造出更好的作品……这就是我入坑和喜爱3D动画的地方。如果不能持续前进，人生该有多无趣。</p>
+<p>因为选了很低配的渲染设置，其实文章大纲才写完，Blender就渲染好了。之前的3D动画都会发到B站上，这次的小小作品打算以Gif形式留档，等以后做些大的再发到B站上去。</p>
+<br/></div><div class="article-licensing box"><div class="licensing-title"><p>Blender几何节点：数学的强度美</p><p><a href="https://uynad.github.io/2023/06/05/devlog/20230606-geometry/">https://uynad.github.io/2023/06/05/devlog/20230606-geometry/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>UyNad</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2023-06-06</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-02-28</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2023/06/11/devlog/gunpla/20230612-mg-6650/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">拼完了...大班 MG 6650自由高达（樱花配色）</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2023/05/23/devlog/gunpla/20230524-fm-aerial/"><span class="level-item">拼完咯！Full Mechanics XVX-016 Gundam Aerial</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="waline-thread"></div><script src="https://cdn.jsdelivr.net/npm/@waline/client@1.3.1/dist/Waline.min.js"></script><script>Waline({
+            el: '#waline-thread',
+            serverURL: "https://blog-comment-api-1tl6ysf8x-uynad.vercel.app/",
+            lang: "zh-CN",
+            visitor: true,
+            emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili"],
+            dark: "auto",
+            meta: ["nick","mail","link"],
+            requiredMeta: [],
+            login: "enable",
+            avatar: "retro",
+            
+            pageSize: 10,
+            avatarCDN: "https://sdn.geekzu.org/avatar/",
+            avatarForce: false,
+            highlight: true,
+            mathTagSupport: false,
+            copyright: true,
+            locale: {"placeholder":"Have fun."},
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.jpg" alt="UyNad"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">UyNad</p><p class="is-size-6 is-block">Here comes nothing!</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Elysium, in the Blue Sky</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">175</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://psnprofiles.com/megurined" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/UyNad"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://psnprofiles.com/megurined"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://psnprofiles.com/megurined"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://psnprofiles.com/megurined"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#一切的开始"><span class="level-left"><span class="level-item">1</span><span class="level-item">一切的开始</span></span></a></li><li><a class="level is-mobile" href="#角色三渲二处理"><span class="level-left"><span class="level-item">2</span><span class="level-item">角色三渲二处理</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#三渲二材质处理"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">三渲二材质处理</span></span></a></li><li><a class="level is-mobile" href="#Rig控制器生成"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">Rig控制器生成</span></span></a></li><li><a class="level is-mobile" href="#武器Solidify处理"><span class="level-left"><span class="level-item">2.3</span><span class="level-item">武器Solidify处理</span></span></a></li></ul></li><li><a class="level is-mobile" href="#场景几何化生成"><span class="level-left"><span class="level-item">3</span><span class="level-item">场景几何化生成</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#地面生成"><span class="level-left"><span class="level-item">3.1</span><span class="level-item">地面生成</span></span></a></li><li><a class="level is-mobile" href="#高台生成"><span class="level-left"><span class="level-item">3.2</span><span class="level-item">高台生成</span></span></a></li><li><a class="level is-mobile" href="#圆环生成"><span class="level-left"><span class="level-item">3.3</span><span class="level-item">圆环生成</span></span></a></li><li><a class="level is-mobile" href="#背景制作"><span class="level-left"><span class="level-item">3.4</span><span class="level-item">背景制作</span></span></a></li></ul></li><li><a class="level is-mobile" href="#圆柱球体几何化生成"><span class="level-left"><span class="level-item">4</span><span class="level-item">圆柱球体几何化生成</span></span></a></li><li><a class="level is-mobile" href="#世界渲染设置与导出"><span class="level-left"><span class="level-item">5</span><span class="level-item">世界渲染设置与导出</span></span></a></li><li><a class="level is-mobile" href="#不重要的后话"><span class="level-left"><span class="level-item">6</span><span class="level-item">不重要的后话</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a><p class="is-size-7"><span>&copy; 2026 UyNad</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Discuss on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fas fa-comments"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

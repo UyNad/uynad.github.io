@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>游戏开发工具的提需权衡：易用性VS通用性 - UyNad的年一站</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#f7f7f7"><meta name="application-name" content="Icaurs - Hexo Theme"><meta name="msapplication-TileImage" content="/img/favicon_new.svg"><meta name="msapplication-TileColor" content="#f7f7f7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Icaurs - Hexo Theme"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="抵制顾头不顾腚的渣男型需求。"><meta property="og:type" content="blog"><meta property="og:title" content="游戏开发工具的提需权衡：易用性VS通用性"><meta property="og:url" content="https://uynad.github.io/2021/09/22/cyborg/20210923-function/"><meta property="og:site_name" content="UyNad的年一站"><meta property="og:description" content="抵制顾头不顾腚的渣男型需求。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://uynad.github.io/images/20210923-function.png"><meta property="article:published_time" content="2021-09-22T16:00:00.000Z"><meta property="article:modified_time" content="2026-02-28T11:09:26.000Z"><meta property="article:author" content="UyNad"><meta property="article:tag" content="关卡设计"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/images/20210923-function.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://uynad.github.io/2021/09/22/cyborg/20210923-function/"},"headline":"游戏开发工具的提需权衡：易用性VS通用性","image":["https://uynad.github.io/images/20210923-function.png"],"datePublished":"2021-09-22T16:00:00.000Z","dateModified":"2026-02-28T11:09:26.000Z","author":{"@type":"Person","name":"UyNad"},"publisher":{"@type":"Organization","name":"UyNad的年一站","logo":{"@type":"ImageObject","url":"https://uynad.github.io/img/logo_new.svg"}},"description":"抵制顾头不顾腚的渣男型需求。"}</script><link rel="canonical" href="https://uynad.github.io/2021/09/22/cyborg/20210923-function/"><link rel="icon" href="/img/favicon_new.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-72437521-5" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-72437521-5');</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.2"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/20210923-function.png" alt="游戏开发工具的提需权衡：易用性VS通用性"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-09-22T16:00:00.000Z" title="9/22/2021, 4:00:00 PM">2021-09-23</time>发表</span><span class="level-item"><a class="link-muted" href="/categories/%E8%B5%9B%E5%8D%9A%E5%9E%83%E5%9C%BE/">赛博垃圾</a></span><span class="level-item">12 分钟读完 (大约1747个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">游戏开发工具的提需权衡：易用性VS通用性</h1><div class="content"><p>抵制顾头不顾腚的渣男型需求。</p>
+<span id="more"></span>
+
+<hr>
+   <br/>
+
+<p>之前和某大佬讨论过关卡制作流程规范的问题，那时我问了个相当迷惑的本体论问题：说到底，提工具时应该考虑什么？</p>
+<h2 id="功能提需的思考切入点"><a href="#功能提需的思考切入点" class="headerlink" title="功能提需的思考切入点"></a>功能提需的思考切入点</h2><p>我们都向往一套既能保底又好拓展的关卡制作流程，即传说中的foolproof。猩猩来了都不能弄坏，同时又能满足创意内容的制作。在这套制作流程里，应该以什么型号的刀去切片，从而保证模块拼成一条工作链？</p>
+<p>个人整理出了一套比较简单的思考方式。</p>
+<p><img src="/images/20210923-function.png"></p>
+<p>易用性工具的标准不用多言，见过的多数需求都是偏向这种。通用性工具相对更加“影响深远”。</p>
+<p>一般而言，通用性越强，外延性越强。例如，一套用来给玩法内随机刷新不同等级资源箱的刷新工具，是否还可以在其他玩法甚至大世界里刷，或者拿去刷新别的东西？开发一期时可以先不做这些功能，但日后有了需求，就要记得利用之前的工具，省得一套轮子反复造。</p>
+<br/>
+
+<h2 id="一个小例子：打气玩法"><a href="#一个小例子：打气玩法" class="headerlink" title="一个小例子：打气玩法"></a>一个小例子：打气玩法</h2><p>  关卡想增加一种关卡玩法，来丰富场景交互性。这个玩法的目标很简单，就是“在气球爆掉前打气到极限”。<em>现实里也经常有这种整蛊玩具，鄙人相当害怕。</em></p>
+<h3 id="初步拆解核心功能"><a href="#初步拆解核心功能" class="headerlink" title="初步拆解核心功能"></a>初步拆解核心功能</h3><p>第一个念头：做一个打气对象BP，该BP有个伤害阈值，超过后自我销毁。玩家攻击可增加BP的积累伤害值，美术需要输出此资源的变大动画，根据积累伤害值的比例去播放。此BP随时可以采集（即交互后销毁），采集到的资源数等于积累伤害值乘以一个配置好的系数或曲线。</p>
+<p>因此，气球越大，收获越大，但风险也越高。</p>
+<p>这样的设计初步满足了目标，但马上就能看到问题：打气球之所以紧张刺激，是因为它爆掉的时间点无法观测。而伤害值在游戏中只是数字，玩家很容易发现规律，这样就不dokidoki了。</p>
+<h3 id="对体验加以改进"><a href="#对体验加以改进" class="headerlink" title="对体验加以改进"></a>对体验加以改进</h3><p>我们将伤害阈值这一需求升级成为一个伤害阈值数组，策划可配置任意多组(伤害阈值，爆掉概率)。如果玩家该次攻击导致积累伤害值超过了一个伤害阈值，会进行一次爆掉概率计算，中了就直接爆。</p>
+<p>配置示意：在伤害阈值数组里添加了三组，分别是(100,0.05) (200, 0.3) (300, 0.3) (500, 1)。这个气球在100时就有极小概率直接爆掉，然后200和300各自检测一次，500以上会直接爆掉。</p>
+<p>在这里发现需要补充一条规则，即如果单次攻击直接超过两个以上伤害阈值，超过的阈值全都会进行判定。</p>
+<h3 id="思考功能与体验的差异"><a href="#思考功能与体验的差异" class="headerlink" title="思考功能与体验的差异"></a>思考功能与体验的差异</h3><p>看似功能已经妥当，实际脑补下来依然有差别。例如在200~300期间，我们期望的是<strong>气球会爆掉的平均概率期望为0.3</strong>，仅在200和300各做一次计算，其实体验依然不对味儿。但问题在于，这一功能最开始定了要以伤害量而非攻击次数去算阈值，而不同技能的伤害差值较大，我们难以知晓玩家从200打到300的平均攻击次数。</p>
+<p>为了模拟平均期望，我会将伤害阈值数组改造为(最小伤害阈值，最大伤害阈值，区间判定次数，爆掉概率)。例，如果我配置了(200,300,5,0.1)，在累计伤害值从200增加到300期间内，一共会进行5次判定，每次爆掉概率都是0.1。判定的分布是均匀的，程序自己做个简单运算来确定这五次的伤害阈值。同上，如果一次性超过好几个阈值，则全都会进行判定。</p>
+<p>其实改进版的配置就可以做到这个效果了，但过于麻烦。虽说策划的人天最不值钱，但这种提需可以节省的功夫，还是尽量省一下。</p>
+<p>题外话：记得最大数值和最小数值不要重叠，个人的习惯是[n,m)。</p>
+<h3 id="展望未来：功能的体验拓展"><a href="#展望未来：功能的体验拓展" class="headerlink" title="展望未来：功能的体验拓展"></a>展望未来：功能的体验拓展</h3><p>最简单的拓展方向就是，更换美术资源，虽然本质还是打气球，但观感上会发生变化。</p>
+<p>那么，有没有可能改成限时玩法呢？例如，一次打气球的时间有限，又要拼速度，又要不越界。</p>
+<p>因此，可以给BP加一个伤害持续时间，在第一次受伤害后开始倒计时，结束时如果尚未被销毁（爆掉或被采集），BP恢复初始状态。</p>
+<p>再者，玩家并不一定随时都能采集这个气球。虽然上面提到，气球玩法是风险越高收益越大，但作为狗策划，还是不希望玩家打几下就采集走，只打一枪的俄罗斯轮盘有啥意思嘛。</p>
+<p>于是，又升级了伤害阈值数组的功能，变成了(最小伤害阈值，最大伤害阈值，区间判定次数，爆掉概率，是否可采集，采集资源比例)。每个区间可以配置是否能采集，同时采集资源量不会再根据积累伤害值去自动计算，而是由玩家配置一个比例。</p>
+<p>现在，我就可以配出完全不一样的体验了：这个气球的伤害持续时间只有5秒，所有区间的爆掉概率都是0，且0<del>400和450</del>n期间都不可采集。玩家要全速输出，同时还要注意不超过450，一旦超过就得重来。由此，这个“气球”的体验已经完全质变，成了悬崖勒马小玩法。</p>
+<p>聪明的提需可以帮助策划拓展想象力的边界，垃圾的提需让策划变成配表苦力工具人。不要怠慢每次提功能，尽量不要走到程序帮策划擦屁股的那一步。</p>
+<br/>
+
+</div><div class="article-licensing box"><div class="licensing-title"><p>游戏开发工具的提需权衡：易用性VS通用性</p><p><a href="https://uynad.github.io/2021/09/22/cyborg/20210923-function/">https://uynad.github.io/2021/09/22/cyborg/20210923-function/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>UyNad</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-09-23</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-02-28</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/">关卡设计</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2021/09/24/cyborg/20210925-nijigasaki/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">十人十色：最喜欢虹咲的三个理由</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/09/20/ldesign/20210921-blockmesh-guideline/"><span class="level-item">关卡设计指导规范：白模制作</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="waline-thread"></div><script src="https://cdn.jsdelivr.net/npm/@waline/client@1.3.1/dist/Waline.min.js"></script><script>Waline({
+            el: '#waline-thread',
+            serverURL: "https://blog-comment-api-1tl6ysf8x-uynad.vercel.app/",
+            lang: "zh-CN",
+            visitor: true,
+            emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili"],
+            dark: "auto",
+            meta: ["nick","mail","link"],
+            requiredMeta: [],
+            login: "enable",
+            avatar: "retro",
+            
+            pageSize: 10,
+            avatarCDN: "https://sdn.geekzu.org/avatar/",
+            avatarForce: false,
+            highlight: true,
+            mathTagSupport: false,
+            copyright: true,
+            locale: {"placeholder":"Have fun."},
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.jpg" alt="UyNad"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">UyNad</p><p class="is-size-6 is-block">Here comes nothing!</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Elysium, in the Blue Sky</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">175</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://psnprofiles.com/megurined" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/UyNad"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://psnprofiles.com/megurined"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://psnprofiles.com/megurined"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://psnprofiles.com/megurined"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#功能提需的思考切入点"><span class="level-left"><span class="level-item">1</span><span class="level-item">功能提需的思考切入点</span></span></a></li><li><a class="level is-mobile" href="#一个小例子：打气玩法"><span class="level-left"><span class="level-item">2</span><span class="level-item">一个小例子：打气玩法</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#初步拆解核心功能"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">初步拆解核心功能</span></span></a></li><li><a class="level is-mobile" href="#对体验加以改进"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">对体验加以改进</span></span></a></li><li><a class="level is-mobile" href="#思考功能与体验的差异"><span class="level-left"><span class="level-item">2.3</span><span class="level-item">思考功能与体验的差异</span></span></a></li><li><a class="level is-mobile" href="#展望未来：功能的体验拓展"><span class="level-left"><span class="level-item">2.4</span><span class="level-item">展望未来：功能的体验拓展</span></span></a></li></ul></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a><p class="is-size-7"><span>&copy; 2026 UyNad</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Discuss on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fas fa-comments"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

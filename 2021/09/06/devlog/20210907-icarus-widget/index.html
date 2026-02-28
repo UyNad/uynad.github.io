@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>icarus自定义：修改归档挂件 - UyNad的年一站</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#f7f7f7"><meta name="application-name" content="Icaurs - Hexo Theme"><meta name="msapplication-TileImage" content="/img/favicon_new.svg"><meta name="msapplication-TileColor" content="#f7f7f7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Icaurs - Hexo Theme"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="修改icarus归档挂件时遇到的问题及解决过程。"><meta property="og:type" content="blog"><meta property="og:title" content="icarus自定义：修改归档挂件"><meta property="og:url" content="https://uynad.github.io/2021/09/06/devlog/20210907-icarus-widget/"><meta property="og:site_name" content="UyNad的年一站"><meta property="og:description" content="修改icarus归档挂件时遇到的问题及解决过程。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://uynad.github.io/images/20210907-icarus.png"><meta property="article:published_time" content="2021-09-06T16:00:00.000Z"><meta property="article:modified_time" content="2026-02-28T11:09:26.000Z"><meta property="article:author" content="UyNad"><meta property="article:tag" content="网页开发"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/images/20210907-icarus.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://uynad.github.io/2021/09/06/devlog/20210907-icarus-widget/"},"headline":"icarus自定义：修改归档挂件","image":["https://uynad.github.io/images/20210907-icarus.png"],"datePublished":"2021-09-06T16:00:00.000Z","dateModified":"2026-02-28T11:09:26.000Z","author":{"@type":"Person","name":"UyNad"},"publisher":{"@type":"Organization","name":"UyNad的年一站","logo":{"@type":"ImageObject","url":"https://uynad.github.io/img/logo_new.svg"}},"description":"修改icarus归档挂件时遇到的问题及解决过程。"}</script><link rel="canonical" href="https://uynad.github.io/2021/09/06/devlog/20210907-icarus-widget/"><link rel="icon" href="/img/favicon_new.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-72437521-5" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-72437521-5');</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.2"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/20210907-icarus.png" alt="icarus自定义：修改归档挂件"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-09-06T16:00:00.000Z" title="9/6/2021, 4:00:00 PM">2021-09-07</time>发表</span><span class="level-item"><a class="link-muted" href="/categories/Devlog/">Devlog</a></span><span class="level-item">5 分钟读完 (大约814个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">icarus自定义：修改归档挂件</h1><div class="content"><p>修改icarus归档挂件时遇到的问题及解决过程。</p>
+<span id="more"></span>  
+
+ <br/>
+
+<p>之前的归档挂件，会显示月份+年份，在文章数量较多时，这一规则会让归档挂件非常累赘。打算修改归档挂件的布局，改成只按照年份分类。</p>
+<h2 id="去Issue里搜索方案"><a href="#去Issue里搜索方案" class="headerlink" title="去Issue里搜索方案"></a>去Issue里搜索方案</h2><p>  在github工程里搜索相关信息，搜到了这个<a target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-theme-icarus/issues/413">讨论</a> ，编辑者提供的解决方案是：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/chenshen03">@chenshen03</a> 请根据<a target="_blank" rel="noopener" href="https://hexo.io/docs/helpers#list-archives">https://hexo.io/docs/helpers#list-archives</a> 的参数描述在<a target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-theme-icarus/blob/master/includes/helpers/override.js#L16">https://github.com/ppoffice/hexo-theme-icarus/blob/master/includes/helpers/override.js#L16</a> 修改list_archives()的参数.</p>
+</blockquote>
+<pre><code>const $ = cheerio.load(this.list_archives(&#123;format: &quot;YYYY MMMM&quot;&#125;), &#123; decodeEntities: false &#125;);
+</code></pre>
+<p>但这个讨论是2019年2月发生的，如今工程已经不再存在这一路径。在这里得知的信息是，最开始icarus是继承了hexo的list.archives然后自己覆写的归档挂件，并不是独立实现。</p>
+<br/>
+
+<h2 id="去Google里搜索方案"><a href="#去Google里搜索方案" class="headerlink" title="去Google里搜索方案"></a>去Google里搜索方案</h2><p>  扩大搜索范围，在Google里寻找了下。有其他作者也想改写归档挂件的效果，蹭了下别人的工作成果。顺藤摸瓜最后还是回到了官方文档，原来人家<a target="_blank" rel="noopener" href="https://ppoffice.github.io/hexo-theme-icarus/uncategorized/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/">在FAQ里提到了</a> ，瞎子就是我自己。</p>
+<blockquote>
+<p>插件和挂件的布局文件已被移至一个单独的Node.js库中——<a target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-component-inferno"><code>hexo-component-inferno</code></a>。 这样，主题开发者可以更好地在不同主题之间复用这些通用组件，并且普通用户可以更简便地覆盖这些内置组件。</p>
+<p>若要自定义这些组件，从<code>hexo-component-inferno</code>仓库中拷贝布局文件并把它们放入<code>&lt;icarus_directory&gt;/layout</code>下的的相应目录中。 例如，如果你想要自定义Valine评论插件，你可以从<code>hexo-component-inferno</code>仓库中拷贝 <a target="_blank" rel="noopener" href="https://github.com/ppoffice/hexo-component-inferno/blob/0.2.4/src/view/comment/valine.jsx"><code>src/view/comment/valine.jsx</code></a> 到<code>&lt;icarus_directory&gt;/layout/comment/valine.jsx</code>。 同时像下面这样改正此文件头部的一些Node.js引用：</p>
+</blockquote>
+<pre><code>&lt;icarus_directory&gt;/layout/comment/valine.jsx
+
+- const &#123; cacheComponent &#125; = require(&#39;../../util/cache&#39;);
++ const &#123; cacheComponent &#125; = require(&#39;hexo-component-inferno/lib/util/cache&#39;);
+</code></pre>
+<blockquote>
+<p>最后，用<code>hexo clean</code>清理你的站点并重新生成HTML文件。</p>
+</blockquote>
+<br/>
+
+<h2 id="手动改写jsx脚本"><a href="#手动改写jsx脚本" class="headerlink" title="手动改写jsx脚本"></a>手动改写jsx脚本</h2><p>根据上面的方法，在layout里新建了个archives.jsx，把<code>hexo-component-inferno</code>仓库里的代码拷贝过来，修改了开头的引用，然后开始魔改。</p>
+<p>我的需求：1. 把月份+年份的分类规则改成年份；2. 点击对应年份，进去后是该年份的归档数据。</p>
+<p>一共修改了三个地方：</p>
+<ol>
+<li><p>修改了type的默认类型，从monthly改成yearly。(L90)</p>
+</li>
+<li><p>修改了分类规则type。(L119)</p>
+</li>
+<li><p>修改了点击归档时返回地址的方法，不再在尾端加上月份，只返回archives&#x2F;年份。 </p>
+<p> const link &#x3D; (item) &#x3D;&gt; {<br> let url &#x3D; <code>$&#123;config.archive_dir&#125;/$&#123;item.year&#125;/</code>;<br> &#x2F;&#x2F;注释掉的部分，会在尾端加入月份<br> &#x2F;&#x2F;if (type &#x3D;&#x3D;&#x3D; ‘monthly’) {<br> &#x2F;&#x2F;    if (item.month &lt; 10) url +&#x3D; ‘0’;<br> &#x2F;&#x2F;    url +&#x3D; <code>$&#123;item.month&#125;/</code>;<br> &#x2F;&#x2F;}<br><br> return url_for(url);<br> };</p>
+</li>
+</ol>
+<p>修改完测试了下，完美无瑕，需求closed。</p>
+<br/>
+
+</div><div class="article-licensing box"><div class="licensing-title"><p>icarus自定义：修改归档挂件</p><p><a href="https://uynad.github.io/2021/09/06/devlog/20210907-icarus-widget/">https://uynad.github.io/2021/09/06/devlog/20210907-icarus-widget/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>UyNad</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-09-07</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-02-28</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E7%BD%91%E9%A1%B5%E5%BC%80%E5%8F%91/">网页开发</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2021/09/07/ldesign/20210908-floor-plan/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">如何为室内场景设计一份Floor Plan？</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/09/06/ldesign/20210907-sktup-tips/"><span class="level-item">SketchUp上手时的注意事项</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="waline-thread"></div><script src="https://cdn.jsdelivr.net/npm/@waline/client@1.3.1/dist/Waline.min.js"></script><script>Waline({
+            el: '#waline-thread',
+            serverURL: "https://blog-comment-api-1tl6ysf8x-uynad.vercel.app/",
+            lang: "zh-CN",
+            visitor: true,
+            emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili"],
+            dark: "auto",
+            meta: ["nick","mail","link"],
+            requiredMeta: [],
+            login: "enable",
+            avatar: "retro",
+            
+            pageSize: 10,
+            avatarCDN: "https://sdn.geekzu.org/avatar/",
+            avatarForce: false,
+            highlight: true,
+            mathTagSupport: false,
+            copyright: true,
+            locale: {"placeholder":"Have fun."},
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.jpg" alt="UyNad"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">UyNad</p><p class="is-size-6 is-block">Here comes nothing!</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Elysium, in the Blue Sky</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">175</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://psnprofiles.com/megurined" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/UyNad"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://psnprofiles.com/megurined"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://psnprofiles.com/megurined"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://psnprofiles.com/megurined"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#去Issue里搜索方案"><span class="level-left"><span class="level-item">1</span><span class="level-item">去Issue里搜索方案</span></span></a></li><li><a class="level is-mobile" href="#去Google里搜索方案"><span class="level-left"><span class="level-item">2</span><span class="level-item">去Google里搜索方案</span></span></a></li><li><a class="level is-mobile" href="#手动改写jsx脚本"><span class="level-left"><span class="level-item">3</span><span class="level-item">手动改写jsx脚本</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a><p class="is-size-7"><span>&copy; 2026 UyNad</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Discuss on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fas fa-comments"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>《如何做船》：游轮副本关卡的设计过程总结 - UyNad的年一站</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#f7f7f7"><meta name="application-name" content="Icaurs - Hexo Theme"><meta name="msapplication-TileImage" content="/img/favicon_new.svg"><meta name="msapplication-TileColor" content="#f7f7f7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Icaurs - Hexo Theme"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="关卡制作管线的第一环：概念设定及流程规划。"><meta property="og:type" content="blog"><meta property="og:title" content="《如何做船》：游轮副本关卡的设计过程总结"><meta property="og:url" content="https://uynad.github.io/2021/09/09/ldesign/20210910-how-to-ship/"><meta property="og:site_name" content="UyNad的年一站"><meta property="og:description" content="关卡制作管线的第一环：概念设定及流程规划。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://uynad.github.io/images/20210918-ship.png"><meta property="article:published_time" content="2021-09-09T16:00:00.000Z"><meta property="article:modified_time" content="2026-02-28T11:09:26.000Z"><meta property="article:author" content="UyNad"><meta property="article:tag" content="关卡设计"><meta property="article:tag" content="玩法设计"><meta property="article:tag" content="叙事设计"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/images/20210918-ship.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://uynad.github.io/2021/09/09/ldesign/20210910-how-to-ship/"},"headline":"《如何做船》：游轮副本关卡的设计过程总结","image":["https://uynad.github.io/images/20210918-ship.png"],"datePublished":"2021-09-09T16:00:00.000Z","dateModified":"2026-02-28T11:09:26.000Z","author":{"@type":"Person","name":"UyNad"},"publisher":{"@type":"Organization","name":"UyNad的年一站","logo":{"@type":"ImageObject","url":"https://uynad.github.io/img/logo_new.svg"}},"description":"关卡制作管线的第一环：概念设定及流程规划。"}</script><link rel="canonical" href="https://uynad.github.io/2021/09/09/ldesign/20210910-how-to-ship/"><link rel="icon" href="/img/favicon_new.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-72437521-5" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-72437521-5');</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.2"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/20210918-ship.png" alt="《如何做船》：游轮副本关卡的设计过程总结"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-09-09T16:00:00.000Z" title="9/9/2021, 4:00:00 PM">2021-09-10</time>发表</span><span class="level-item"><a class="link-muted" href="/categories/%E9%97%B8%E6%80%BB%E8%87%AA%E7%99%BD/">闸总自白</a></span><span class="level-item">25 分钟读完 (大约3702个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">《如何做船》：游轮副本关卡的设计过程总结</h1><div class="content"><p>关卡制作管线的第一环：概念设定及流程规划。</p>
+<span id="more"></span>
+
+<hr>
+<p><em>在欧洲时为了省钱，做过好几趟客轮。没想到日后有一天会做进游戏里。</em></p>
+<br/>
+
+<h2 id="确定舞台的三要素"><a href="#确定舞台的三要素" class="headerlink" title="确定舞台的三要素"></a>确定舞台的三要素</h2><h3 id="Who：核对叙事剧本"><a href="#Who：核对叙事剧本" class="headerlink" title="Who：核对叙事剧本"></a>Who：核对叙事剧本</h3><p>仔细检查叙事剧本，抽出所有关卡相关的重要元素。</p>
+<p><strong>基本叙事：</strong>最基础的是人与事。人略过不谈，事经常被抽象为脚本动画与关卡互动事件。对于事件的分类，要和文案在规划上达成一致。</p>
+<p><strong>关卡叙事：</strong>其次是剧本感情与氛围。故事有自己的发生情感，关卡在规划主题时需要以此为出发点。</p>
+<p><strong>玩法叙事：</strong>最后是可抽象出来的玩法。剧本一般不会写明要做什么玩法，但一些故事是可以做成玩法类型的，由此还能引出多选择&#x2F;多结局&#x2F;多重奖励。如果有可以抽象出来的玩法事件，可以在设计后和文案核对，双方一起确定最终方案。</p>
+<br/>
+
+<h3 id="Where：选择船只种类的思考"><a href="#Where：选择船只种类的思考" class="headerlink" title="Where：选择船只种类的思考"></a>Where：选择船只种类的思考</h3><p>在此环节，关卡一般已经有了主题或粗略地点，<em>如果这都没有，建议快跑</em>，但需要进行具体的层与点设计。</p>
+<p>对于做船这个需求，<strong>船</strong>是确定的，但<strong>船是什么</strong>需要由关卡来设计。不幸的是，文案方面没有找到“敌人为什么在这艘船上”的内容，因此叙事线索断了。</p>
+<p>那么，在文案没有解释的情况下，要如何考虑去选择船只呢？</p>
+<img src="/images/20210910-ship/ship-select.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="船只种类选择Xmind" alt="船只种类选择Xmind">
+
+<br/>
+
+<p>最后选择了关卡自由度最高<em>且最容易做场景叙事</em>的游轮。游轮是个容易混淆的词（油轮、邮轮……），后续经常称呼为Ferry。</p>
+<br/>
+
+<h3 id="When：昼夜天气的结合"><a href="#When：昼夜天气的结合" class="headerlink" title="When：昼夜天气的结合"></a>When：昼夜天气的结合</h3><p>无论项目存不存在昼夜天气变化系统，这一点都要纳入考虑。</p>
+<p>先确定能否动态变化<em>（大概率是不可以的，因为昼夜变化会影响光照）</em>，再确定哪些不能做，最后在剩下选项里选到最好的。</p>
+<p>当然，前提是叙事剧本没有强制要求，否则大概率要按照叙事来走。</p>
+<p>对于游轮关卡，我的思考出发点是<strong>突出游轮相对于“会跑的楼房”的特别之处</strong>。最大的不同当然是，游轮四周都是海，而楼房再怎么会走依然是在陆地上。考虑到关卡动线（多数在船内）和关卡尺寸（大型游轮）的问题，海的存在感并不高。</p>
+<p>那么，假如周围在下着雷雨，游轮像一座孤岛一样在海中沉沦，海的存在感是否就会提高呢？</p>
+<p>在对同类题材的调研里，发现不少船上故事都发生在雨中。或许创作者们都很喜欢雨中波荡的大海，起码我很喜欢，也觉得这会让游轮关卡更有记忆点。</p>
+<p>于是，黄昏<del>夜晚，中雨</del>大雨（附雷电）的时间点，就愉快地定下了！</p>
+<br/>
+
+<h3 id="What：确定关卡的Gameplay主题"><a href="#What：确定关卡的Gameplay主题" class="headerlink" title="What：确定关卡的Gameplay主题"></a>What：确定关卡的Gameplay主题</h3><p>看似是基本操作，实际上不很早确定并反复重提，在大型副本的设计里，很容易在讨论中慢慢走偏。</p>
+<p>个人习惯为关卡取一个核心词，然后将主题细分为四个方面，分别是玩法主题、关卡走向、战斗谜题和美术氛围。</p>
+<p>至于这个关卡的核心词是什么？那当然是<strong>《雷雨游轮》</strong>拉！</p>
+<br/>
+
+<h2 id="设计演出的具体内容"><a href="#设计演出的具体内容" class="headerlink" title="设计演出的具体内容"></a>设计演出的具体内容</h2><h3 id="Prologue：引用可利用的库"><a href="#Prologue：引用可利用的库" class="headerlink" title="Prologue：引用可利用的库"></a>Prologue：引用可利用的库</h3><p>即便制作的是项目第一个标杆关卡，也应该有了一定的设计库储备。为了保持项目整体的设计调性，尽量基于前人的肩膀去发散设计，不要完全白手起家。个人习惯将库分为三类：</p>
+<h4 id="玩法主题"><a href="#玩法主题" class="headerlink" title="玩法主题"></a>玩法主题</h4><p>关卡策划自己规划和管理的设计库。该Block的主要目标，例如漫威蜘蛛侠里常见的玩法变种：追车、救人质、破解电脑和抓人等。这些玩法模块里应该配备好了一定参数，便于设计师调整具体流程。</p>
+<h4 id="战斗主题"><a href="#战斗主题" class="headerlink" title="战斗主题"></a>战斗主题</h4><p>战斗与关卡共同规划的设计库。战斗和关卡结合紧密的类型<em>（其实就是点名射击游戏）</em>，关卡参与比例越高。一个具体的战斗主题由战斗倾向+兵种组合组成，可以任意排列组合。不同组合难度不同，一些组合可能难以成立，最好进行规避。</p>
+<h4 id="关卡主题"><a href="#关卡主题" class="headerlink" title="关卡主题"></a>关卡主题</h4><p>关卡与战斗共同规划的设计库。战斗和关卡结合紧密的类型<em>（其实就是点名射击游戏）</em>，战斗参与比例越高。一个具体的关卡主题由高低分布+结构类型组成，可以任意排列组合。关卡主题和战斗主题的搭配会产生各种火花，如果关卡调不出想要的战斗，可以向战斗请求帮助，或者直接更换主题。</p>
+<br/>
+
+<h3 id="Criteria-Matrix：罗列Beats的重要参数"><a href="#Criteria-Matrix：罗列Beats的重要参数" class="headerlink" title="Criteria Matrix：罗列Beats的重要参数"></a>Criteria Matrix：罗列Beats的重要参数</h3><p>熟悉了项目的设计库后，就可以细化具体的流程规划了。之前学习过的<a href="https://uynad.github.io/2021/09/07/ldesign/20210908-floor-plan/">室内设计视频</a>有一点非常吸引我，那就是一开始先列出所有数据参数。关卡体验是抽象的，但设计师要将目标具体化，从而对着蓝图进行施工。</p>
+<p>我会在Beats表格里填写以下参数：</p>
+<p><strong>NO.&#x2F;发生地点&#x2F;最小联通&#x2F;最大联通&#x2F;玩法主题&#x2F;关卡主题&#x2F;战斗主题&#x2F;关卡尺寸&#x2F;战斗尺寸&#x2F;预期难度&#x2F;预期时间</strong></p>
+<p>日后细化具体设计时，会将Number或发生地点作为代号，来明确讨论对象。</p>
+<p>最小和最大联通是指该Beats会联通哪些Beats。最小联通是最低目标，最大联通是期望目标。前者要满足最基本的剧本流程设计，而后者就是关卡自由度的体现。</p>
+<p>玩法、关卡和战斗主题是从上面的库里引用出来的，如果创造了新的主题，可以丰富原本的设计库，但尽量不要生造一个不存在于库里的主题。</p>
+<p>关卡尺寸是按照关卡与战斗主题估算出来的，日后白模做好后要记得修改成准确尺寸。战斗尺寸单独抽出来，是因为两者并不一定相等。关卡美术更关心前者，战斗更关心后者。为了他人方便，外加更直观地看到空间利用效率，我个人反正……<em>拆出来试试看嘛。</em></p>
+<p>另：每个Beats之间都有通路，主要作用是<strong>资源补充、地标观景和兴趣点</strong>。因为作用单一，并没有放进Beats表格。<em>下次可能会单独整理个通路表格。</em></p>
+<br/>
+
+<h3 id="Bubble-Diagram：相对位置与联通关系"><a href="#Bubble-Diagram：相对位置与联通关系" class="headerlink" title="Bubble Diagram：相对位置与联通关系"></a>Bubble Diagram：相对位置与联通关系</h3><p>一个大前提是，先确定关卡地基在哪儿。如果是在已有大世界上进行设计，地基尺寸大致确定，动线次序会相当受限制。如果是凭地起一个关卡，动线次序就只能受到想象力的限制www</p>
+<p>把所有Beats做成bubble，大小比例按照关卡尺寸来大致画下，然后放入地基形状内。按照最小联通和最大联通的目标去画连接线，然后查看交叉情况。室内设计会尽量规避交叉，但游戏关卡更加自由，只要处理好路线交叉时的引导问题，个人觉得交叉是可以接受的。</p>
+<img src="/images/20210910-ship/bubble.png" class="box px-0 py-0 ml-auto mr-auto" width="500" title="Bubble Diagram" alt="Bubble Diagram">
+
+<br/>
+
+<p>可以画2~4份来场竞标比赛<em>（我竞标我自己）</em>，以防止思路受到限制。</p>
+<br/>
+
+<h3 id="Block-Diagram：具体布局及通路"><a href="#Block-Diagram：具体布局及通路" class="headerlink" title="Block Diagram：具体布局及通路"></a>Block Diagram：具体布局及通路</h3><p>确定好了bubble方案后，需要将bubble升级成拥有确定尺寸的Block。此时我们要确定Block间的关卡通路。</p>
+<p>不同项目对通路有着不同定义，有些可能附带了预设结构和尺寸。总之，设计师要尽量满足Bubble方案的连接线设计。</p>
+<p>相比现实的室内设计，游戏关卡的通路可以更加天马行空。不仅可以摆脱平面限制，还可以利用各种游戏机制，例如上升气流和弹簧等。</p>
+<p>很多关卡设计师喜欢“兜兜转转回到原路”的高利用率设计，我个人认为这其实只是手段，其目标是“让玩家时刻意识到自己所处位置”。如果玩家回到原路时意识不到自己刚刚走了条联通路，那这个回到原路的意义并不大。要实现这一目标，通路本身不能太绕，还需借助机制与美术的引导。这是另一个大话题，此处不再赘述，<em>毕竟本人也还在实践中。</em></p>
+<br/>
+
+<h3 id="调色：添加兴趣点与出入口分流"><a href="#调色：添加兴趣点与出入口分流" class="headerlink" title="调色：添加兴趣点与出入口分流"></a>调色：添加兴趣点与出入口分流</h3><p>布局通路全部确定好后，就可以开始锦上添花了。个人目前的主要切入点只有两个，根据项目不同可能会增加。</p>
+<p>兴趣点：可以粗暴分为能看的和能玩的。能看的顾名思义，能玩的是主要流程之外的交互物品，例如<a href="https://uynad.github.io/2021/09/22/cyborg/20210923-function/#%E4%B8%80%E4%B8%AA%E5%B0%8F%E4%BE%8B%E5%AD%90%EF%BC%9A%E6%89%93%E6%B0%94%E7%8E%A9%E6%B3%95">打气球玩法</a>和爆炸物等。兴趣点本身也可以作为路线引导，可以和通路连接相结合。</p>
+<p>出入口分流：多人关卡更加需要。Block的出入口可以不止一个，从而进行人员分流，尤其是在关卡出入口狭窄时，设计多出入口也能稍微提高自由感。<em>但别太过了，不要搞得Block四敞大开</em></p>
+<br/>
+
+<h3 id="Finale：具体白模及对应文档"><a href="#Finale：具体白模及对应文档" class="headerlink" title="Finale：具体白模及对应文档"></a>Finale：具体白模及对应文档</h3><p>上述设计流程后，应该起码有三份施工蓝图，其中Block Diagram完成度最高。在自己常用的<em>或项目要求的</em>建模软件里，画出具体白模，用各种颜色、形状或文字去标记特殊点，甚至可以直接从资源商店里下合适的模型。</p>
+<p>白模（Whitebox，Greybox，Blockmesh，或其他说法）具体设计上有极多心得事项，日后会单开一篇文章。</p>
+<p>至于建模操作中的教训与悔恨，<a href="https://uynad.github.io/2021/09/15/ldesign/20210916-sktup-faceproblem/">已经尝过很多</a>，只能说下次起码会换个尝。</p>
+<p>白模画好后，一般需要产出关卡PPT进行归档，此时全部设计早已想清楚，搬砖就完事儿了。</p>
+<br/>
+
+<h2 id="做船的特别之处在于……"><a href="#做船的特别之处在于……" class="headerlink" title="做船的特别之处在于……"></a>做船的特别之处在于……</h2><p>上面的思考过程，对于所有关卡都是适用的。那么这次做了个船，相比之前有什么特别之处吗？</p>
+<br/>
+
+<h3 id="船与“会跑的楼房”的区别点"><a href="#船与“会跑的楼房”的区别点" class="headerlink" title="船与“会跑的楼房”的区别点"></a>船与“会跑的楼房”的区别点</h3><p>上面也提到了，根据叙事剧本，大部分流程发生在船内。对于大型游轮，内部其实和楼房差距不大。在这个关卡里，我分别用了昼夜天气、3C颠簸体验、船外动线和尽量贴近真实的关卡美术设定去打造区别点，希望玩家能清楚意识到”这是艘船“。</p>
+<br/>
+
+<h3 id="贴近真实的关卡美术限制"><a href="#贴近真实的关卡美术限制" class="headerlink" title="贴近真实的关卡美术限制"></a>贴近真实的关卡美术限制</h3><p>为了让船像船，在设计关卡分层和分间主题时，大量采用了现实存在的设定。但这也带来了限制：现实里的游轮，关卡动线相当单一，毕竟其用途是旅游购物，不是让游客来当波斯猴子的。虽然在动线上尽量增加了船外场景，但整体动线还是螺旋上升，没有花费心思去打通船层，算是这次的一个遗憾。</p>
+<br/>
+
+<h3 id="本质上是个超大封闭空间"><a href="#本质上是个超大封闭空间" class="headerlink" title="本质上是个超大封闭空间"></a>本质上是个超大封闭空间</h3><p>油轮的基础尺寸定下后，就完全无法再更改了。最开始就意识到了这件事，特意选了大型游轮的尺寸并稍微魔改变大。后续如果要二次利用，无论是老路重走还是设计新结构，都要限制在船体尺寸内，不能擅自打通隔壁或挖地下层。</p>
+<p>为了日后用起来方便，这次虽然只用了船体的1&#x2F;3面积，但在关卡设定里，对整艘船的全部分层与分间进行了详细设计，并与相关设计师进行了同步。<em>毕竟个人不喜欢顾头不顾腚的设计行为。</em></p>
+<br/>
+
+<h2 id="附录：关卡文档的逻辑结构"><a href="#附录：关卡文档的逻辑结构" class="headerlink" title="附录：关卡文档的逻辑结构"></a>附录：关卡文档的逻辑结构</h2><p>以后会不断丰富，或根据关卡需求进行修改。</p>
+<ol>
+<li><p>概念设定</p>
+<ol>
+<li>整体概念</li>
+<li>分层概念</li>
+<li>分间概念</li>
+</ol>
+</li>
+<li><p>体验规划</p>
+<ol>
+<li>体验主题</li>
+<li>路线总览</li>
+<li>Beats表格</li>
+<li>流程曲线</li>
+</ol>
+</li>
+<li><p>玩法机制</p>
+<p>​	1.（关卡特性玩法，有多少列多少）</p>
+</li>
+<li><p>流程设计</p>
+<ol>
+<li><p>Beats No.1</p>
+<ol>
+<li>Art：美术氛围及需求（按理来说应该单独出一份文档，不然PPT爆炸）</li>
+<li>Level：结构、布局及动线说明</li>
+<li>Gameplay：玩法类型及具体设计，战斗需要写清敌人规划，解谜需要写清谜面谜底，etc</li>
+</ol>
+</li>
+<li><p>同上</p>
+<p>……</p>
+</li>
+</ol>
+</li>
+<li><p>需求统计</p>
+</li>
+<li><p>参考对象</p>
+</li>
+</ol>
+<br/>
+
+</div><div class="article-licensing box"><div class="licensing-title"><p>《如何做船》：游轮副本关卡的设计过程总结</p><p><a href="https://uynad.github.io/2021/09/09/ldesign/20210910-how-to-ship/">https://uynad.github.io/2021/09/09/ldesign/20210910-how-to-ship/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>UyNad</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-09-10</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-02-28</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/">关卡设计</a><a class="link-muted mr-2" rel="tag" href="/tags/%E7%8E%A9%E6%B3%95%E8%AE%BE%E8%AE%A1/">玩法设计</a><a class="link-muted mr-2" rel="tag" href="/tags/%E5%8F%99%E4%BA%8B%E8%AE%BE%E8%AE%A1/">叙事设计</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2021/09/09/devlog/20210910-music99-program/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">【持续更新中】Music99：项目开发日记</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/09/08/cyborg/20210909-clockwork/"><span class="level-item">《耻辱2》关卡Clockwork Mansion开发者复盘</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="waline-thread"></div><script src="https://cdn.jsdelivr.net/npm/@waline/client@1.3.1/dist/Waline.min.js"></script><script>Waline({
+            el: '#waline-thread',
+            serverURL: "https://blog-comment-api-1tl6ysf8x-uynad.vercel.app/",
+            lang: "zh-CN",
+            visitor: true,
+            emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili"],
+            dark: "auto",
+            meta: ["nick","mail","link"],
+            requiredMeta: [],
+            login: "enable",
+            avatar: "retro",
+            
+            pageSize: 10,
+            avatarCDN: "https://sdn.geekzu.org/avatar/",
+            avatarForce: false,
+            highlight: true,
+            mathTagSupport: false,
+            copyright: true,
+            locale: {"placeholder":"Have fun."},
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.jpg" alt="UyNad"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">UyNad</p><p class="is-size-6 is-block">Here comes nothing!</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Elysium, in the Blue Sky</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">175</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://psnprofiles.com/megurined" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/UyNad"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://psnprofiles.com/megurined"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://psnprofiles.com/megurined"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://psnprofiles.com/megurined"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#确定舞台的三要素"><span class="level-left"><span class="level-item">1</span><span class="level-item">确定舞台的三要素</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Who：核对叙事剧本"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">Who：核对叙事剧本</span></span></a></li><li><a class="level is-mobile" href="#Where：选择船只种类的思考"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">Where：选择船只种类的思考</span></span></a></li><li><a class="level is-mobile" href="#When：昼夜天气的结合"><span class="level-left"><span class="level-item">1.3</span><span class="level-item">When：昼夜天气的结合</span></span></a></li><li><a class="level is-mobile" href="#What：确定关卡的Gameplay主题"><span class="level-left"><span class="level-item">1.4</span><span class="level-item">What：确定关卡的Gameplay主题</span></span></a></li></ul></li><li><a class="level is-mobile" href="#设计演出的具体内容"><span class="level-left"><span class="level-item">2</span><span class="level-item">设计演出的具体内容</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Prologue：引用可利用的库"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">Prologue：引用可利用的库</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#玩法主题"><span class="level-left"><span class="level-item">2.1.1</span><span class="level-item">玩法主题</span></span></a></li><li><a class="level is-mobile" href="#战斗主题"><span class="level-left"><span class="level-item">2.1.2</span><span class="level-item">战斗主题</span></span></a></li><li><a class="level is-mobile" href="#关卡主题"><span class="level-left"><span class="level-item">2.1.3</span><span class="level-item">关卡主题</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Criteria-Matrix：罗列Beats的重要参数"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">Criteria Matrix：罗列Beats的重要参数</span></span></a></li><li><a class="level is-mobile" href="#Bubble-Diagram：相对位置与联通关系"><span class="level-left"><span class="level-item">2.3</span><span class="level-item">Bubble Diagram：相对位置与联通关系</span></span></a></li><li><a class="level is-mobile" href="#Block-Diagram：具体布局及通路"><span class="level-left"><span class="level-item">2.4</span><span class="level-item">Block Diagram：具体布局及通路</span></span></a></li><li><a class="level is-mobile" href="#调色：添加兴趣点与出入口分流"><span class="level-left"><span class="level-item">2.5</span><span class="level-item">调色：添加兴趣点与出入口分流</span></span></a></li><li><a class="level is-mobile" href="#Finale：具体白模及对应文档"><span class="level-left"><span class="level-item">2.6</span><span class="level-item">Finale：具体白模及对应文档</span></span></a></li></ul></li><li><a class="level is-mobile" href="#做船的特别之处在于……"><span class="level-left"><span class="level-item">3</span><span class="level-item">做船的特别之处在于……</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#船与“会跑的楼房”的区别点"><span class="level-left"><span class="level-item">3.1</span><span class="level-item">船与“会跑的楼房”的区别点</span></span></a></li><li><a class="level is-mobile" href="#贴近真实的关卡美术限制"><span class="level-left"><span class="level-item">3.2</span><span class="level-item">贴近真实的关卡美术限制</span></span></a></li><li><a class="level is-mobile" href="#本质上是个超大封闭空间"><span class="level-left"><span class="level-item">3.3</span><span class="level-item">本质上是个超大封闭空间</span></span></a></li></ul></li><li><a class="level is-mobile" href="#附录：关卡文档的逻辑结构"><span class="level-left"><span class="level-item">4</span><span class="level-item">附录：关卡文档的逻辑结构</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a><p class="is-size-7"><span>&copy; 2026 UyNad</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Discuss on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fas fa-comments"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

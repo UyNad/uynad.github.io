@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>关卡设计指导规范：白模制作 - UyNad的年一站</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#f7f7f7"><meta name="application-name" content="Icaurs - Hexo Theme"><meta name="msapplication-TileImage" content="/img/favicon_new.svg"><meta name="msapplication-TileColor" content="#f7f7f7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Icaurs - Hexo Theme"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="关卡制作管线的第二环：白模制作的指导规范。"><meta property="og:type" content="blog"><meta property="og:title" content="关卡设计指导规范：白模制作"><meta property="og:url" content="https://uynad.github.io/2021/09/20/ldesign/20210921-blockmesh-guideline/"><meta property="og:site_name" content="UyNad的年一站"><meta property="og:description" content="关卡制作管线的第二环：白模制作的指导规范。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://uynad.github.io/images/20210921-blockmesh.png"><meta property="article:published_time" content="2021-09-20T16:00:00.000Z"><meta property="article:modified_time" content="2026-02-28T11:09:26.000Z"><meta property="article:author" content="UyNad"><meta property="article:tag" content="关卡设计"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/images/20210921-blockmesh.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://uynad.github.io/2021/09/20/ldesign/20210921-blockmesh-guideline/"},"headline":"关卡设计指导规范：白模制作","image":["https://uynad.github.io/images/20210921-blockmesh.png"],"datePublished":"2021-09-20T16:00:00.000Z","dateModified":"2026-02-28T11:09:26.000Z","author":{"@type":"Person","name":"UyNad"},"publisher":{"@type":"Organization","name":"UyNad的年一站","logo":{"@type":"ImageObject","url":"https://uynad.github.io/img/logo_new.svg"}},"description":"关卡制作管线的第二环：白模制作的指导规范。"}</script><link rel="canonical" href="https://uynad.github.io/2021/09/20/ldesign/20210921-blockmesh-guideline/"><link rel="icon" href="/img/favicon_new.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-72437521-5" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-72437521-5');</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.2"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/20210921-blockmesh.png" alt="关卡设计指导规范：白模制作"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-09-20T16:00:00.000Z" title="9/20/2021, 4:00:00 PM">2021-09-21</time>发表</span><span class="level-item"><a class="link-muted" href="/categories/%E9%97%B8%E6%80%BB%E8%87%AA%E7%99%BD/">闸总自白</a></span><span class="level-item">23 分钟读完 (大约3430个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">关卡设计指导规范：白模制作</h1><div class="content"><p>关卡制作管线的第二环：白模制作的指导规范。</p>
+<span id="more"></span>
+
+<hr>
+<h2 id="Level-Design-Pipeline"><a href="#Level-Design-Pipeline" class="headerlink" title="Level Design Pipeline"></a>Level Design Pipeline</h2><p>关卡制作管线可以粗略分为三大环节：流程规划、白模制作和游玩迭代。在之前一篇文章里，总结了自己对于<a href="https://uynad.github.io/2021/09/09/ldesign/20210910-how-to-ship/">流程规划的思考过程</a>。近日回顾了一个<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=09r1B9cVEQY">Level Design方向的GDC视频</a>，顽皮狗的David Shaver分享了自己对于Blockmesh（白模制作）的思考角度，收益颇丰。</p>
+<p>实际上，之前的流程规划思考，在Level Design Pipeline里就对应着Level Requirements环节。而这个GDC视频，主题是第二环节的Build Blockmesh Layout。<em>正巧和优秀设计师的思路接上轨，把别人的视角拿来利用，真妙。</em></p>
+<img src="/images/20210921-blockmesh/pipeline.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Level Design Pipeline" alt="Level Design Pipeline">
+
+<br/>
+
+<p>日后会针对Playtest编写第三篇文章，就此由三部曲组成完整的关卡设计指南。希望在日后实操里不要忘本，同时要不断进化。</p>
+<h2 id="Blockmesh-Guidance-Principles"><a href="#Blockmesh-Guidance-Principles" class="headerlink" title="Blockmesh Guidance Principles"></a>Blockmesh Guidance Principles</h2><p>David在开头列举了所有Blockmesh制作时的设计角度，结论放最前。</p>
+<img src="/images/20210921-blockmesh/sum.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Blockmesh Principles" alt="Blockmesh Principles">
+
+<br/>
+
+<p>下面的分条说明，会截取PPT原文作为留档，但文章部分是个人想法而非原文内容，请注意。</p>
+<br/>
+
+<h3 id="Affordance"><a href="#Affordance" class="headerlink" title="Affordance"></a>Affordance</h3><p>Affordance是个设计领域的自创词，是Donald Norman在《设计心理学》里引入的一个心理学概念。这个词是afford（可提供）的名词变种。</p>
+<blockquote>
+<p>（Affordance）示能这个词，是指一个物理对象与人之间的关系。无论是动物还是人类，甚至是机器和机器人，他们之间发生的任何交互作用。</p>
+<p>示能的体现，由物品的品质，和与之交互的主体的能力共同决定。</p>
+</blockquote>
+<img src="/images/20210921-blockmesh/affordance.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Affordance in Game" alt="Affordance in Game">
+
+<br/>
+
+<p>可以将示能理解为场景关卡交互，但其含义远不止“有交互功能”，还包括“统一的交互原则”。例如有裂痕的墙壁是可破坏交互物，血量归零后自我销毁；那么这种墙壁的外观、摆放逻辑等，要在整个游戏里保持一致，不能这次普攻能打碎，下次就得靠炸弹来打碎。</p>
+<p>制作Blockmesh时，可以靠颜色和形状做出几个prototype去摆放，哪怕没写程序功能。例如我在自己的白模设计里，会用颜色深浅来区别不同高度的掩体，表示其功能的变化。</p>
+<br/>
+
+<h3 id="Denying-Affordance"><a href="#Denying-Affordance" class="headerlink" title="Denying Affordance"></a>Denying Affordance</h3><p>反示能（拒绝示能？负示能？），字面意思，是示能的反面。示能让主体意识到可交互及交互结果，反示能让主体意识到不可交互，从而主动远离。<em>当然，游戏界最经典的反示能就是空气墙</em></p>
+<img src="/images/20210921-blockmesh/deny.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Denying Affordance in Game" alt="Affordance in Game">
+
+<br/>
+
+<p>contextualize是件易懂难做的事。有多种方法可以达到反示能效果，但有些方法会比其他方法分数更高。例如，不想让玩家去攀爬的缺口墙壁，会在缺口设计一些木刺和挡板，以表示“此路不通”。在一个房间存在多个入口，但设计师只希望玩家从特定口进入时，其他口应处于封闭状态。</p>
+<p>这一节出现了个有趣的点。顽皮狗内部CE时，会<strong>用不可见mesh圈定“不想让玩家去的反示能区”</strong>，日后可以和游玩数据比对，以及更有效地向别人展示设计意图。</p>
+<br/>
+
+<h3 id="Visual-Language-Shape"><a href="#Visual-Language-Shape" class="headerlink" title="Visual Language - Shape"></a>Visual Language - Shape</h3><p>形状与颜色的使用有着相似准则，例如要在整个游戏里（或者起码本关卡）保持统一性，同时可以传达设计信息给其他设计师，作为图例来使用。</p>
+<img src="/images/20210921-blockmesh/shape.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Visual Language - Shape" alt="Visual Language - Shape">
+
+<br/>
+
+<p>不同形状存在着不同的心理暗示，例如圆体是安全，方体是稳定，尖刺是危险。利用不同形状，可以有效示能。</p>
+<br/>
+
+<h3 id="Visual-Language-Color"><a href="#Visual-Language-Color" class="headerlink" title="Visual Language - Color"></a>Visual Language - Color</h3><p>除去上述的形状功能，颜色还拥有自己的用法。</p>
+<img src="/images/20210921-blockmesh/color.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Visual Language - Shape" alt="Visual Language - Shape">
+
+<br/>
+
+<p>稍微可变性：颜色要适应环境美术，突出即可，不必强求同一颜色。例如可攀爬的黄色，在部分场景里可能会变为浅绿色。</p>
+<p>场景叙事性：在白模阶段，颜色比形状的叙事功能更突出。想要设定白模舞台为学园、绿林等，可以通过简单上色来展现效果。</p>
+<br/>
+
+<h3 id="Landmarks"><a href="#Landmarks" class="headerlink" title="Landmarks"></a>Landmarks</h3><p>地标，顾名思义的存在。在这里发现了一个差异，个人会把所有用来指引路线的特殊景色都称为地标，但演讲特意指明了是“多个角度都可见的遥远对象”。鉴于演讲者的细分程度比我的要丰富得多，之后也打算划清概念，只用来指代远处对象。</p>
+<img src="/images/20210921-blockmesh/landmark.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Landmarks" alt="Landmarks">
+
+<br/>
+
+<p>要设计地标是所有关卡的共识，实际设计效果却大相径庭。近年来最喜欢的地标设计风格是《对马岛之鬼》，制作组曾在GDC视频中表示，他们的地标设计期望是“玩家每十秒就要看到一样新东西”。<em>显然，对马岛对地标的定义又宽泛了起来。</em></p>
+<p>在系统玩法相对空荡的情况下，靠地标景观去打造一个世界，不论这一设计目标本身如何，Sucker Punch算是做透彻了。</p>
+<br/>
+
+<h3 id="Openings-Attract"><a href="#Openings-Attract" class="headerlink" title="Openings Attract"></a>Openings Attract</h3><img src="/images/20210921-blockmesh/opening.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Openings Attract" alt="Openings Attract">
+
+<br/>
+
+<p>Openings在这里指开口，而非宝箱等交互物。此类开口一般会引向一个安全区，<em>恶意点做个开门杀也不是不行</em>，因为让人感到神秘，“有什么事情会发生”，因而才有动力去探索，由此被自然引导。</p>
+<br/>
+
+<h3 id="Gates-amp-Valves"><a href="#Gates-amp-Valves" class="headerlink" title="Gates &amp; Valves"></a>Gates &amp; Valves</h3><img src="/images/20210921-blockmesh/gate.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Gates &amp; Valves" alt="Gates &amp; Valves">
+
+<br/>
+
+<p>做过线性游戏关卡的同志，应该对这一设计再熟悉不过。我们来到一个战点，为了强迫玩家面对战斗谜题，需要在入口做一道适时打开的大门（Gates），然后再在玩家进入后将其关在里面（Valves）。</p>
+<p>将Gate与Valve分开，是因为部分情况下它们不是一样物品。例如TLOU里，流程中有一个Valve是1.5人高的下落，一旦下去后无法返回。这种Valve会比自动关门要合理得多。</p>
+<p>Gate和Valve应该是具有极高复用价值的关卡功能，在开发关卡流程时，请记得接入并不断丰富，不要单独造轮子。</p>
+<p><em>反思了下自己的设计，大量用到自动开关门。虽说室内关卡无可奈何，但也不至于如此单一。</em></p>
+<br/>
+
+<h3 id="Leading-Lines"><a href="#Leading-Lines" class="headerlink" title="Leading Lines"></a>Leading Lines</h3><img src="/images/20210921-blockmesh/line.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Leading Lines" alt="Leading Lines">
+
+<br/>
+
+<p>引导线是纯景观系，不具备玩法功能。在室内场景，这种素材相当常见，比如黄色电线、天花板水管和暴露在外的电路等。这里又引到上面的话题，黄色与圆柱体是稳定、引导的象征，因而最常见是黄色电线；如果改用红色，起码在个人想象里会很突兀。</p>
+<br/>
+
+<h3 id="Pinching"><a href="#Pinching" class="headerlink" title="Pinching"></a>Pinching</h3><img src="/images/20210921-blockmesh/pinch.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Pinching" alt="Pinching">
+
+<br/>
+
+<p><em>pinch，指拿捏的意思。这里的pinching含义见第一行，通过形状摆放使玩家要穿过特定角度。</em></p>
+<p>TLOU里有两个例子。其一是公交车被摆放为集中一点型，玩家在步行时自动被引向该目标点。其二是前往医院的路上，在下地下通道时，有一辆大货车阻挡了路线。顺着大货车车身走，会自然在末尾看到远处的医院地标。</p>
+<br/>
+
+<h3 id="Framing-amp-Composition"><a href="#Framing-amp-Composition" class="headerlink" title="Framing &amp; Composition"></a>Framing &amp; Composition</h3><img src="/images/20210921-blockmesh/composition.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Framing &amp; Composition" alt="Framing &amp; Composition">
+
+<br/>
+
+<p>摄影的构图知识，在关卡设计里同样适用。关卡要将玩家的注意力吸引到兴趣点上，既要让目标置于正中央，又要适度遮挡不必要的物体。</p>
+<p>TLOU里<em>又</em>有个好例子，乔尔沿着上坡前进，转角看到占据画面2&#x2F;3正中央的大坝。同时，大坝在远景里也非常详尽，细节丰富的物体会自然吸引玩家眼光。</p>
+<br/>
+
+<h3 id="Breadcrumbs"><a href="#Breadcrumbs" class="headerlink" title="Breadcrumbs"></a>Breadcrumbs</h3><img src="/images/20210921-blockmesh/breadcrumb.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Breadcrumbs" alt="Breadcrumbs">
+
+<br/>
+
+<p>面包屑，最著名的例子就是马里奥系列中的金币。</p>
+<p>可以是场景中的小摆设、敌人、拾取物、交互物或资源等，与上面的指引物的区别在于，面包屑相对较小且不影响整体layout。演讲者并不推荐过度使用面包屑功能，虽然很有效，但会让人轻视整体layout设计。</p>
+<br/>
+
+<h3 id="Textures"><a href="#Textures" class="headerlink" title="Textures"></a>Textures</h3><img src="/images/20210921-blockmesh/texture.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Textures" alt="Textures">
+
+<br/>
+
+<p>存在于模型材质里的信息，尤其是文本信息，可以提供非常直观的引导作用。在现代或未来题材里，这种引导方法非常好用，且能大大丰富场景叙事功能。<em>在城市里设计各种玩梗招牌，居然比做关卡还有趣……但要记得和文案对，不然会被重拳出击。</em></p>
+<p>之前在<a href="https://uynad.github.io/2021/09/03/article/20210904-nijigasaki/">虹咲动画场景叙事分析</a>里，提到了交通信号对于人物心理的暗示功能。下次有合适主题时，也想用下试试。</p>
+<br/>
+
+<h3 id="Movement"><a href="#Movement" class="headerlink" title="Movement"></a>Movement</h3><img src="/images/20210921-blockmesh/movement.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Movement" alt="Movement">
+
+<br/>
+
+<p>移动是指场景元素的移动，而非角色本身。环境生物、动态场景、特效和敌人等，都可以成为“会动的路标”。</p>
+<p>演讲者在这里提到，移动是关卡提高引导性的最后一个创口贴，除非到了万事休矣的地步，最好不要大量使用。</p>
+<br/>
+
+<h3 id="Light-amp-God-Rays"><a href="#Light-amp-God-Rays" class="headerlink" title="Light &amp; God Rays"></a>Light &amp; God Rays</h3><img src="/images/20210921-blockmesh/light.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="Light &amp; God Rays" alt="Light &amp; God Rays">
+
+<br/>
+
+<p>演讲者把打光提到了一个很高的地步，要求在白模阶段就定好灯光方案。从顽皮狗作品里也能看出，大部分关卡的灯光存在感极高，不仅仅是为了做美术氛围而存在。</p>
+<p>灯光的<strong>有和无、强与弱、暖与冷</strong>是个人的三层指标，建模完成后，导入引擎内要记得多多打光。</p>
+<p><em>回顾了下之前的白模，只在出入口等重要点放了点光源，非常敷衍，汗颜。</em></p>
+<br/>
+
+<h3 id="The-Squinting-Test"><a href="#The-Squinting-Test" class="headerlink" title="The Squinting Test"></a>The Squinting Test</h3><img src="/images/20210921-blockmesh/squint.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="The Squinting Test" alt="The Squinting Test">
+
+<br/>
+
+<p>此条为演讲者新增，并非设计角度，而是审视设计的角度。演讲者举出了Titanfall2中的一幕，要求读者一起盯着画面几秒，思考几个问题：你注意到了什么？注意对象的先后顺序是？你的最终目标点是哪个？……</p>
+<p>在审视关卡的过程里，不断调整关卡结构与灯光，让玩家去注意设计师希望他们注意的地方。</p>
+<br/>
+
+<h2 id="Epilogue：为何写，如何用"><a href="#Epilogue：为何写，如何用" class="headerlink" title="Epilogue：为何写，如何用"></a>Epilogue：为何写，如何用</h2><p>Q：你这篇文章不就是GDC视频的读后感嘛。这个视频很多人都看过，肯定也有很多人写过repo，你为什么还要写这篇文章呢？</p>
+<p>A：确实。有很多人在我之前就学会了这个，可能还比我做得好；但这不代表我就不需要去做了嘛。</p>
+<p>我非常认同这篇演讲的设计切入点，读后感文章既是复读，也是个人延伸。把它写进自己的blog，日后可以对照文本版去思考设计，也满足了个人的园丁鸟癖好。<em>园丁鸟喜欢收集亮晶晶的东西，会叼回来放进自己的巢。</em></p>
+<p>这篇演讲的15条准则，没有先后次序，甚至不完全是并列顺序。例如视觉语言形状与颜色，其实是普适性原则；而面包屑和移动，则偏向后期的修补调整。</p>
+<p>演讲的立意，不是教人“如何去做白模”，而是“如何将白模做得更好”。想要提高白模水平，还是要自己亲自实践。</p>
+<br/>
+
+</div><div class="article-licensing box"><div class="licensing-title"><p>关卡设计指导规范：白模制作</p><p><a href="https://uynad.github.io/2021/09/20/ldesign/20210921-blockmesh-guideline/">https://uynad.github.io/2021/09/20/ldesign/20210921-blockmesh-guideline/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>UyNad</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-09-21</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-02-28</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/">关卡设计</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2021/09/22/cyborg/20210923-function/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">游戏开发工具的提需权衡：易用性VS通用性</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/09/19/ldesign/20210920-sktup-ueproblem/"><span class="level-item">如何正确地将SketchUp白模优雅导入UE4</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="waline-thread"></div><script src="https://cdn.jsdelivr.net/npm/@waline/client@1.3.1/dist/Waline.min.js"></script><script>Waline({
+            el: '#waline-thread',
+            serverURL: "https://blog-comment-api-1tl6ysf8x-uynad.vercel.app/",
+            lang: "zh-CN",
+            visitor: true,
+            emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili"],
+            dark: "auto",
+            meta: ["nick","mail","link"],
+            requiredMeta: [],
+            login: "enable",
+            avatar: "retro",
+            
+            pageSize: 10,
+            avatarCDN: "https://sdn.geekzu.org/avatar/",
+            avatarForce: false,
+            highlight: true,
+            mathTagSupport: false,
+            copyright: true,
+            locale: {"placeholder":"Have fun."},
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.jpg" alt="UyNad"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">UyNad</p><p class="is-size-6 is-block">Here comes nothing!</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Elysium, in the Blue Sky</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">175</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://psnprofiles.com/megurined" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/UyNad"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://psnprofiles.com/megurined"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://psnprofiles.com/megurined"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://psnprofiles.com/megurined"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#Level-Design-Pipeline"><span class="level-left"><span class="level-item">1</span><span class="level-item">Level Design Pipeline</span></span></a></li><li><a class="level is-mobile" href="#Blockmesh-Guidance-Principles"><span class="level-left"><span class="level-item">2</span><span class="level-item">Blockmesh Guidance Principles</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#Affordance"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">Affordance</span></span></a></li><li><a class="level is-mobile" href="#Denying-Affordance"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">Denying Affordance</span></span></a></li><li><a class="level is-mobile" href="#Visual-Language-Shape"><span class="level-left"><span class="level-item">2.3</span><span class="level-item">Visual Language - Shape</span></span></a></li><li><a class="level is-mobile" href="#Visual-Language-Color"><span class="level-left"><span class="level-item">2.4</span><span class="level-item">Visual Language - Color</span></span></a></li><li><a class="level is-mobile" href="#Landmarks"><span class="level-left"><span class="level-item">2.5</span><span class="level-item">Landmarks</span></span></a></li><li><a class="level is-mobile" href="#Openings-Attract"><span class="level-left"><span class="level-item">2.6</span><span class="level-item">Openings Attract</span></span></a></li><li><a class="level is-mobile" href="#Gates-amp-Valves"><span class="level-left"><span class="level-item">2.7</span><span class="level-item">Gates &amp; Valves</span></span></a></li><li><a class="level is-mobile" href="#Leading-Lines"><span class="level-left"><span class="level-item">2.8</span><span class="level-item">Leading Lines</span></span></a></li><li><a class="level is-mobile" href="#Pinching"><span class="level-left"><span class="level-item">2.9</span><span class="level-item">Pinching</span></span></a></li><li><a class="level is-mobile" href="#Framing-amp-Composition"><span class="level-left"><span class="level-item">2.10</span><span class="level-item">Framing &amp; Composition</span></span></a></li><li><a class="level is-mobile" href="#Breadcrumbs"><span class="level-left"><span class="level-item">2.11</span><span class="level-item">Breadcrumbs</span></span></a></li><li><a class="level is-mobile" href="#Textures"><span class="level-left"><span class="level-item">2.12</span><span class="level-item">Textures</span></span></a></li><li><a class="level is-mobile" href="#Movement"><span class="level-left"><span class="level-item">2.13</span><span class="level-item">Movement</span></span></a></li><li><a class="level is-mobile" href="#Light-amp-God-Rays"><span class="level-left"><span class="level-item">2.14</span><span class="level-item">Light &amp; God Rays</span></span></a></li><li><a class="level is-mobile" href="#The-Squinting-Test"><span class="level-left"><span class="level-item">2.15</span><span class="level-item">The Squinting Test</span></span></a></li></ul></li><li><a class="level is-mobile" href="#Epilogue：为何写，如何用"><span class="level-left"><span class="level-item">3</span><span class="level-item">Epilogue：为何写，如何用</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a><p class="is-size-7"><span>&copy; 2026 UyNad</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Discuss on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fas fa-comments"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

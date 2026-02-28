@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>《MHXX》小结：切换风格的战斗体验设计 - UyNad的年一站</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#f7f7f7"><meta name="application-name" content="Icaurs - Hexo Theme"><meta name="msapplication-TileImage" content="/img/favicon_new.svg"><meta name="msapplication-TileColor" content="#f7f7f7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Icaurs - Hexo Theme"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="试论证：MHXX为什么是世界上最好玩的ACT？"><meta property="og:type" content="blog"><meta property="og:title" content="《MHXX》小结：切换风格的战斗体验设计"><meta property="og:url" content="https://uynad.github.io/2020/08/31/article/20200901-mhxx/"><meta property="og:site_name" content="UyNad的年一站"><meta property="og:description" content="试论证：MHXX为什么是世界上最好玩的ACT？"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://uynad.github.io/images/20200901-mhxx.jpg"><meta property="article:published_time" content="2020-08-31T16:00:00.000Z"><meta property="article:modified_time" content="2026-02-28T11:09:26.000Z"><meta property="article:author" content="UyNad"><meta property="article:tag" content="战斗设计"><meta property="article:tag" content="改变了鄙人人生的作品"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/images/20200901-mhxx.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://uynad.github.io/2020/08/31/article/20200901-mhxx/"},"headline":"《MHXX》小结：切换风格的战斗体验设计","image":["https://uynad.github.io/images/20200901-mhxx.jpg"],"datePublished":"2020-08-31T16:00:00.000Z","dateModified":"2026-02-28T11:09:26.000Z","author":{"@type":"Person","name":"UyNad"},"publisher":{"@type":"Organization","name":"UyNad的年一站","logo":{"@type":"ImageObject","url":"https://uynad.github.io/img/logo_new.svg"}},"description":"试论证：MHXX为什么是世界上最好玩的ACT？"}</script><link rel="canonical" href="https://uynad.github.io/2020/08/31/article/20200901-mhxx/"><link rel="icon" href="/img/favicon_new.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-72437521-5" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-72437521-5');</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.2"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/20200901-mhxx.jpg" alt="《MHXX》小结：切换风格的战斗体验设计"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2020-08-31T16:00:00.000Z" title="8/31/2020, 4:00:00 PM">2020-09-01</time>发表</span><span class="level-item"><a class="link-muted" href="/categories/%E4%B8%BA%E7%88%B1FA%E7%94%B5/">为爱FA电</a></span><span class="level-item">31 分钟读完 (大约4693个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">《MHXX》小结：切换风格的战斗体验设计</h1><div class="content"><p>试论证：MHXX为什么是世界上最好玩的ACT？</p>
+<span id="more"></span>
+
+<hr>
+<p><em>这篇文章写于至少两年前，当年的自己热情满满，但解析角度欠缺。现在看来，这篇文章有诸多可改进之处，但为了保留“原味儿”，仅对事实错误进行修正。</em></p>
+ <br/>
+
+<p>Monster Hunter（怪物猎人）系列是我最喜欢的动作游戏IP，从P3开始，连续游玩了P3、4、4G、XX、W和WI这些作品。其中个人最喜欢的就是MHXX，带有风格和狩技，让战斗系统高度深入化的一代MH，集MH系列之大成的优秀作，无愧于X（Cross）这一名字。<br>MHXX和MHGU（Generations Ultimate）是同一部作品，GU是面向海外的名称，XX是在日本发售时的名称。但是在Switch上，后发售的MHGU加入了中文补丁，因此中国玩家一般会选择MHGU进行游玩。以下我的游戏截图和名词翻译也都是来自于MHGU的版本。</p>
+<img src="/images/20200901-mhxx/1.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="刚解禁时做的帅气螳螂大剑和螳螂套" alt="刚解禁时做的帅气螳螂大剑和螳螂套">
+
+ <br/>
+
+<p>实际上，我从两年前就开始玩MHGU这个游戏，算不上“本月开始体验”；但是两年以来一直在持续游玩这款游戏，哪怕MHW和MHWI先后毕业，也依然会回来玩这款游戏，而且每次玩都会体验不同的武器与风格搭配，获得新的游戏体验。<br>上个月正好和朋友一起再次返回MHGU进行狩猎，在这里想写下我对于这个游戏的一些心得体验。  </p>
+ <br/>
+
+<h2 id="由风格衍生出的动作模组"><a href="#由风格衍生出的动作模组" class="headerlink" title="由风格衍生出的动作模组"></a>由风格衍生出的动作模组</h2><p>  MHXX和之前的MH相比，最大区别是加入了狩猎风格这一设定。这个战斗设计为每把武器提供了更多乘法级别的可能性，让整个游戏变得非常耐玩，堪称ACT之最。</p>
+<p>游戏中一共六种风格，虽然14把武器各自有各自的动作变形，但其中的战斗设计存在共通之处。</p>
+<h3 id="工会风格"><a href="#工会风格" class="headerlink" title="工会风格"></a>工会风格</h3><p> 最基础的风格，和以往MH里的战斗风格一致。<em>当然，由于每代制作组不同，每代的基础战斗模组都会有区别。</em></p>
+<p>工会风格可以装备两个狩技。这个风格构成了以下五种风格的基础，每把武器都是在工会风格上进行加减，来形成其他风格。</p>
+<br/>
+
+<h3 id="强袭风格"><a href="#强袭风格" class="headerlink" title="强袭风格"></a>强袭风格</h3><p>适配本代的狩技系统的风格。相比工会风格去掉了较多动作，但能装备<strong>三个狩技</strong>，而且积攒狩技条的效率大大提高。这个风格适合去掉的动作不是原武器的核心动作，并且狩技非常强势的武器，例如强袭盾斧。</p>
+<img src="/images/20200901-mhxx/2.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="强袭盾斧" alt="给倒地怪物来一套电锯+光剑combo！——强袭盾斧">
+
+ <br/>
+
+<h3 id="武士道风格"><a href="#武士道风格" class="headerlink" title="武士道风格"></a>武士道风格</h3><p>强化了回避动作并增加了回避派生的风格。相比工会风格将几个动作放到了回避派生中，好处是回避后可以安逸打出，坏处是回避不出来就根本无法发动。</p>
+<p>武士道风格的核心是<strong>Just回避</strong>，如果翻滚动作中进入了怪物攻击碰撞盒，将发动Just回避，这一动作为：玩家进入无敌状态并向摇杆方向大幅度位移。在Just回避发动后的一段时间内，接受输入，输入对应按键，可以发动武器特有的回避派生攻击。例如武士道大剑，在Just回避后输入攻击键，才会派生出可以蓄力的回避蓄力斩。</p>
+<img src="/images/20200901-mhxx/3.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="武士道双刀" alt="吃饭了吗弟弟？能不能打中一下？——武士道双刀">
+
+ <br/>
+
+<p>翻滚动作的判定时间较长，相比GP这种高手技巧要更简单，所以在熟悉了游戏后其实是相当安逸的风格。如果是新手，一开始也能靠这个风格安全开荒，但由于这一风格下的大部分武器，都是靠回避派生动作来进行输出，如果无法掌握Just回避，效率会非常低。</p>
+<br/>
+
+<h3 id="空战风格"><a href="#空战风格" class="headerlink" title="空战风格"></a>空战风格</h3><p>增加了翻滚跳跃和空中派生攻击的风格。相比工会风格将该武器的核心动作放到了空中派生中。</p>
+<p>空战风格下，玩家的翻滚动作会变成<strong>前空翻</strong>，在前空翻过程中如果与：我方玩家、敌方小怪或敌方BOSS相碰撞，玩家会以碰撞点为起点，跳跃到空中。这一跳跃的方向为跳跃时的摇杆朝向，起跳后的位移方向为固定路线，不受后续输入所影响。如果在跳跃时未进行摇杆输入，则原地起跳。</p>
+<p>空战风格的发挥下限极高，由于跳跃到空中后，多数初级怪物的攻击盒不覆盖，因此可以侥幸躲过多数攻击并进行输出。而且空中派生的操作非常简单，一般都是按攻击键就可以，例如大剑是空中长按攻击进行蓄力斩，双刀时空中按下攻击键进行攻击；所以新手也能打出一套攻击。同时，空中攻击会积累怪物的骑乘槽，虽然MHXX这一代相比MH4G大幅度削弱了骑乘，但骑乘依然是造成伤害并控制怪物的有效手段。</p>
+<img src="/images/20200901-mhxx/4.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="空战大剑" alt="不知道接下来怎么Counter时先起飞就对了——空战大剑">
+
+ <br/>
+
+<p>然而，空战风格的发挥上限也很低。在游戏进入G位难度后，怪物的攻击盒往往会覆盖空中，而且攻击频率高，无法在空中改变方向的空战风格很容易被打中。以及，高级怪物往往弱点范围很小，需要针对性瞄准输出，空战风格很难控制打点，一味地跳跃攻击效率会越来越低。</p>
+<p>这一风格的存在对于MH系列是个极大的突破，让除了操虫棍之外的其他武器也能享受飞翔的乐趣。下限高但上限低这件事，我觉得不是缺陷，而恰恰是这个风格的区别点与乐趣点所在。玩惯了高难度武器，就来玩空战进行娱乐，让打法变得多样化。实际上，本身就能跳的操虫棍，加上空战风格还能在空中再跳一次，非常有趣。MHW就直接吸收了这个设计，把它加入了操虫棍的标准战斗模组中。</p>
+ <br/>
+
+<h3 id="勇气风格"><a href="#勇气风格" class="headerlink" title="勇气风格"></a>勇气风格</h3><p>用勇气状态这一设计，在一个风格内提供了两套战斗系统的高手向风格。这一风格有三个关键词，分别是：<strong>勇气状态</strong>、<strong>勇气槽</strong>和<strong>勇气纳刀</strong>。</p>
+<p>非勇气状态下，勇气槽不会减少，会随着玩家的攻击和受伤进行积累，满了后自动进入勇气状态。勇气状态下勇气槽随时间减少，但玩家攻击可以进行恢复。勇气状态和非勇气状态是两套战斗动作。工会风格里的核心动作被放在勇气状态下，非勇气状态一般只有很基础的战斗动作。</p>
+<img src="/images/20200901-mhxx/5.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="勇气太刀" alt="勇气状态下，太刀会发出蓝色光芒——勇气太刀">
+
+ <br/>
+
+<p>勇气纳刀是勇气风格下收刀的特殊变形。收刀时玩家会浑身发蓝光，此时如果被怪物攻击，玩家会进入无敌并撤步回避，在这一动作结束后退出无敌状态。勇气纳刀时受到攻击，玩家会减少血量，但相比直接受到攻击的伤害要小得多。勇气纳刀不会导致死亡，哪怕血量为1，只要一直成功纳刀回避就不会死。勇气纳刀状态可以通过按住收刀键来延长，期间会消耗玩家精力条，消耗完毕后自动结束勇气纳刀状态。</p>
+<p>通过勇气纳刀，可以得到的是纳刀派生动作：在勇气纳刀期间，如果输入对应攻击键，会派生出纳刀攻击，这一攻击积累勇气槽的效率非常高。</p>
+<p>由此，勇气风格的玩法循环就完成了：<strong>（非勇气状态）积极攻击和使用勇气纳刀攻击  → 勇气槽积累满 → 进入勇气状态，疯狂输出 → 勇气槽消耗完，返回非勇气状态</strong></p>
+<img src="/images/20200901-mhxx/6.png" class="box px-0 py-0 ml-auto mr-auto" width="700" title="勇气太刀" alt="迅龙回身咬，GP掉这一攻击并打出刚气刃斩1，成功完成狩猎——勇气太刀">
+
+ <br/>
+
+<p>游戏中的14把武器，每把都针对勇气风格中的勇气状态进行了设计，例如盾斧可以让盾变成比红盾更高级的蓝盾，大剑能迅速三蓄，操虫棍能全程三灯等。其中个人觉得最有趣的，也是人气最高的风格武器，就是著名的勇气太刀。</p>
+<p>勇气太刀在非勇气状态下和工会风格类似，勇气状态下，在有气刃槽的时候，R1特殊攻击将变成能GP的气刃斩，如果GP成功，玩家将进入无敌状态并打出刚气刃斩1。在刚气刃斩1后，可以通过攻击键取消后摇然后再次进行气刃斩1来GP，也可以连续输入R1用出伤害最高的刚气刃斩2和刚气刃斩3，其中最后一下攻击力高达180+，大剑的强三蓄也不过200多。</p>
+<p>这个核心动作，让本作的勇气太刀享受到了MH4G中的盾斧的地位，即“化敌方攻击为我方攻击”，永远是“玩家的回合”。我认为勇气太刀也是MH整个系列里，太刀这个强调无缝连招的武器，设计的最有趣的一次。</p>
+ <br/>
+
+<h3 id="炼金术风格"><a href="#炼金术风格" class="headerlink" title="炼金术风格"></a>炼金术风格</h3><p>炼金术风格：强化了道具使用和升级的风格。相比工会风格去掉了几个动作，加入了特殊的<strong>炼金桶道具</strong>。</p>
+<p>炼金桶每个级别有不同的道具可供兑换，也可以通过升级来获得更高级的道具选择。然而在MH里，主动道具已经十分丰富，片手剑更是能直接使用道具和使用特殊的刃药；炼金术风格的存在意义并不高。这个风格没有明显特点和用武之地，玩家使用率是肉眼可见的低。</p>
+<br/>
+
+<h2 id="高风险高收益的狩技机制"><a href="#高风险高收益的狩技机制" class="headerlink" title="高风险高收益的狩技机制"></a>高风险高收益的狩技机制</h2><p>所有风格下的所有武器都可以装备狩技，不同风格可装备数量不同，例如工会是2个，武士道、空战和勇气是1个，强袭是3个。狩技看似是会打破MH这种沉重的狩猎体验的系统，但实际上制作组将它的节奏进行控制，最后融合进了MH的战斗体验中。</p>
+<p>狩技控制节奏的设计点主要有以下：</p>
+<ol>
+<li><p>使用间隔长，玩家需要靠输出来攒狩技槽，攒够才能使用；</p>
+</li>
+<li><p>技能硬直长且发动后无法控制方向，使用门槛高；</p>
+</li>
+<li><p>许多狩技是辅助攻击的强化效果。</p>
+</li>
+</ol>
+<p>狩技的设计，主要能分成这几类：</p>
+<ol>
+<li><p>站桩输出技；</p>
+</li>
+<li><p>位移输出技，一般需要位移方向准确才能打出高输出；</p>
+</li>
+<li><p>BUFF技，强化持续时间内的普通攻击；</p>
+</li>
+<li><p>中断当前动作的强制无敌回避。</p>
+</li>
+</ol>
+<p>狩技的加入并没有让MH就此走上伊苏式的甩技能ARPG式战斗体验，而是增加了战斗中的策略性和炫技时间，因为制作组对于狩技的利用非常节制，没有破坏而是加强了MH的狩猎体验。</p>
+<br/>
+
+<h2 id="怪物的挑战梯度设计"><a href="#怪物的挑战梯度设计" class="headerlink" title="怪物的挑战梯度设计"></a>怪物的挑战梯度设计</h2><p>和老MH一样，MHXX分为村任务和集会所任务，其中村任务分下位和上位，集会所任务分下位、上位和G位。在此想谈谈的是集会所G位解禁后的挑战任务。</p>
+<p>因为每代MH，一般会默认玩家在G位解禁前一直有新内容可接触，因此要留住玩家，G位解禁后的内容设计就非常重要。MHXX由于战斗系统非常复杂且有深度，本身就能提供After  Game的游戏内容，但MHXX本身也有颇为有趣的任务设计。</p>
+<p>MHXX引入了一系列系统，总称为二名怪物。在集会所里，玩家能承接到特殊许可任务，挑战特殊怪物。这些特殊怪物，按照设定是“因为遭遇特殊事件而获得更强能力的个体”，被称为二名怪物。例如：黑狼鸟失去了一只眼睛，变成独眼黑狼鸟；角龙断了一只脚，变成鏖魔。</p>
+<p>二名怪物和原版比，部分动作会出现变化，一般会拥有新的核心威胁招数；玩家狩猎二名怪物得到的素材，可以制作新的武器和装备。值得一提的是，如果全部Clear掉对应二名，会出现一个<strong>超特殊许可任务</strong>，这一任务里二名的血量和攻击力等会非常之高，且该地点不允许使用陷阱等道具。</p>
+<p>在MHXX里，能够独自挑战并通过超特殊许可任务，尤其是鏖魔的超特，被视为真正毕业的怪物猎人。</p>
+<p>对于制作组来说，二名的存在无非是：修改建模局部，更换材质，增加修改攻击模组，然后制作一系列二名任务。但是这种省力的设计，却给玩家带来了很大乐趣，尤其是和MH4G的挖掘任务以及MHWI的聚魔之地相比。</p>
+<br/>
+
+<h2 id="如何设计切换状态的战斗体验？"><a href="#如何设计切换状态的战斗体验？" class="headerlink" title="如何设计切换状态的战斗体验？"></a>如何设计切换状态的战斗体验？</h2><p>虽然在上文称赞了勇气风格的设计，但是这一风格其实给我带来了其他想法。按照勇气风格的设计，玩家应该尽量保持在勇气状态，而非勇气状态下的唯一目标是尽快进入勇气状态。勇气风格虽然拥有两个战斗状态，但其中一个状态是劣势的、应当尽快切换状态的。虽然玩法循环非常完善，但是否能作为其他切换状态的战斗设计参考？</p>
+<p>例如，MH里自己就存在切换状态的武器，分别是斩斧和盾斧。斩斧这一武器，起码在最开始设计时，设计者应该是希望玩家“根据情况切换合适状态进行输出”，但实际情况非常不如人意。大部分斩斧高手，会希望自己一直保持剑形态，所谓的“更灵活”的斧形态意味着输出下降，而灵活这点对于高手来说是不需要的。即便不是高手，在玩斩斧时也会感到策略的缺失。玩家并不知道要根据什么情况来切换，但知道剑形态输出绝对比斧形态要高，最终结果都会变成玩家一味地使用剑形态。</p>
+<p>而对于盾斧，剑形态下会积攒瓶子，用来在斧形态打出解放斩，相比斩斧似乎要有策略得多。然而，真的是这样吗？解放斩只是斧形态下的一个动作而已，玩家切换形态的契机是攒够瓶子，进入斧形态的唯一目标是尽快打出解放斩。这其实根本不是灵活切换状态，本质上是一套攻击连招派生罢了。</p>
+<p>MH4G的盾斧之所以这么强势，就是因为剑形态下GP可以直接派生出解放斩，跳过了剑变形斧这一步，这件事情更说明了盾斧的本质是一套攻击而不是灵活切换状态。MHW对此做出的解答是：加入红斧机制，让斧形态下除了解放斩之外的其他攻击更加强力。然而结果又变成出现了斧形态玩家，很少使用剑形态。</p>
+<p>如果要设计能够灵活切换状态的战斗风格，最需要考虑的就是有效地给玩家提供<strong>判断自己是否要切换形态的信号</strong>。这一信号必须非常直观和好观察，以免玩家在战斗中察觉不到；同时状态的切换能够带来真正的策略性收益，而不是单纯的换一套攻击模组。能灵活切换状态的战斗体验是非常有趣的，但制作的时候需要考虑很多，才能让它真正有趣起来。</p>
+<br/>
+</div><div class="article-licensing box"><div class="licensing-title"><p>《MHXX》小结：切换风格的战斗体验设计</p><p><a href="https://uynad.github.io/2020/08/31/article/20200901-mhxx/">https://uynad.github.io/2020/08/31/article/20200901-mhxx/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>UyNad</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2020-09-01</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-02-28</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1/">战斗设计</a><a class="link-muted mr-2" rel="tag" href="/tags/%E6%94%B9%E5%8F%98%E4%BA%86%E9%84%99%E4%BA%BA%E4%BA%BA%E7%94%9F%E7%9A%84%E4%BD%9C%E5%93%81/">改变了鄙人人生的作品</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2020/10/14/review/20201015-p5s/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">《女神异闻录5 乱战 魅影攻手》：名字最长奖</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2020/08/31/cyborg/20200901-cv-sn/"><span class="level-item">《恶魔城 月下夜想曲》流程规划分析</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="waline-thread"></div><script src="https://cdn.jsdelivr.net/npm/@waline/client@1.3.1/dist/Waline.min.js"></script><script>Waline({
+            el: '#waline-thread',
+            serverURL: "https://blog-comment-api-1tl6ysf8x-uynad.vercel.app/",
+            lang: "zh-CN",
+            visitor: true,
+            emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili"],
+            dark: "auto",
+            meta: ["nick","mail","link"],
+            requiredMeta: [],
+            login: "enable",
+            avatar: "retro",
+            
+            pageSize: 10,
+            avatarCDN: "https://sdn.geekzu.org/avatar/",
+            avatarForce: false,
+            highlight: true,
+            mathTagSupport: false,
+            copyright: true,
+            locale: {"placeholder":"Have fun."},
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.jpg" alt="UyNad"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">UyNad</p><p class="is-size-6 is-block">Here comes nothing!</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Elysium, in the Blue Sky</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">175</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://psnprofiles.com/megurined" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/UyNad"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://psnprofiles.com/megurined"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://psnprofiles.com/megurined"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://psnprofiles.com/megurined"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#由风格衍生出的动作模组"><span class="level-left"><span class="level-item">1</span><span class="level-item">由风格衍生出的动作模组</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#工会风格"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">工会风格</span></span></a></li><li><a class="level is-mobile" href="#强袭风格"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">强袭风格</span></span></a></li><li><a class="level is-mobile" href="#武士道风格"><span class="level-left"><span class="level-item">1.3</span><span class="level-item">武士道风格</span></span></a></li><li><a class="level is-mobile" href="#空战风格"><span class="level-left"><span class="level-item">1.4</span><span class="level-item">空战风格</span></span></a></li><li><a class="level is-mobile" href="#勇气风格"><span class="level-left"><span class="level-item">1.5</span><span class="level-item">勇气风格</span></span></a></li><li><a class="level is-mobile" href="#炼金术风格"><span class="level-left"><span class="level-item">1.6</span><span class="level-item">炼金术风格</span></span></a></li></ul></li><li><a class="level is-mobile" href="#高风险高收益的狩技机制"><span class="level-left"><span class="level-item">2</span><span class="level-item">高风险高收益的狩技机制</span></span></a></li><li><a class="level is-mobile" href="#怪物的挑战梯度设计"><span class="level-left"><span class="level-item">3</span><span class="level-item">怪物的挑战梯度设计</span></span></a></li><li><a class="level is-mobile" href="#如何设计切换状态的战斗体验？"><span class="level-left"><span class="level-item">4</span><span class="level-item">如何设计切换状态的战斗体验？</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a><p class="is-size-7"><span>&copy; 2026 UyNad</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Discuss on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fas fa-comments"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

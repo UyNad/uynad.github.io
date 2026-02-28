@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>UnityPrefab批量替换GameObject脚本 - UyNad的年一站</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#f7f7f7"><meta name="application-name" content="Icaurs - Hexo Theme"><meta name="msapplication-TileImage" content="/img/favicon_new.svg"><meta name="msapplication-TileColor" content="#f7f7f7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Icaurs - Hexo Theme"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="问题解决了，但轮子是别人造的。“我和科比合砍81分”。"><meta property="og:type" content="blog"><meta property="og:title" content="UnityPrefab批量替换GameObject脚本"><meta property="og:url" content="https://uynad.github.io/2022/03/06/devlog/20220307-unity-replace/"><meta property="og:site_name" content="UyNad的年一站"><meta property="og:description" content="问题解决了，但轮子是别人造的。“我和科比合砍81分”。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://uynad.github.io/images/20220307-replace.jpg"><meta property="article:published_time" content="2022-03-06T16:00:00.000Z"><meta property="article:modified_time" content="2026-02-28T11:09:26.000Z"><meta property="article:author" content="UyNad"><meta property="article:tag" content="关卡设计"><meta property="article:tag" content="游戏开发"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/images/20220307-replace.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://uynad.github.io/2022/03/06/devlog/20220307-unity-replace/"},"headline":"UnityPrefab批量替换GameObject脚本","image":["https://uynad.github.io/images/20220307-replace.jpg"],"datePublished":"2022-03-06T16:00:00.000Z","dateModified":"2026-02-28T11:09:26.000Z","author":{"@type":"Person","name":"UyNad"},"publisher":{"@type":"Organization","name":"UyNad的年一站","logo":{"@type":"ImageObject","url":"https://uynad.github.io/img/logo_new.svg"}},"description":"问题解决了，但轮子是别人造的。“我和科比合砍81分”。"}</script><link rel="canonical" href="https://uynad.github.io/2022/03/06/devlog/20220307-unity-replace/"><link rel="icon" href="/img/favicon_new.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-72437521-5" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-72437521-5');</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.2"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/20220307-replace.jpg" alt="UnityPrefab批量替换GameObject脚本"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-03-06T16:00:00.000Z" title="3/6/2022, 4:00:00 PM">2022-03-07</time>发表</span><span class="level-item"><a class="link-muted" href="/categories/Devlog/">Devlog</a></span><span class="level-item">7 分钟读完 (大约1091个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">UnityPrefab批量替换GameObject脚本</h1><div class="content"><p>问题解决了，但轮子是别人造的。“我和科比合砍81分”。</p>
+<span id="more"></span>
+
+<hr>
+<h2 id="遭遇问题"><a href="#遭遇问题" class="headerlink" title="遭遇问题"></a>遭遇问题</h2><p>Unity2018版本之前，将一个Prefab的instance载入另一个Prefab下并Apply，会导致原本Prefab的连接断开。</p>
+<br/>
+
+<h2 id="期望目标"><a href="#期望目标" class="headerlink" title="期望目标"></a>期望目标</h2><p>保持原有Prefab的链接关系，同时还要把它们做成一个Prefab来给工程用。</p>
+<p>在这里学到了Unity多场景编辑的妙用：将想编辑的东西单独在另一个Scene里编辑，这个Scene里会保持所有Prefab的链接关系。当需要做成一个Prefab时，再把内容Copy过去。</p>
+<p><em>当然，如果不是Unity版本太老，根本不会产生这个问题和这套拐弯解决的方案。</em></p>
+<br/>
+
+<h2 id="实操过程"><a href="#实操过程" class="headerlink" title="实操过程"></a>实操过程</h2><p>知道要做什么了，却没有马上开始做。因为当前的Prefab已经全部断开了链接关系，没法直接使用上面的方法。</p>
+<p>最简单粗暴的方法就是，新建个空Scene然后<strong>全部重新手摆一遍</strong>。我无法接受。</p>
+<p>其次想到的是，Unity是否有UE4的replace功能？查了下<em>果然</em>没有。然后在Google上搜索“Unity Replace gameobject with prefab”相关字眼，最后找到Unity forum一条从2009年更新至今的讨论串。<em>原来这个破引擎十年了还没做出来个replace功能是吗</em></p>
+<p>Unity工程下的Editor里可以放那种脚本，当作插件来使用，非常便利。找到了讨论串最新的脚本，复制贴贴进来打算开用，然后compile报错，说找不到某个函数定义。又Google了下Unity的API，发现这个函数最早是2018版才更新进去的。<em>2017到底是有多老</em></p>
+<p>退而求其次，往回回溯版本，注释掉了会引起问题的方法，保留了可运行部分。毕竟我只是需要一个replace功能，根据tag和layer等分类的功能还用不到。</p>
+<p>下面为2017可运行的脚本，保存一份留档。</p>
+<pre><code>using UnityEngine;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+using System.Collections.Generic;
+ 
+// COMMUNITY THREAD LINK https://forum.unity.com/threads/replace-game-object-with-prefab.24311/
+// CopyComponents - by Michael L. Croswell for Colorado Game Coders, LLC
+// March 2010
+//Modified by Kristian Helle Jespersen
+//June 2011
+//Modified by Connor Cadellin McKee for Excamedia
+//April 2015
+//Modified by Fernando Medina (fermmmm)
+//April 2015
+//Modified by Julien Tonsuso (www.julientonsuso.com)
+//July 2015
+//Changed into editor window and added instant preview in scene view
+//Modified by Alex Dovgodko
+//June 2017
+//Made changes to make things work with Unity 5.6.1
+//March 2018
+//Added link to community thread, booleans to chose if scale and rotation are applied, mark scene as dirty, changed menu item to tools. By Hyper
+//May 2018
+//Added KeepPlaceInHeirarchy self explanatory
+//Modified by Virgil Iordan
+public class ReplaceWithPrefab:EditorWindow &#123;
+    public GameObject Prefab;
+    public GameObject[] ObjectsToReplace;
+    public List&lt;GameObject&gt; TempObjects = new List&lt;GameObject&gt;();
+    public bool KeepOriginalNames = true;
+    public bool EditMode = false;
+    public bool ApplyRotation = true;
+    public bool ApplyScale = true;
+    public bool KeepPlaceInHeirarchy = false;
+    // Add menu named &quot;My Window&quot; to the Window menu
+    [MenuItem(&quot;Tools/ReplaceWithPrefab&quot;)]
+    static void Init() &#123;
+        // Get existing open window or if none, make a new one:
+        ReplaceWithPrefab window = (ReplaceWithPrefab)EditorWindow.GetWindow(typeof(ReplaceWithPrefab));
+        window.Show();
+    &#125;
+    void OnSelectionChange() &#123;
+        GetSelection();
+        Repaint();
+    &#125;
+ 
+    void CheckParent() &#123;
+    &#125;
+ 
+    void OnGUI() &#123;
+        EditMode = GUILayout.Toggle(EditMode,&quot;Edit&quot;);
+        if (GUI.changed) &#123;
+            if (EditMode)
+                GetSelection();
+            else
+                ResetPreview();
+        &#125;
+        KeepOriginalNames = GUILayout.Toggle(KeepOriginalNames,&quot;Keep names&quot;);
+        ApplyRotation = GUILayout.Toggle(ApplyRotation,&quot;Apply rotation&quot;);
+        ApplyScale = GUILayout.Toggle(ApplyScale,&quot;Apply scale&quot;);
+        KeepPlaceInHeirarchy = GUILayout.Toggle(KeepPlaceInHeirarchy,&quot;Keep Place In Heirarchy&quot;);
+        GUILayout.Space(5);
+        if (EditMode) &#123;
+            ResetPreview();
+ 
+            GUI.color = Color.yellow;
+            if (Prefab != null) &#123;
+                GUILayout.Label(&quot;Prefab: &quot;);
+                GUILayout.Label(Prefab.name);
+            &#125; else &#123;
+                GUILayout.Label(&quot;No prefab selected&quot;);
+            &#125;
+            GUI.color = Color.white;
+ 
+            GUILayout.Space(5);
+            GUILayout.BeginScrollView(new Vector2());
+            foreach (GameObject go in ObjectsToReplace) &#123;
+                GUILayout.Label(go.name);
+                if (Prefab != null) &#123;
+                    GameObject newObject;
+                    newObject = (GameObject)PrefabUtility.InstantiatePrefab(Prefab);
+                    newObject.transform.SetParent(go.transform.parent,true);
+                    newObject.transform.localPosition = go.transform.localPosition;
+                    if (ApplyRotation) &#123;
+                        newObject.transform.localRotation = go.transform.localRotation;
+                    &#125;
+                    if (ApplyScale) &#123;
+                        newObject.transform.localScale = go.transform.localScale;
+                    &#125;
+                    TempObjects.Add(newObject);
+                    if (KeepOriginalNames) &#123;
+                        newObject.transform.name = go.transform.name;
+                    &#125;
+                    go.SetActive(false);
+                    if (KeepPlaceInHeirarchy) &#123;
+                        newObject.transform.SetSiblingIndex(go.transform.GetSiblingIndex());
+                    &#125;
+                &#125;
+            &#125;
+            GUILayout.EndScrollView();
+            GUILayout.Space(5);
+            GUILayout.BeginHorizontal();
+            if (GUILayout.Button(&quot;Apply&quot;)) &#123;
+                foreach (GameObject go in ObjectsToReplace) &#123;
+                    DestroyImmediate(go);
+                &#125;
+                EditMode = false;
+                EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene()); // So that we don&#39;t forget to save...
+            &#125;;
+            if (GUILayout.Button(&quot;Cancel&quot;)) &#123;
+                ResetPreview();
+                EditMode = false;
+            &#125;;
+            GUILayout.EndHorizontal();
+        &#125; else &#123;
+            ObjectsToReplace = new GameObject[0];
+            TempObjects.Clear();
+            Prefab = null;
+        &#125;
+ 
+    &#125;
+    void OnDestroy() &#123;
+        ResetPreview();
+    &#125;
+    void GetSelection() &#123;
+        if (EditMode &amp;&amp; Selection.activeGameObject != null) &#123;
+            PrefabType t = PrefabUtility.GetPrefabType(Selection.activeGameObject);
+            if (t == PrefabType.Prefab) //Here goes the fix
+            &#123;
+                Prefab = Selection.activeGameObject;
+            &#125; else &#123;
+                ResetPreview();
+                ObjectsToReplace = Selection.gameObjects;
+            &#125;
+        &#125;
+    &#125;
+    void ResetPreview() &#123;
+        if (TempObjects != null) &#123;
+            foreach (GameObject go in TempObjects) &#123;
+                DestroyImmediate(go);
+            &#125;
+        &#125;
+        foreach (GameObject go in ObjectsToReplace) &#123;
+            go.SetActive(true);
+        &#125;
+        TempObjects.Clear();
+    &#125;
+&#125;
+</code></pre>
+<p>扔进Editor就可以用了。这个东西比想象中好用，选取任意数量的gameobject，然后点选Project视图里的prefab，就能一键全部替换，保留原本的transom和hierarchy位置。除去干上面的脏活儿，以后做关卡时也可以经常用。</p>
+<p><em>千万记得别上传，不想被QA查水表</em></p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>UnityPrefab批量替换GameObject脚本</p><p><a href="https://uynad.github.io/2022/03/06/devlog/20220307-unity-replace/">https://uynad.github.io/2022/03/06/devlog/20220307-unity-replace/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>UyNad</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2022-03-07</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-02-28</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/">关卡设计</a><a class="link-muted mr-2" rel="tag" href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">游戏开发</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2022/03/17/devlog/20220318-render/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">3D动画制作与渲染技术学习目标规划</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2022/03/05/review/20220306-ring/"><span class="level-item">《艾尔登法环》：“这可比BOTW劲儿大多了”</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="waline-thread"></div><script src="https://cdn.jsdelivr.net/npm/@waline/client@1.3.1/dist/Waline.min.js"></script><script>Waline({
+            el: '#waline-thread',
+            serverURL: "https://blog-comment-api-1tl6ysf8x-uynad.vercel.app/",
+            lang: "zh-CN",
+            visitor: true,
+            emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili"],
+            dark: "auto",
+            meta: ["nick","mail","link"],
+            requiredMeta: [],
+            login: "enable",
+            avatar: "retro",
+            
+            pageSize: 10,
+            avatarCDN: "https://sdn.geekzu.org/avatar/",
+            avatarForce: false,
+            highlight: true,
+            mathTagSupport: false,
+            copyright: true,
+            locale: {"placeholder":"Have fun."},
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.jpg" alt="UyNad"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">UyNad</p><p class="is-size-6 is-block">Here comes nothing!</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Elysium, in the Blue Sky</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">175</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://psnprofiles.com/megurined" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/UyNad"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://psnprofiles.com/megurined"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://psnprofiles.com/megurined"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://psnprofiles.com/megurined"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#遭遇问题"><span class="level-left"><span class="level-item">1</span><span class="level-item">遭遇问题</span></span></a></li><li><a class="level is-mobile" href="#期望目标"><span class="level-left"><span class="level-item">2</span><span class="level-item">期望目标</span></span></a></li><li><a class="level is-mobile" href="#实操过程"><span class="level-left"><span class="level-item">3</span><span class="level-item">实操过程</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a><p class="is-size-7"><span>&copy; 2026 UyNad</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Discuss on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fas fa-comments"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

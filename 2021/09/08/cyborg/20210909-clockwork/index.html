@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>《耻辱2》关卡Clockwork Mansion开发者复盘 - UyNad的年一站</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#f7f7f7"><meta name="application-name" content="Icaurs - Hexo Theme"><meta name="msapplication-TileImage" content="/img/favicon_new.svg"><meta name="msapplication-TileColor" content="#f7f7f7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Icaurs - Hexo Theme"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="《耻辱2》关卡设计师对发条宅邸的设计问题解答。"><meta property="og:type" content="blog"><meta property="og:title" content="《耻辱2》关卡Clockwork Mansion开发者复盘"><meta property="og:url" content="https://uynad.github.io/2021/09/08/cyborg/20210909-clockwork/"><meta property="og:site_name" content="UyNad的年一站"><meta property="og:description" content="《耻辱2》关卡设计师对发条宅邸的设计问题解答。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://uynad.github.io/images/20210909-clockwork.webp"><meta property="article:published_time" content="2021-09-08T16:00:00.000Z"><meta property="article:modified_time" content="2026-02-28T11:09:26.000Z"><meta property="article:author" content="UyNad"><meta property="article:tag" content="关卡设计"><meta property="article:tag" content="翻译"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/images/20210909-clockwork.webp"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://uynad.github.io/2021/09/08/cyborg/20210909-clockwork/"},"headline":"《耻辱2》关卡Clockwork Mansion开发者复盘","image":["https://uynad.github.io/images/20210909-clockwork.webp"],"datePublished":"2021-09-08T16:00:00.000Z","dateModified":"2026-02-28T11:09:26.000Z","author":{"@type":"Person","name":"UyNad"},"publisher":{"@type":"Organization","name":"UyNad的年一站","logo":{"@type":"ImageObject","url":"https://uynad.github.io/img/logo_new.svg"}},"description":"《耻辱2》关卡设计师对发条宅邸的设计问题解答。"}</script><link rel="canonical" href="https://uynad.github.io/2021/09/08/cyborg/20210909-clockwork/"><link rel="icon" href="/img/favicon_new.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-72437521-5" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-72437521-5');</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.2"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/20210909-clockwork.webp" alt="《耻辱2》关卡Clockwork Mansion开发者复盘"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-09-08T16:00:00.000Z" title="9/8/2021, 4:00:00 PM">2021-09-09</time>发表</span><span class="level-item"><a class="link-muted" href="/categories/%E8%B5%9B%E5%8D%9A%E5%9E%83%E5%9C%BE/">赛博垃圾</a></span><span class="level-item">11 分钟读完 (大约1614个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">《耻辱2》关卡Clockwork Mansion开发者复盘</h1><div class="content"><p>《耻辱2》关卡设计师对发条宅邸的设计问题解答。</p>
+<span id="more"></span>
+
+<hr>
+   <br/>
+
+<p>收看了GTMK最近的<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=JIZTk4QRRFE&t=256s">Dishonored 2 Devs Explain the Clockwork Mansion</a>，对其中内容深有感触。视频是访谈形式，GMTK的Mark Brown一边游玩发条宅邸的全流程，一边对Arkane的Dana Nightingale进行提问，由设计师本人来解释设计点。</p>
+<p><em>不确定是否存在剧本，但是</em>印象最深的地方是，设计师对于任何问题都有明确的设计答复，”我们是想要这样，所以做成这样“。对自己的设计负责，本应是设计师的基本素养，实际上很多做设计的人并没有做到。以此视频作为标杆，希望自己日后不会<em>（再）</em>犯。</p>
+<p>靠记忆复读出了对个人有参考的内容。如有出入，请以原视频为准。</p>
+  <br/>
+
+<p>Q：刚进入发条宅邸时，第一次遇到的发条人其实并不是敌对的。</p>
+<p>A：我们认为进入后，建筑发生变形，然后敌人马上来攻击，这件事太overwhelming了。外加从叙事角度出发，此时的Emily也不一定被视为敌人。</p>
+<p>出于惯性，很多玩家会躲在旁边的椅子下面。我们专门为此设计了一种表现，BOSS会在广播里疑惑“嗯？没客人吗？”，发条人会自处张望。最终BOSS不再关注，玩家就能从这个节点开始100%的潜行流程。</p>
+  <br/>
+
+<p>Q：发条人的玩法很独特，它主要靠听觉捕捉敌人。</p>
+<p>A：为了向玩家介绍这一特性，我们<strong>针对不同风格的玩家</strong>，做了不同的提示。本关的两个顾客NPC会在发条人前面谈论这件商品，而狂战士玩家会在战斗中发现端倪。发条人仅对战斗中的声响做出巨大反应，平时会比较笨拙。</p>
+<br/>
+
+<p>Q：来到地下后，会看到超级大的展厅，在这里主要有两条路可以选。中间还有个电磁开关。</p>
+<p>A：玩家可以从安全的位置观察场景，决定接下来的探索路线。使用了环境生物（老鼠），它们路过电磁开关时会被电死，以此提醒危险。</p>
+<br/>
+
+<p>Q：会变形的房屋是相当惊人的设计。</p>
+<p>A：最开始就把这个特性作为出发点。在具体设计时，经常会代入BOSS本人的想法，比如现在是床，拉下拉手就会是洗浴间。BOSS是个资本主义发明家，这个宅邸是他用来炫技和出售商品的。那么什么是对他来说最便利的设计？这层考虑纳入了关卡设计里。</p>
+<br/>
+
+<p>Q：是怎么让玩家在这么复杂的分层里不迷路的？</p>
+<p>A：关卡分出了几个区分度极高的主题，且主题之间一定要设计通路，希望表现出一种门效应，即“玩家只要走过这扇门，身后的事就可以抛之脑后”了。</p>
+<p>一个房间最多只有三个出入口，但不包括特殊通道。</p>
+<br/>
+
+<p>Q：我很喜欢在房屋变形时闪现过去。</p>
+<p>A：实际上这也是最初设计点之一。我们希望<strong>房屋变形后和房屋变形时</strong>都能提供出新的路线，为了保证后者，特意将变形过程做得缓慢，让玩家可以利用。</p>
+<br/>
+
+<p>Q：地下结构是如何考虑的？</p>
+<p>A：其实最开始的设想和现在差距比较大。最开始在地下做了非常大的类似实验室的地方，BOSS希望测试发条人的道德参数，于是设置了许多类似电车难题的东西。</p>
+<p>玩家同样需要通过这种试验。例如，在“杀人但能轻松通过”和“不杀人但艰难通过”之间选一个。但如果要做实验室，这个关卡会非常大，而且流程比较固定。玩家经常需要靠按钮去选定接下来去哪个区域。我很庆幸我们没有采用这个方向。</p>
+<br/>
+
+<p>Q：当初设计的时候，救人和杀BOSS，是否有预设答案？</p>
+<p>A：其实是没有的。玩家先选哪个都行。为此我们对两条路线都进行了设计，怎么玩都行。</p>
+<br/>
+
+<p>Q：设计的内容，玩家其实玩不全，不会觉得浪费吗？</p>
+<p>A：是的，甚至玩家可能做了一些回答选择，就直接跳过了整个章节。但我们是允许的，或者说这就是自由度的表现。我们依然会尽力打造每个细节，因为关卡是综合性的，正是细节全部做好了，玩家才能从任何切片里体会到发条宅邸是真实存在的。</p>
+<br/>
+
+<p>Q：救人后撤退的流程是如何设计的？</p>
+<p>A：我非常不希望玩家顺着路再走一遍，这样很无聊。一开始想做一个管子，BOSS平时是通过这个把发条人运到大街上的，那可以把救的人也这么发射出去。但最后考虑到种种问题，没有制作。</p>
+<p>救人回去的路上，考虑到难易度以及交互性问题，最终人变成了个类似无敌的存在。</p>
+<br/>
+
+<p>Q：感觉最终结局的二选一里，非道德结局做法非常惊人。</p>
+<p>A：其实有考虑过加入第三种。杀了BOSS、电击BOSS让BOSS再也无法发明东西之外，还可以把BOSS绑在电椅上，然后直接走掉。但考虑到成本问题，主要是交互配音和日后的可能路线，最终还是没有制作。</p>
+<br/>
+</div><div class="article-licensing box"><div class="licensing-title"><p>《耻辱2》关卡Clockwork Mansion开发者复盘</p><p><a href="https://uynad.github.io/2021/09/08/cyborg/20210909-clockwork/">https://uynad.github.io/2021/09/08/cyborg/20210909-clockwork/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>UyNad</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-09-09</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-02-28</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/">关卡设计</a><a class="link-muted mr-2" rel="tag" href="/tags/%E7%BF%BB%E8%AF%91/">翻译</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2021/09/09/ldesign/20210910-how-to-ship/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">《如何做船》：游轮副本关卡的设计过程总结</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/09/07/ldesign/20210908-floor-plan/"><span class="level-item">如何为室内场景设计一份Floor Plan？</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="waline-thread"></div><script src="https://cdn.jsdelivr.net/npm/@waline/client@1.3.1/dist/Waline.min.js"></script><script>Waline({
+            el: '#waline-thread',
+            serverURL: "https://blog-comment-api-1tl6ysf8x-uynad.vercel.app/",
+            lang: "zh-CN",
+            visitor: true,
+            emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili"],
+            dark: "auto",
+            meta: ["nick","mail","link"],
+            requiredMeta: [],
+            login: "enable",
+            avatar: "retro",
+            
+            pageSize: 10,
+            avatarCDN: "https://sdn.geekzu.org/avatar/",
+            avatarForce: false,
+            highlight: true,
+            mathTagSupport: false,
+            copyright: true,
+            locale: {"placeholder":"Have fun."},
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.jpg" alt="UyNad"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">UyNad</p><p class="is-size-6 is-block">Here comes nothing!</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Elysium, in the Blue Sky</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">175</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://psnprofiles.com/megurined" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/UyNad"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://psnprofiles.com/megurined"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://psnprofiles.com/megurined"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://psnprofiles.com/megurined"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a><p class="is-size-7"><span>&copy; 2026 UyNad</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Discuss on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fas fa-comments"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

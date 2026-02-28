@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>hexo使用sass插件遇到的问题 - UyNad的年一站</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#f7f7f7"><meta name="application-name" content="Icaurs - Hexo Theme"><meta name="msapplication-TileImage" content="/img/favicon_new.svg"><meta name="msapplication-TileColor" content="#f7f7f7"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Icaurs - Hexo Theme"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="最后并没有解决，但记录下思考过程作为《忏悔录》。"><meta property="og:type" content="blog"><meta property="og:title" content="hexo使用sass插件遇到的问题"><meta property="og:url" content="https://uynad.github.io/2021/08/26/devlog/20210827-sass/"><meta property="og:site_name" content="UyNad的年一站"><meta property="og:description" content="最后并没有解决，但记录下思考过程作为《忏悔录》。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://uynad.github.io/images/20210827-sass.jpg"><meta property="article:published_time" content="2021-08-26T16:00:00.000Z"><meta property="article:modified_time" content="2026-02-28T11:09:26.000Z"><meta property="article:author" content="UyNad"><meta property="article:tag" content="网页开发"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/images/20210827-sass.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://uynad.github.io/2021/08/26/devlog/20210827-sass/"},"headline":"hexo使用sass插件遇到的问题","image":["https://uynad.github.io/images/20210827-sass.jpg"],"datePublished":"2021-08-26T16:00:00.000Z","dateModified":"2026-02-28T11:09:26.000Z","author":{"@type":"Person","name":"UyNad"},"publisher":{"@type":"Organization","name":"UyNad的年一站","logo":{"@type":"ImageObject","url":"https://uynad.github.io/img/logo_new.svg"}},"description":"最后并没有解决，但记录下思考过程作为《忏悔录》。"}</script><link rel="canonical" href="https://uynad.github.io/2021/08/26/devlog/20210827-sass/"><link rel="icon" href="/img/favicon_new.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-72437521-5" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-72437521-5');</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.2"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="/images/20210827-sass.jpg" alt="hexo使用sass插件遇到的问题"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-08-26T16:00:00.000Z" title="8/26/2021, 4:00:00 PM">2021-08-27</time>发表</span><span class="level-item"><a class="link-muted" href="/categories/Devlog/">Devlog</a></span><span class="level-item">8 分钟读完 (大约1165个字)</span></div></div><h1 class="title is-3 is-size-4-mobile">hexo使用sass插件遇到的问题</h1><div class="content"><p>最后并没有解决，但记录下思考过程作为《忏悔录》。</p>
+<span id="more"></span>
+
+<hr>
+   <br/>
+
+<h3 id="Step-1-需求出发点（万恶之源）"><a href="#Step-1-需求出发点（万恶之源）" class="headerlink" title="Step 1. 需求出发点（万恶之源）"></a><strong>Step 1. 需求出发点（万恶之源）</strong></h3><p>之前打算使用Claudia theme，此theme要求安装三个插件，其中一个是hexo-renderer-sass。</p>
+<br/>
+
+<h3 id="Step-2-npm-i失败后改用淘宝镜像"><a href="#Step-2-npm-i失败后改用淘宝镜像" class="headerlink" title="Step 2. npm i失败后改用淘宝镜像"></a><strong>Step 2. npm i失败后改用淘宝镜像</strong></h3><p>这个插件，直接npm install hexo-renderer-sass –save会失败。报错如下。</p>
+<p><img src="/images/20210827-sass/npm-install.png"></p>
+<p>网上说是国内网问题，但公司网明明是默认翻墙的，而且速度很给力。不理解。</p>
+<p>无可奈何了，用了网上最容易搜到的普遍解法，通过淘宝镜像进行cnpm instal，安装成功。</p>
+<br/>
+
+<h3 id="Step-3-Travis-CI构建不通过，npm-install也失败"><a href="#Step-3-Travis-CI构建不通过，npm-install也失败" class="headerlink" title="Step 3. Travis CI构建不通过，npm install也失败"></a><strong>Step 3. Travis CI构建不通过，npm install也失败</strong></h3><p>本地hexo server运行验证是完全没问题的，于是推到了主干打算进行构建。</p>
+<p>结果Travis CI构建不通过，报错如下。要求我去npm install。</p>
+<p><img src="/images/20210827-sass/travis-ci.png">   </p>
+<p>然后执行npm install，也报错。</p>
+<p><img src="/images/20210827-sass/install2.png">   </p>
+<p>通过艰难的阅读log，似乎是淘宝镜像缺少了个东西：<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/@tootallnate/once/-/once-1.1.2.tgz">https://registry.npm.taobao.org/@tootallnate/once/-/once-1.1.2.tgz</a></p>
+<br/>
+
+<h3 id="Step-4-回退sass插件提交，暂时撤兵"><a href="#Step-4-回退sass插件提交，暂时撤兵" class="headerlink" title="Step 4. 回退sass插件提交，暂时撤兵"></a><strong>Step 4. 回退sass插件提交，暂时撤兵</strong></h3><p>这是第一次使用插件，为了确认不是其他两个引起的报错，外加不希望项目连续三天还跑不起来<em>（是的，这个theme前后磨蹭了三天）</em>，打算单独回退掉sass的安装。通过 cnpm uninstall hexo-renderer-sass –save指令卸载了淘宝镜像安装的sass，提交后，</p>
+<p><strong>确实构建成功了。：）</strong></p>
+<br/>
+
+<h3 id="Step-5-思考原因，寻找解法"><a href="#Step-5-思考原因，寻找解法" class="headerlink" title="Step 5. 思考原因，寻找解法"></a><strong>Step 5. 思考原因，寻找解法</strong></h3><p>和@jskyzero大佬交流了下原因。sass插件改的是另外的文件，将其编译成css。</p>
+<blockquote>
+<p>内容比较多、比较重型的前端网站项目，有必要对css做一个抽象，写cass或者其他的，编译成css。</p>
+<p>只是用的别人的主题（图一个简单方便），还要涉及这个，就有点过分了。</p>
+</blockquote>
+<p>确实可以直接换个主题，但毕竟踩坑到一半了，继续踩几下看看能不能解决。</p>
+<p>分析了下上述的魔鬼操作，大概发现几个可能原因：</p>
+<ol>
+<li><p>Python环境不对。</p>
+</li>
+<li><p>node和node-sass不兼容，拉不下来导致安装失败。</p>
+</li>
+<li><p>通过<strong>某种方法</strong>补全那个缺失的淘宝镜像文件。</p>
+</li>
+</ol>
+<p>感谢这位大佬的文章，<a target="_blank" rel="noopener" href="https://juejin.cn/post/6946530710324772878">https://juejin.cn/post/6946530710324772878</a> ，提供了非常多的解决方案，我打算照猫画虎。</p>
+<br/>
+
+<ol>
+<li><strong>Python环境的解法</strong></li>
+</ol>
+<p>尝试了文章里的做法，两个包都安装好了，然后：npm i报错失败。</p>
+<p>自己下了个py2.7试图搭建环境，加了一通path，然后：npm i报错失败。</p>
+<ol start="2">
+<li><strong>版本不兼容的解法</strong></li>
+</ol>
+<p>换了几个node-sass版本包，然后：npm i报错失败*n。</p>
+<ol start="3">
+<li><strong>淘宝镜像的解法</strong></li>
+</ol>
+<p>暂无尝试。</p>
+<br/>
+
+<h3 id="Step-6-及时止损，走向未来"><a href="#Step-6-及时止损，走向未来" class="headerlink" title="Step 6. 及时止损，走向未来"></a><strong>Step 6. 及时止损，走向未来</strong></h3><p>从Step5可以看到，初步的问题定位已经有了，一开始的解法虽然都失败，但继续挖掘可能还有其他做法。甚至还有一个终极保底，直接弄一套wsl环境，linux下绝对不会出错。</p>
+<p>但走到现在，真的值得吗？</p>
+<p>回顾下Step 1的需求，其实这个插件，无非是为了使用某个主题而已。使用主题是为了方便快速出效果，而不是死磕sass的运行环境。</p>
+<p>就像这个网站的存在一样，其存在目的是<strong>“让自己保持思考和写作习惯”</strong>，如果对技术的挖掘占用了太多时间，和出发点就已经南辕北辙。</p>
+<p><em>更何况这也不能算是挖掘，撑死叫亡羊补牢</em></p>
+<p>总之，经过一系列成本与收益、风险与挑战等的权衡后，最后决定是：放弃此theme，同时把sass拉入黑名单，换个不需要sass的theme去。</p>
+<br/>
+
+<p>……</p>
+<h3 id="Step-Now"><a href="#Step-Now" class="headerlink" title="Step Now."></a>Step Now.</h3><p>正如你所见，现在用的就是icarus，功能挺齐全，效果也依然很好嘛。</p>
+<p>这篇文章无法提供有价值的知识，甚至连踩坑都只踩到一半就撤退了。</p>
+<p>但个人觉得还是收获到了有用的“开发经验”，那就是：</p>
+<p><strong>永远不要忘了，自己到底在开发什么。</strong></p>
+<br/>
+</div><div class="article-licensing box"><div class="licensing-title"><p>hexo使用sass插件遇到的问题</p><p><a href="https://uynad.github.io/2021/08/26/devlog/20210827-sass/">https://uynad.github.io/2021/08/26/devlog/20210827-sass/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>UyNad</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-08-27</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2026-02-28</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E7%BD%91%E9%A1%B5%E5%BC%80%E5%8F%91/">网页开发</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2021/08/27/cyborg/20210828-apex-arena/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">《走近APEX》：Arena玩法模式的体验反思</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2021/08/26/devlog/20210827-website-devlog/"><span class="level-item">【不再更新】网页博客开荒日记</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div class="content" id="waline-thread"></div><script src="https://cdn.jsdelivr.net/npm/@waline/client@1.3.1/dist/Waline.min.js"></script><script>Waline({
+            el: '#waline-thread',
+            serverURL: "https://blog-comment-api-1tl6ysf8x-uynad.vercel.app/",
+            lang: "zh-CN",
+            visitor: true,
+            emoji: ["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili"],
+            dark: "auto",
+            meta: ["nick","mail","link"],
+            requiredMeta: [],
+            login: "enable",
+            avatar: "retro",
+            
+            pageSize: 10,
+            avatarCDN: "https://sdn.geekzu.org/avatar/",
+            avatarForce: false,
+            highlight: true,
+            mathTagSupport: false,
+            copyright: true,
+            locale: {"placeholder":"Have fun."},
+        });</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.jpg" alt="UyNad"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">UyNad</p><p class="is-size-6 is-block">Here comes nothing!</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Elysium, in the Blue Sky</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">175</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://psnprofiles.com/megurined" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/UyNad"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://psnprofiles.com/megurined"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://psnprofiles.com/megurined"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://psnprofiles.com/megurined"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#Step-1-需求出发点（万恶之源）"><span class="level-left"><span class="level-item">1</span><span class="level-item">Step 1. 需求出发点（万恶之源）</span></span></a></li><li><a class="level is-mobile" href="#Step-2-npm-i失败后改用淘宝镜像"><span class="level-left"><span class="level-item">2</span><span class="level-item">Step 2. npm i失败后改用淘宝镜像</span></span></a></li><li><a class="level is-mobile" href="#Step-3-Travis-CI构建不通过，npm-install也失败"><span class="level-left"><span class="level-item">3</span><span class="level-item">Step 3. Travis CI构建不通过，npm install也失败</span></span></a></li><li><a class="level is-mobile" href="#Step-4-回退sass插件提交，暂时撤兵"><span class="level-left"><span class="level-item">4</span><span class="level-item">Step 4. 回退sass插件提交，暂时撤兵</span></span></a></li><li><a class="level is-mobile" href="#Step-5-思考原因，寻找解法"><span class="level-left"><span class="level-item">5</span><span class="level-item">Step 5. 思考原因，寻找解法</span></span></a></li><li><a class="level is-mobile" href="#Step-6-及时止损，走向未来"><span class="level-left"><span class="level-item">6</span><span class="level-item">Step 6. 及时止损，走向未来</span></span></a></li><li><a class="level is-mobile" href="#Step-Now"><span class="level-left"><span class="level-item">7</span><span class="level-item">Step Now.</span></span></a></li></ul></div></div><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo_new.svg" alt="UyNad的年一站" height="28"></a><p class="is-size-7"><span>&copy; 2026 UyNad</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Discuss on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fas fa-comments"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/UyNad/uynad.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
