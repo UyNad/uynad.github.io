@@ -1,13 +1,13 @@
 ---
-title： 黑夜君临排位9999登顶后：（四）ACT品类在阿尔法时代的破局
-date： 2026-01-19
-categories： 赛博垃圾
-tags： 
+title: 黑夜君临排位9999登顶后：（四）ACT品类在阿尔法时代的破局
+date: 2026-01-19
+categories: 赛博垃圾
+tags:
 - 战斗设计
 - 玩法设计
 - 改变了鄙人人生的作品
-cover： /images/20260114-nightreign-love-4.jpg
-toc： true
+cover: /images/20260114-nightreign-love-4.jpg
+toc: true
 ---
 
 ACT老树开新花，在快节奏的当下，如何获得玩家和市场的青睐？
