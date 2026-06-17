@@ -55,7 +55,7 @@
     "jsesc": "^3.0.2",
     "locate-path": "^7.2.0",
     "lodash.debounce": "^4.0.8",
-    "make-dir": "^4.0.0",
+    "make-dir": "^5.0.0",
     "object-assign": "^4.1.1",
     "opencollective-postinstall": "^2.0.3",
     "pify": "^6.1.0",
