@@ -1,6 +1,7 @@
 ---
 title: 《光环无限》：受击反馈中的关键信息
 date: 2021-11-22
+description: 《光环：无限》受击反馈设计分析：长TTK射击游戏如何在受击反馈中传递关键信息。
 categories: 赛博垃圾
 tags: 
 - 《走近APEX》

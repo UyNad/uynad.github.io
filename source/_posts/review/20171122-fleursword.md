@@ -1,6 +1,7 @@
 ---
 title: Les Fleursword：流程过短，其实还行
 date: 2017-11-26
+description: 《Les Fleursword》评测：流程过短但完成度尚可的乙女向独立游戏。
 categories: 游戏评测
 tags: 
 - 叙事设计

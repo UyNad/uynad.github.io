@@ -1,6 +1,7 @@
 ---
 title: 在游玩中塑造角色：《绯红结系》与《异界星链》
 date: 2021-09-28
+description: 《绯红结系》与《异界星链（Astral Chain）》分析：战斗与关卡结合如何在游玩中塑造角色。
 categories: 赛博垃圾
 tags: 
 - 战斗设计

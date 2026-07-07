@@ -1,6 +1,7 @@
 ---
 title: 如何衡量PVP射击游戏的难度
 date: 2021-07-09
+description: 如何衡量PVP射击游戏的难度：上手门槛、对抗强度与玩家水平分布的关系。
 categories: 赛博垃圾
 tags: 
 - 战斗设计

@@ -1,6 +1,7 @@
 ---
 title: 关卡设计指导规范：白模制作
 date: 2021-09-21
+description: 关卡设计白模（Blockmesh）制作指导规范：关卡制作管线第二环的标准与要点。
 categories: 闸总自白
 tags: 
 - 关卡设计

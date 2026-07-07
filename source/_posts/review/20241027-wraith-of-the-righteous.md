@@ -1,6 +1,7 @@
 ---
 title: 《开拓者：正义之怒》入门答疑
 date: 2024-10-27
+description: 《开拓者：正义之怒》入门答疑：CRPG新手常见问题与开荒建议合集。
 categories: 游戏评测
 tags: 
 - CRPG

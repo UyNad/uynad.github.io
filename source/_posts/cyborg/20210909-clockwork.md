@@ -1,6 +1,7 @@
 ---
 title: 《耻辱2》关卡Clockwork Mansion开发者复盘
 date: 2021-09-09
+description: 译文：《耻辱2》发条宅邸（Clockwork Mansion）关卡的开发者设计复盘与问题解答。
 categories: 赛博垃圾
 tags: 
 - 翻译

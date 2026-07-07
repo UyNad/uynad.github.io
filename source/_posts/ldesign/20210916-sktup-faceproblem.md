@@ -1,6 +1,7 @@
 ---
 title: SketchUp的面向问题及个人反思
 date: 2021-09-16
+description: SketchUp建模的面向（法线方向）问题及反思：白模制作中容易忽视的细节。
 categories: 闸总自白
 tags: 
 - 关卡设计

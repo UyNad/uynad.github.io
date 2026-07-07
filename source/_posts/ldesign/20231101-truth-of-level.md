@@ -1,6 +1,7 @@
 ---
 title: 原神Like：大世界项目底层构建全流程
 date: 2023-11-01
+description: 原神like大世界项目的底层构建全流程解析：开放世界关卡从规划到落地的制作管线。
 categories: 闸总自白
 tags: 
 - 关卡设计

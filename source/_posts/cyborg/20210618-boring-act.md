@@ -1,6 +1,7 @@
 ---
 title: 如何消解ACT跑路时的无聊感
 date: 2021-06-18
+description: 如何消解ACT动作游戏跑路赶路时的无聊感：让移动本身也成为一种玩法。
 categories: 赛博垃圾
 tags: 
 - 玩法设计

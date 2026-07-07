@@ -1,6 +1,7 @@
 ---
 title: 从身份塑造的角度看待PVP玩法定位
 date: 2021-11-20
+description: 从玩家身份塑造的角度看PVP玩法定位：内容型二次元游戏是否适合做PVP对抗。
 categories: 赛博垃圾
 tags: 
 - 叙事设计

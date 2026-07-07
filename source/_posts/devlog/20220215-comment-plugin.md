@@ -1,6 +1,7 @@
 ---
 title: Hexo评论插件：从Disqus换成Waline
 date: 2022-02-15
+description: Hexo博客评论插件迁移记录：从Disqus更换为Waline的配置过程。
 categories: Devlog
 tags: 
 - 网页开发

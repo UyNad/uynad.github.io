@@ -1,6 +1,7 @@
 ---
 title: 【持续更新中】Music99：项目开发日记
 date: 2021-09-10
+description: Music99吃鸡音游demo开发日记：玩法原型的开发过程与问题记录。
 categories: Devlog
 tags: 
 - 游戏开发

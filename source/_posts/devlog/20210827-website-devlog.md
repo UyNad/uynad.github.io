@@ -1,6 +1,7 @@
 ---
 title: 【不再更新】网页博客开荒日记
 date: 2021-08-27
+description: 个人博客网站开荒日记（已完结）：从零搭建本站的期望目标与开发过程记录。
 categories: Devlog
 tags:
 - 网页开发

@@ -1,6 +1,7 @@
 ---
 title: 幸存者Like：颇有潜力的IP向衍生作品框架
 date: 2024-03-23
+description: 幸存者like玩法分析：颇有潜力的IP衍生作品框架，以《深岩银河幸存者》为例。
 categories: 游戏评测
 tags: 
 - 战斗设计

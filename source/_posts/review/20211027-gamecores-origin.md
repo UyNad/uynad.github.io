@@ -1,6 +1,7 @@
 ---
 title: 自译《刺客信条起源》IGN评测：成功的RPG改革
 date: 2017-10-27 12:17:17
+description: 自译IGN《刺客信条：起源》评测：开放世界RPG化的成功改革。
 categories: 游戏评测
 tags:
 - 开放世界

@@ -1,6 +1,7 @@
 ---
 title: 虹咲第十一集的场景叙事手法
 date: 2021-09-04
+description: 分析Lovelive虹咲学园偶像同好会动画第十一集的场景叙事手法：如何用空间与走位讲故事。
 categories: 为爱FA电
 tags: 
 - 二刺猿

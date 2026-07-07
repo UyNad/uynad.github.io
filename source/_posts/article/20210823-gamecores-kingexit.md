@@ -1,6 +1,7 @@
 ---
 title: King Exit：黄油外皮下，热血王道冒险传奇
 date: 2017-11-01 12:16:19
+description: 《King Exit》评测安利：黄油外皮下的热血王道冒险RPG，一部令人感动的复仇传奇。
 categories: 为爱FA电
 tags:
 - 叙事设计

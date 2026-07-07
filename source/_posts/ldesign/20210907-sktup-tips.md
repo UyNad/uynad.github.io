@@ -1,6 +1,7 @@
 ---
 title: SketchUp上手时的注意事项
 date: 2021-09-07
+description: SketchUp上手注意事项与踩坑记录：给关卡白模制作新手的避坑提示。
 categories: 闸总自白
 tags: 
 - 关卡设计

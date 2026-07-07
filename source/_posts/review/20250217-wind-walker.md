@@ -1,6 +1,7 @@
 ---
 title: 《风中行者》：献祭《死亡细胞》后就整这出？
 date: 2025-02-17
+description: 《风中行者（Windblown）》评测：死亡细胞团队的合作肉鸽，双人组队才能凑齐完整BD。
 categories: 游戏评测
 tags: 
 - 战斗设计

@@ -1,6 +1,7 @@
 ---
 title: Hexo搭建博客网站的全流程指南
 date: 2021-08-29
+description: Hexo搭建个人博客的全流程指南：Hexo+Travis CI+GitHub Pages从零部署教程。
 categories: Devlog
 tags: 
 - 网页开发

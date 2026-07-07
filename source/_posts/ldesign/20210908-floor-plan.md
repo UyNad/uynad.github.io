@@ -1,6 +1,7 @@
 ---
 title: 如何为室内场景设计一份Floor Plan？
 date: 2021-09-08
+description: 如何为游戏室内场景设计Floor Plan平面图：城市题材房屋室内的关卡设计方法。
 categories: 闸总自白
 tags: 
 - 关卡设计

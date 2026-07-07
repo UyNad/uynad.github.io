@@ -1,6 +1,7 @@
 ---
 title: The Last of Us：Left Behind
 date: 2017-02-08
+description: 《最后生还者：Left Behind》DLC评测：艾莉与莱莉的故事，系列叙事的高光篇章。
 categories: 游戏评测
 tags: 
 - 叙事设计

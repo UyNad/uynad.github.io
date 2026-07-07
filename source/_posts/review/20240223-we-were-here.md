@@ -1,6 +1,7 @@
 ---
 title: We Were Here：电子版真人密室逃脱
 date: 2024-02-23
+description: 《We Were Here》系列评测：电子版真人密室逃脱，比《双人成行》更考验默契的双人解谜。
 categories: 游戏评测
 tags: 
 - 关卡设计

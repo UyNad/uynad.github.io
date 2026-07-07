@@ -1,6 +1,7 @@
 ---
 title: 《走近APEX》：Arena玩法模式的体验反思
 date: 2021-08-28
+description: 《Apex英雄》Arena竞技场模式的体验反思：大逃杀改小队团竞为何不够好玩。
 categories: 赛博垃圾
 tags: 
 - 《走近APEX》

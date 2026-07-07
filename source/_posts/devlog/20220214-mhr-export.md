@@ -1,6 +1,7 @@
 ---
 title: 《怪物猎人崛起》工程解包及MOD制作指南
 date: 2022-02-14
+description: 《怪物猎人崛起》解包与MOD制作指南：如何解包MHR工程并修改数据制作Mod。
 categories: Devlog
 tags: 
 - 游戏开发

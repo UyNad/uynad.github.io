@@ -1,6 +1,7 @@
 ---
 title: 《仁王2》的多周目体验延伸机制：一难BUFF
 date: 2021-10-23
+description: 《仁王2》多周目Endgame设计分析：一难BUFF机制如何同时兼容技术验证与数值验证。
 categories: 赛博垃圾
 tags: 
 - 玩法设计

@@ -1,6 +1,7 @@
 ---
 title: Blackberry Honey：维多利亚甜蜜物语
 date: 2017-12-26
+description: 《Blackberry Honey》评测：维多利亚时代女仆的甜蜜百合物语视觉小说。
 categories: 游戏评测
 tags: 
 - 叙事设计

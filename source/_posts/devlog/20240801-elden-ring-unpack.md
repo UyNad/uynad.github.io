@@ -1,6 +1,7 @@
 ---
 title: 《艾尔登法环》Mod：解包工程篇
 date: 2024-08-01
+description: 《艾尔登法环》Mod制作教程其一：如何解包游戏工程并查看动画与配置文件。
 categories: Devlog
 tags: 
 - 游戏开发

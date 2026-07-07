@@ -1,6 +1,7 @@
 ---
 title: 《走近APEX》：赛季战斗主题迭代思路
 date: 2021-08-12
+description: 《Apex英雄》赛季战斗主题迭代思路分析：大逃杀游戏运营期的赛季设计逻辑。
 categories: 赛博垃圾
 tags: 
 - 《走近APEX》

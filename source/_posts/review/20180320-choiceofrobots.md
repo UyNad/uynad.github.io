@@ -1,6 +1,7 @@
 ---
 title: 《机器人的选择》：充满了刻板印象的时代产物
 date: 2018-03-20
+description: 《机器人的选择（Choice of Robots）》评测：充满刻板印象的文字冒险时代产物。
 categories: 游戏评测
 tags: 
 - 叙事设计

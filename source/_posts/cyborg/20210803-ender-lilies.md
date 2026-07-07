@@ -1,6 +1,7 @@
 ---
 title: 《终结的百合花》：空有框架的战斗机制
 date: 2021-08-03
+description: 《终结的百合花（Ender Lilies）》战斗机制分析：自由搭配技能的框架为何玩起来束手束脚。
 categories: 赛博垃圾
 tags: 
 - 战斗设计

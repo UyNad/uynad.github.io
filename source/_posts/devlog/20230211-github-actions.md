@@ -1,6 +1,7 @@
 ---
 title: 使用Github Actions部署Hexo博客
 date: 2023-02-11
+description: 使用GitHub Actions自动部署Hexo博客：从Travis CI迁移的配置教程。
 categories: Devlog
 tags: 
 - 网页开发

@@ -1,6 +1,7 @@
 ---
 title: Steam Deck OLED上手体验
 date: 2024-02-01
+description: Steam Deck OLED掌机上手体验：屏幕、续航与手感的真实使用感受。
 categories: 赛博垃圾
 cover: /images/20240201-steam-deck-oled.jpg
 toc: true

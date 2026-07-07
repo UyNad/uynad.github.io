@@ -1,6 +1,7 @@
 ---
 title: 【持续更新中】Genji：无限回廊开发日记
 date: 2021-09-28
+description: 无限回廊关卡机制开发日记：基于FPS弹幕战斗demo的循环空间实现记录。
 categories: Devlog
 tags: 
 - 游戏开发

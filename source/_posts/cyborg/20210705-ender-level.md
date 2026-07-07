@@ -1,6 +1,7 @@
 ---
 title: 《终结的百合花》的关卡设计缺陷
 date: 2021-07-05
+description: 《终结的百合花（Ender Lilies）》关卡设计缺陷分析：类银河恶魔城地图设计的常见误区。
 categories: 赛博垃圾
 tags: 
 - 关卡设计

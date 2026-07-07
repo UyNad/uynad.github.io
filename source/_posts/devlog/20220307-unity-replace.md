@@ -1,6 +1,7 @@
 ---
 title: UnityPrefab批量替换GameObject脚本
 date: 2022-03-07
+description: Unity批量替换Prefab中GameObject的脚本方案：编辑器批处理工具使用记录。
 categories: Devlog
 tags: 
 - 游戏开发

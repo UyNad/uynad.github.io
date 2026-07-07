@@ -1,6 +1,7 @@
 ---
 title: 《走近APEX》：进化甲的作用及迭代路线
 date: 2021-08-16
+description: 《Apex英雄》进化甲机制的作用与迭代路线：一件装备如何改变大逃杀的交战节奏。
 categories: 赛博垃圾
 tags: 
 - 《走近APEX》

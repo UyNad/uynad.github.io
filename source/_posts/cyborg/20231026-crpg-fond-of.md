@@ -1,6 +1,7 @@
 ---
 title: 让CRPG成为CRPG的体验特质
 date: 2023-10-26
+description: 让CRPG成为CRPG的体验特质：为什么玩家迷恋在规则内合理且正义地成为英雄的记忆。
 categories: 赛博垃圾
 tags: 
 - 角色扮演

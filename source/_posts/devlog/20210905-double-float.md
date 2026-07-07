@@ -1,6 +1,7 @@
 ---
 title: -1.5为什么是double而不是float？
 date: 2021-09-05
+description: 编程语言里-1.5为什么默认是double而不是float：浮点数字面量类型设计的原因探究。
 categories: Devlog
 tags: 
 - 游戏开发

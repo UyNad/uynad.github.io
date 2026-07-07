@@ -1,6 +1,7 @@
 ---
 title: 《食魂徒》：别具风味的弹幕系STG
 date: 2018-07-30
+description: 《食魂徒》评测：浮世绘风格加擦弹微创新，完成度极高的新世代弹幕STG。
 categories: 游戏评测
 tags: 
 - 玩法设计

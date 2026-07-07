@@ -1,6 +1,7 @@
 ---
 title: 让文章不出现在首页的消失魔法
 date: 2023-08-10
+description: 让Hexo文章不出现在首页的方法：hexo-generator-index-custom插件使用记录。
 categories: Devlog
 tags: 
 - 网页开发

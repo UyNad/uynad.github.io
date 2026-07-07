@@ -1,6 +1,7 @@
 ---
 title: 众神眷恋的幻想乡与登陆Steam的《东方天空璋》
 date: 2017-11-21 12:17:17
+description: 东方Project同人文化与《东方天空璋》登陆Steam的介绍：众神眷恋的幻想乡如何走向世界。
 categories: 为爱FA电
 tags:
 - 东方Project

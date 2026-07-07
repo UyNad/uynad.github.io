@@ -1,6 +1,7 @@
 ---
 title: 《雨中冒险2》：成功了，但也没完全成功
 date: 2021-07-25
+description: 《雨中冒险2（Risk of Rain 2）》评测：核心循环有缺陷但体验实打实的肉鸽射击游戏。
 categories: 游戏评测
 tags: 
 - 随机生成

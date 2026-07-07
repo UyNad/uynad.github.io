@@ -1,6 +1,7 @@
 ---
 title: 十人十色：最喜欢虹咲的三个理由
 date: 2021-09-25
+description: 最喜欢Lovelive虹咲学园偶像同好会的三个理由：十人十色的角色塑造与企划魅力。
 categories: 赛博垃圾
 tags: 
 - 二刺猿
