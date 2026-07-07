@@ -76,3 +76,14 @@ baidusitemap:
     path: baidusitemap.xml
 sitemap:
     path: sitemap.xml
+
+# RSS 订阅源 (hexo-generator-feed)
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  content: false
+  content_limit: 140
+  order_by: -date
+  autodiscovery: true
