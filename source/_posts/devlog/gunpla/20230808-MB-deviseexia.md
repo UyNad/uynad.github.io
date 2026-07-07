@@ -1,6 +1,7 @@
 ---
 title: 拼完咯！GN-001 Gundam Devise Exia
 date: 2023-08-08
+description: Metal Build争锋能天使（Devise Exia）开箱记录：合金成品的把玩体验。
 categories: Survive
 tags: 
 - Gunpla

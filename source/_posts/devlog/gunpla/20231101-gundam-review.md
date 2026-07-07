@@ -1,6 +1,7 @@
 ---
 title: 拼完咯！所有高达的拼装评测汇总
 date: 2023-11-01
+description: 高达模型（Gunpla）拼装评测汇总：EG、HG、RG、MG、FM各系列套件的个人评分与推荐，持续更新。
 categories: Survive
 tags: 
 - Gunpla

@@ -1,6 +1,7 @@
 ---
 title: 下班，然后回家拼高达！
 date: 2023-05-11
+description: 下班回家拼高达：入坑高达模型（Gunpla）的起点随笔。
 categories: Survive
 tags: 
 - 3D动画

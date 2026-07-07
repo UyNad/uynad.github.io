@@ -1,6 +1,7 @@
 ---
 title: 拼完咯！HGBF SBG-E01 Shin Burning Gundam
 date: 2023-12-10
+description: HGBF新燃烧高达（Shin Burning Gundam）拼装记录：仅次于命运高达的最喜欢HG。
 categories: Survive
 tags: 
 - Gunpla

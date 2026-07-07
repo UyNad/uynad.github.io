@@ -1,6 +1,7 @@
 ---
 title: 拼完咯！MG GNT-0000/FS 00 Qan［T］ Full Saber
 date: 2023-07-02
+description: MG量子型00全刃式（00 Qan[T] Full Saber）拼装记录与成品体验。
 categories: Survive
 tags: 
 - Gunpla

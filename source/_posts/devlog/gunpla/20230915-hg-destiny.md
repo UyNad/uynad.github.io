@@ -1,6 +1,7 @@
 ---
 title: 拼完咯！HGCE ZGMF-X42S Destiny Gundam
 date: 2023-09-15
+description: HGCE命运高达（Destiny Gundam）拼装记录：成品质量远超想象的最帅大翅膀。
 categories: Survive
 tags: 
 - Gunpla

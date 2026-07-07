@@ -1,6 +1,7 @@
 ---
 title: 拼完咯！Full Mechanics ZGMF-X10A Freedom Gundam Ver.GCP
 date: 2023-04-30
+description: Full Mechanics自由高达Ver.GCP拼装记录：ZGMF-X10A的FM版本成品体验。
 categories: Survive
 tags: 
 - Gunpla
