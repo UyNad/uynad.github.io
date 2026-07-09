@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://uynad.github.io/sitemap.xml
-Sitemap: https://uynad.github.io/baidusitemap.xml
+Sitemap: https://uynad.me/sitemap.xml
+Sitemap: https://uynad.me/baidusitemap.xml
