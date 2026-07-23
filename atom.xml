@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>UyNad的年一站</title>
+  
+  <subtitle>前往新世界的钥匙是11037</subtitle>
+  <link href="https://uynad.me/atom.xml" rel="self"/>
+  
+  <link href="https://uynad.me/"/>
+  <updated>2026-07-23T03:43:25.000Z</updated>
+  <id>https://uynad.me/</id>
+  
+  <author>
+    <name>UyNad</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《鸦卫奇旅》：联机共斗游戏要学会用巧克力包住史</title>
+    <link href="https://uynad.me/2026/05/23/review/20260524-raven/"/>
+    <id>https://uynad.me/2026/05/23/review/20260524-raven/</id>
+    <published>2026-05-23T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">《鸦卫奇旅》白金+最高梦魇难度通关后的深度评测：联机共斗游戏为何需要用甜头保证初体验、用高难度内核保证重玩黏性，以及它与《黑夜君临》的对比分析。</summary>
+    
+    
+    
+    <category term="游戏评测" scheme="https://uynad.me/categories/%E6%B8%B8%E6%88%8F%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="玩法设计" scheme="https://uynad.me/tags/%E7%8E%A9%E6%B3%95%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="战斗设计" scheme="https://uynad.me/tags/%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中小型游戏快闪：春节假期游玩游戏简评</title>
+    <link href="https://uynad.me/2026/02/28/cyborg/20260301-new-year-game/"/>
+    <id>https://uynad.me/2026/02/28/cyborg/20260301-new-year-game/</id>
+    <published>2026-02-28T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">春节假期Steam中小型游戏简评合集：从教学设计、谜题机制到关卡结构，以游戏设计师视角拆解可参考的设计素材。</summary>
+    
+    
+    
+    <category term="赛博垃圾" scheme="https://uynad.me/categories/%E8%B5%9B%E5%8D%9A%E5%9E%83%E5%9C%BE/"/>
+    
+    
+    <category term="关卡设计" scheme="https://uynad.me/tags/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="玩法设计" scheme="https://uynad.me/tags/%E7%8E%A9%E6%B3%95%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="战斗设计" scheme="https://uynad.me/tags/%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>黑夜君临排位9999登顶后：（四）ACT品类在阿尔法时代的破局</title>
+    <link href="https://uynad.me/2026/01/18/cyborg/20260119-nightreign-love-4/"/>
+    <id>https://uynad.me/2026/01/18/cyborg/20260119-nightreign-love-4/</id>
+    <published>2026-01-18T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">《黑夜君临》设计分析第四篇：ACT品类在当今快节奏游戏市场的选型优势与破局思路，为何动作游戏没有像RTS一样走向小众。</summary>
+    
+    
+    
+    <category term="赛博垃圾" scheme="https://uynad.me/categories/%E8%B5%9B%E5%8D%9A%E5%9E%83%E5%9C%BE/"/>
+    
+    
+    <category term="玩法设计" scheme="https://uynad.me/tags/%E7%8E%A9%E6%B3%95%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="战斗设计" scheme="https://uynad.me/tags/%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="改变了鄙人人生的作品" scheme="https://uynad.me/tags/%E6%94%B9%E5%8F%98%E4%BA%86%E9%84%99%E4%BA%BA%E4%BA%BA%E7%94%9F%E7%9A%84%E4%BD%9C%E5%93%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>黑夜君临排位9999登顶后：（三）联机玩家的正负反馈分析</title>
+    <link href="https://uynad.me/2026/01/13/cyborg/20260114-nightreign-love-3/"/>
+    <id>https://uynad.me/2026/01/13/cyborg/20260114-nightreign-love-3/</id>
+    <published>2026-01-13T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">《黑夜君临》设计分析第三篇：联机游戏玩家的正负反馈机制分析——正反馈让玩家期待下把更好，负反馈“甩锅”让玩家期待下把翻盘。</summary>
+    
+    
+    
+    <category term="赛博垃圾" scheme="https://uynad.me/categories/%E8%B5%9B%E5%8D%9A%E5%9E%83%E5%9C%BE/"/>
+    
+    
+    <category term="玩法设计" scheme="https://uynad.me/tags/%E7%8E%A9%E6%B3%95%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="战斗设计" scheme="https://uynad.me/tags/%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="改变了鄙人人生的作品" scheme="https://uynad.me/tags/%E6%94%B9%E5%8F%98%E4%BA%86%E9%84%99%E4%BA%BA%E4%BA%BA%E7%94%9F%E7%9A%84%E4%BD%9C%E5%93%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>黑夜君临排位9999登顶后：（二）如何赢得团队合作</title>
+    <link href="https://uynad.me/2025/12/23/cyborg/20251224-nightreign-love-2/"/>
+    <id>https://uynad.me/2025/12/23/cyborg/20251224-nightreign-love-2/</id>
+    <published>2025-12-23T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">《黑夜君临》设计分析第二篇：联机共斗游戏中团队合作的本质——团队精神不是为了团队，而是为了团队里每个人都能赢。</summary>
+    
+    
+    
+    <category term="赛博垃圾" scheme="https://uynad.me/categories/%E8%B5%9B%E5%8D%9A%E5%9E%83%E5%9C%BE/"/>
+    
+    
+    <category term="玩法设计" scheme="https://uynad.me/tags/%E7%8E%A9%E6%B3%95%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="战斗设计" scheme="https://uynad.me/tags/%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="改变了鄙人人生的作品" scheme="https://uynad.me/tags/%E6%94%B9%E5%8F%98%E4%BA%86%E9%84%99%E4%BA%BA%E4%BA%BA%E7%94%9F%E7%9A%84%E4%BD%9C%E5%93%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>黑夜君临排位9999登顶后：（一）核心吸引点</title>
+    <link href="https://uynad.me/2025/12/22/cyborg/20251223-nightreign-love-1/"/>
+    <id>https://uynad.me/2025/12/22/cyborg/20251223-nightreign-love-1/</id>
+    <published>2025-12-22T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">《艾尔登法环：黑夜君临》深夜排位9999登顶后的设计分析第一篇：高竞争力核心玩法如何在Endgame阶段培养出玩家社交生态。</summary>
+    
+    
+    
+    <category term="赛博垃圾" scheme="https://uynad.me/categories/%E8%B5%9B%E5%8D%9A%E5%9E%83%E5%9C%BE/"/>
+    
+    
+    <category term="玩法设计" scheme="https://uynad.me/tags/%E7%8E%A9%E6%B3%95%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="战斗设计" scheme="https://uynad.me/tags/%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="改变了鄙人人生的作品" scheme="https://uynad.me/tags/%E6%94%B9%E5%8F%98%E4%BA%86%E9%84%99%E4%BA%BA%E4%BA%BA%E7%94%9F%E7%9A%84%E4%BD%9C%E5%93%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何做“正常”的玩法闭环流程体验</title>
+    <link href="https://uynad.me/2025/06/30/cyborg/20250701-forfun/"/>
+    <id>https://uynad.me/2025/06/30/cyborg/20250701-forfun/</id>
+    <published>2025-06-30T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">大型游戏项目中如何设计“正常”的玩法闭环流程：从玩家上手到玩无可玩的全周期体验规划，闭环、复刷与闭环转复刷三种思路辨析。</summary>
+    
+    
+    
+    <category term="赛博垃圾" scheme="https://uynad.me/categories/%E8%B5%9B%E5%8D%9A%E5%9E%83%E5%9C%BE/"/>
+    
+    
+    <category term="玩法设计" scheme="https://uynad.me/tags/%E7%8E%A9%E6%B3%95%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="游戏设计" scheme="https://uynad.me/tags/%E6%B8%B8%E6%88%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如龙式路人VS刺客信条式路人</title>
+    <link href="https://uynad.me/2025/04/15/cyborg/20250416-hangout/"/>
+    <id>https://uynad.me/2025/04/15/cyborg/20250416-hangout/</id>
+    <published>2025-04-15T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">如龙式路人与刺客信条式路人的对比：开放世界游戏塑造世界感时路人NPC的存在意义。</summary>
+    
+    
+    
+    <category term="赛博垃圾" scheme="https://uynad.me/categories/%E8%B5%9B%E5%8D%9A%E5%9E%83%E5%9C%BE/"/>
+    
+    
+    <category term="关卡设计" scheme="https://uynad.me/tags/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="叙事设计" scheme="https://uynad.me/tags/%E5%8F%99%E4%BA%8B%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="开放世界" scheme="https://uynad.me/tags/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《风中行者》：献祭《死亡细胞》后就整这出？</title>
+    <link href="https://uynad.me/2025/02/16/review/20250217-wind-walker/"/>
+    <id>https://uynad.me/2025/02/16/review/20250217-wind-walker/</id>
+    <published>2025-02-16T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">《风中行者（Windblown）》评测：死亡细胞团队的合作肉鸽，双人组队才能凑齐完整BD。</summary>
+    
+    
+    
+    <category term="游戏评测" scheme="https://uynad.me/categories/%E6%B8%B8%E6%88%8F%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="战斗设计" scheme="https://uynad.me/tags/%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="随机生成" scheme="https://uynad.me/tags/%E9%9A%8F%E6%9C%BA%E7%94%9F%E6%88%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>L4D+模式乐趣分析：合作PVE角色分工游戏</title>
+    <link href="https://uynad.me/2025/01/24/cyborg/20250125-l4d/"/>
+    <id>https://uynad.me/2025/01/24/cyborg/20250125-l4d/</id>
+    <published>2025-01-24T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">《求生之路（L4D）》类模式乐趣分析：合作PVE角色分工游戏为何让玩家愿意投入长局对战。</summary>
+    
+    
+    
+    <category term="赛博垃圾" scheme="https://uynad.me/categories/%E8%B5%9B%E5%8D%9A%E5%9E%83%E5%9C%BE/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>拼完咯！30MM SCHNEIDER NACHTREIHER/40E STEEL HAZE</title>
+    <link href="https://uynad.me/2024/12/31/devlog/gunpla/20250101-rusty/"/>
+    <id>https://uynad.me/2024/12/31/devlog/gunpla/20250101-rusty/</id>
+    <published>2024-12-31T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">30MM施耐德NACHTREIHER/40E钢铁雾霭（Steel Haze）拼装记录：装甲核心6拉斯提机体模型。</summary>
+    
+    
+    
+    <category term="Survive" scheme="https://uynad.me/categories/Survive/"/>
+    
+    
+    <category term="Gunpla" scheme="https://uynad.me/tags/Gunpla/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《开拓者：正义之怒》入门答疑</title>
+    <link href="https://uynad.me/2024/10/26/review/20241027-wraith-of-the-righteous/"/>
+    <id>https://uynad.me/2024/10/26/review/20241027-wraith-of-the-righteous/</id>
+    <published>2024-10-26T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">《开拓者：正义之怒》入门答疑：CRPG新手常见问题与开荒建议合集。</summary>
+    
+    
+    
+    <category term="游戏评测" scheme="https://uynad.me/categories/%E6%B8%B8%E6%88%8F%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="战斗设计" scheme="https://uynad.me/tags/%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="改变了鄙人人生的作品" scheme="https://uynad.me/tags/%E6%94%B9%E5%8F%98%E4%BA%86%E9%84%99%E4%BA%BA%E4%BA%BA%E7%94%9F%E7%9A%84%E4%BD%9C%E5%93%81/"/>
+    
+    <category term="叙事设计" scheme="https://uynad.me/tags/%E5%8F%99%E4%BA%8B%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="CRPG" scheme="https://uynad.me/tags/CRPG/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中秋玩什么：《宇宙机器人》VS《战锤：星际战士2》</title>
+    <link href="https://uynad.me/2024/10/11/review/20241012-autumn-play/"/>
+    <id>https://uynad.me/2024/10/11/review/20241012-autumn-play/</id>
+    <published>2024-10-11T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">《宇宙机器人》对比《战锤40K：星际战士2》：有效与无效的美术资源堆砌之别。</summary>
+    
+    
+    
+    <category term="游戏评测" scheme="https://uynad.me/categories/%E6%B8%B8%E6%88%8F%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="关卡设计" scheme="https://uynad.me/tags/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="战斗设计" scheme="https://uynad.me/tags/%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《堕落之主》：仰望星空，然后撞空气墙</title>
+    <link href="https://uynad.me/2024/08/19/review/20240820-fallen/"/>
+    <id>https://uynad.me/2024/08/19/review/20240820-fallen/</id>
+    <published>2024-08-19T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">《堕落之主（Lords of the Fallen）》评测：魂like做加法设计前应先打好基础品质。</summary>
+    
+    
+    
+    <category term="游戏评测" scheme="https://uynad.me/categories/%E6%B8%B8%E6%88%8F%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="关卡设计" scheme="https://uynad.me/tags/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="战斗设计" scheme="https://uynad.me/tags/%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="叙事设计" scheme="https://uynad.me/tags/%E5%8F%99%E4%BA%8B%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《艾尔登法环》Mod：解包工程篇</title>
+    <link href="https://uynad.me/2024/07/31/devlog/20240801-elden-ring-unpack/"/>
+    <id>https://uynad.me/2024/07/31/devlog/20240801-elden-ring-unpack/</id>
+    <published>2024-07-31T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">《艾尔登法环》Mod制作教程其一：如何解包游戏工程并查看动画与配置文件。</summary>
+    
+    
+    
+    <category term="Devlog" scheme="https://uynad.me/categories/Devlog/"/>
+    
+    
+    <category term="战斗设计" scheme="https://uynad.me/tags/%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="游戏开发" scheme="https://uynad.me/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DG_Clock：钟表主题地牢关卡留档</title>
+    <link href="https://uynad.me/2024/06/30/ldesign/20240701-dg-clock/"/>
+    <id>https://uynad.me/2024/06/30/ldesign/20240701-dg-clock/</id>
+    <published>2024-06-30T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">钟表主题地牢关卡设计留档：以《艾尔登法环》风格绘制的小型地牢关卡方案。</summary>
+    
+    
+    
+    <category term="闸总自白" scheme="https://uynad.me/categories/%E9%97%B8%E6%80%BB%E8%87%AA%E7%99%BD/"/>
+    
+    
+    <category term="关卡设计" scheme="https://uynad.me/tags/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《艾尔登法环》DLC回顾：很烂的好活儿</title>
+    <link href="https://uynad.me/2024/06/26/review/20240627-ring-dlc/"/>
+    <id>https://uynad.me/2024/06/26/review/20240627-ring-dlc/</id>
+    <published>2024-06-26T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">《艾尔登法环》DLC黄金树幽影回顾：很烂的好活儿，内容一言难尽的扩展包体验。</summary>
+    
+    
+    
+    <category term="游戏评测" scheme="https://uynad.me/categories/%E6%B8%B8%E6%88%8F%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="战斗设计" scheme="https://uynad.me/tags/%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="叙事设计" scheme="https://uynad.me/tags/%E5%8F%99%E4%BA%8B%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="开放世界" scheme="https://uynad.me/tags/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《黑暗之魂2》全主题关卡体验回顾</title>
+    <link href="https://uynad.me/2024/06/02/article/2024-6-3-ds2/"/>
+    <id>https://uynad.me/2024/06/02/article/2024-6-3-ds2/</id>
+    <published>2024-06-02T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">《黑暗之魂2》全主题关卡体验回顾：逐一记录每个区域的关卡设计感想与叙事氛围。</summary>
+    
+    
+    
+    <category term="为爱FA电" scheme="https://uynad.me/categories/%E4%B8%BA%E7%88%B1FA%E7%94%B5/"/>
+    
+    
+    <category term="关卡设计" scheme="https://uynad.me/tags/%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="战斗设计" scheme="https://uynad.me/tags/%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="叙事设计" scheme="https://uynad.me/tags/%E5%8F%99%E4%BA%8B%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为什么《黑暗之魂2》的探图体验系列最差</title>
+    <link href="https://uynad.me/2024/05/26/cyborg/20240527-ds2/"/>
+    <id>https://uynad.me/2024/05/26/cyborg/20240527-ds2/</id>
+    <published>2024-05-26T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">为什么《黑暗之魂2》的探图体验是魂系列最差：从地图结构与敌人配置谈探索体验的崩坏。</summary>
+    
+    
+    
+    <category term="赛博垃圾" scheme="https://uynad.me/categories/%E8%B5%9B%E5%8D%9A%E5%9E%83%E5%9C%BE/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>《浪人崛起》：没能成为新时代的武士</title>
+    <link href="https://uynad.me/2024/04/19/review/20240420-ronin/"/>
+    <id>https://uynad.me/2024/04/19/review/20240420-ronin/</id>
+    <published>2024-04-19T16:00:00.000Z</published>
+    <updated>2026-07-23T03:43:25.000Z</updated>
+    
+    
+    <summary type="html">《浪人崛起》评测：忍者组开放世界的失手，没能成为新时代的武士。</summary>
+    
+    
+    
+    <category term="游戏评测" scheme="https://uynad.me/categories/%E6%B8%B8%E6%88%8F%E8%AF%84%E6%B5%8B/"/>
+    
+    
+    <category term="战斗设计" scheme="https://uynad.me/tags/%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1/"/>
+    
+    <category term="叙事设计" scheme="https://uynad.me/tags/%E5%8F%99%E4%BA%8B%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+</feed>

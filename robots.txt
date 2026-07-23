@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://uynad.me/sitemap.xml
+Sitemap: https://uynad.me/baidusitemap.xml
