@@ -4,23 +4,61 @@ on:
     branches:
     # 推送到main分支后开始自动更新
       - main
+  # 也可以在 GitHub 的 Actions 页面手动触发
+  workflow_dispatch:
+
+# 同一时间只跑一个部署，新的推送会排队
+concurrency:
+  group: deploy
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      # 用自带的 GITHUB_TOKEN 推送 gh-pages 分支
+      contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v4
+        with:
+          # 需要完整提交历史，下面要按提交时间设置文章更新时间
+          fetch-depth: 0
 
-      - name: Build and Deploy
-        uses: theme-keep/hexo-deploy-github-pages-action@master
-        env:
-          # GITHUB TOKEN
-          PERSONAL_TOKEN: ${{ secrets.HEXO_KEEP_DEPLOY }}
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
 
-          #部署到uynad.github.io仓库
-          PUBLISH_REPOSITORY: UyNad/uynad.github.io
+      # 文章的「更新时间」取最近一次 git 提交时间（沿用旧部署 action 的做法）
+      - name: Set post update time from git
+        run: |
+          git config --global core.quotepath false
+          find source/_posts -name "*.md" | while read -r file; do
+            timestamp=$(git log -1 --format="%ct" -- "$file")
+            [ -n "$timestamp" ] && touch -d "@$timestamp" "$file"
+          done
 
-          # 部署到gh-pages分支
-          BRANCH: gh-pages
-          PUBLISH_DIR: ./public
+      # 按 package-lock.json 安装，和本地预览用的依赖版本完全一致
+      # （旧 action 用 pnpm@latest 现装，pnpm 升级后拒绝运行依赖的安装脚本，导致部署失败）
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate site
+        run: |
+          npx hexo clean
+          npx hexo generate
+
+      # 部署到 gh-pages 分支（每次覆盖为单个提交，和旧 action 一致）
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./public
+          force_orphan: true
+          cname: uynad.me
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
+          commit_message: Build and Deploy from Github Actions
