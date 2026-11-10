@@ -95,6 +95,7 @@ navbar:
         Archives: /archives
         Categories: /categories
         Tags: /tags
+        Games: /games/
         About: /about
     # Links to be shown on the right of the navigation bar
     # links:

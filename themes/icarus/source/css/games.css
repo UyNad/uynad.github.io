@@ -1,0 +1,78 @@
+/* 游戏开发栏目样式（games.jsx / game.jsx / post.jsx 引用） */
+
+/* 徽章 */
+.game-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:.5rem;}
+.game-badge{display:inline-block;padding:1px 8px;border-radius:3px;font-size:12px;line-height:1.7;background:#f0f0f0;color:#555;}
+.game-badge.is-ue{background:#1c1c1c;color:#fff;}
+.game-badge.is-godot{background:#478cbf;color:#fff;}
+.game-badge.is-html{background:#e34f26;color:#fff;}
+.game-badge.is-unity{background:#222c37;color:#fff;}
+.game-badge.is-status{background:#fff4d6;color:#946200;}
+
+/* 栏目首页卡片 */
+.game-grid{margin-top:0;}
+.game-card{height:100%;display:flex;flex-direction:column;}
+.game-card .card-content{flex:1;display:flex;flex-direction:column;}
+.game-card .buttons{margin-top:auto;padding-top:.75rem;}
+.game-card-cover{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:4px 4px 0 0;background:linear-gradient(135deg,#3a3f4b,#1d2027);}
+.game-card-cover.is-ue{background:linear-gradient(135deg,#3b3b3b,#0f0f0f);}
+.game-card-cover.is-godot{background:linear-gradient(135deg,#5fa4d6,#2a5b80);}
+.game-card-cover.is-html{background:linear-gradient(135deg,#f0784f,#a8341a);}
+.game-card-cover img{width:100%;height:100%;object-fit:cover;transition:transform .3s;}
+.game-card-cover:hover img{transform:scale(1.04);}
+.game-card-placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.85);font-size:28px;font-weight:700;letter-spacing:2px;}
+.game-card-title{font-size:1.25rem;font-weight:600;margin-bottom:.25rem;}
+.game-card-tagline{color:#666;font-size:.9rem;}
+.game-card-meta{display:flex;justify-content:space-between;margin-top:.75rem;font-size:12px;color:#888;}
+
+/* 游戏页 */
+.game-crumb{margin-bottom:1rem !important;}
+.game-tagline{color:#666;margin-top:-.75rem;}
+.game-stage{background:#111;}
+.game-frame{position:relative;width:100%;margin:0 auto;background:#000;}
+/* 竖屏（手机游戏）：居中的“手机框”，同时不超过屏幕高度 */
+.game-stage.is-portrait .game-frame{width:min(100%,420px,calc(85vh * 9 / 16));}
+.game-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;}
+.game-start{position:absolute;inset:0;width:100%;border:0;cursor:pointer;background:#1d2027 center/cover no-repeat;}
+.game-start span{display:inline-flex;align-items:center;gap:10px;padding:12px 28px;border-radius:999px;background:rgba(0,0,0,.65);color:#fff;font-size:18px;font-weight:600;transition:background .2s;}
+.game-start:hover span{background:#3273dc;}
+.game-frame.is-playing .game-start{display:none;}
+.game-stage-tip{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;padding:8px 16px;font-size:13px;color:#aaa;}
+.game-stage-tip a{color:#ddd;margin-left:auto;}
+.game-stage-tip a:hover{color:#fff;}
+.game-stage-tip .fas{margin-right:6px;}
+.game-media{display:block;width:100%;max-height:85vh;object-fit:contain;margin:0 auto;}
+.game-release{border-top:1px solid #eee;}
+.game-latest{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-bottom:.75rem;}
+.game-version{font-weight:600;}
+.game-date{color:#888;font-size:13px;}
+.game-notes{color:#555;font-size:14px;}
+.game-downloads .button{height:auto;padding-top:.5em;padding-bottom:.5em;}
+.game-downloads .fas{margin-right:8px;}
+.game-downloads small{margin-left:8px;opacity:.7;font-size:12px;}
+.game-section-title{font-size:1.15rem;font-weight:600;margin-bottom:.75rem;}
+.game-section-title small{margin-left:8px;font-size:12px;font-weight:400;color:#888;}
+.game-posts{list-style:none;margin:0;}
+.game-posts li{padding:.6rem 0;border-bottom:1px dashed #e5e5e5;}
+.game-posts li:last-child{border-bottom:0;}
+.game-posts a{display:flex;gap:12px;align-items:baseline;}
+.game-posts time{flex:none;color:#888;font-size:13px;font-variant-numeric:tabular-nums;}
+.game-post-title{font-weight:500;}
+.game-posts p{margin:.2rem 0 0 calc(10ch + 12px);color:#777;font-size:13px;}
+.game-empty{color:#999;}
+.game-versions summary{cursor:pointer;margin-bottom:0;}
+.game-versions[open] summary{margin-bottom:.75rem;}
+.game-versions ul{list-style:none;margin:0;}
+.game-versions li{display:flex;flex-wrap:wrap;gap:4px 12px;padding:.35rem 0;font-size:14px;}
+.game-versions time{color:#888;font-size:13px;}
+
+/* 文章顶部的系列条 */
+.game-series-bar{display:flex;align-items:center;gap:10px;margin-bottom:1rem;padding:.7rem 1rem;border-radius:4px;background:#eef3fc;color:#3273dc;font-size:14px;}
+.game-series-bar:hover{background:#e1eafa;}
+.game-series-go{margin-left:auto;font-size:13px;white-space:nowrap;}
+
+@media screen and (max-width:768px){
+    .game-posts a{flex-direction:column;gap:0;}
+    .game-posts p{margin-left:0;}
+    .game-series-go{display:none;}
+}
