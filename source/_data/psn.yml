@@ -10,29 +10,29 @@ motto: Here comes nothing!
 flag: ''
 avatar: https://i.psnprofiles.com/avatars/m/Gf9e57bdfe.png
 background: https://i.psnprofiles.com/games/59d66b/LHfccd3c.jpg
-level: '543'
+level: '550'
 trophies:
-  total: '11,434'
-  platinum: '192'
-  gold: '1,389'
-  silver: '2,188'
-  bronze: '7,665'
+  total: '11,940'
+  platinum: '196'
+  gold: '1,415'
+  silver: '2,262'
+  bronze: '8,067'
 stats:
-  - value: '742'
+  - value: '770'
     label: Games Played
-  - value: '171'
+  - value: '173'
     label: Completed Games
-  - value: '47.01%'
+  - value: '46.42%'
     label: Completion
-  - value: '13,218'
+  - value: '14,220'
     label: Unearned Trophies
-  - value: '2.32'
+  - value: '2.37'
     label: Trophies Per Day
-  - value: '518'
+  - value: '529'
     label: Views
-  - value: '30,886'
+  - value: '30,386'
     label: World Rank
     highlight: true
-  - value: '990'
+  - value: '983'
     label: Country Rank
     highlight: true
